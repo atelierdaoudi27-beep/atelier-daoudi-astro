@@ -41,7 +41,7 @@
         leadImg.alt = lead.imageAlt || lead.title;
       }
       if (leadCategory) leadCategory.textContent = lead.category.toUpperCase();
-      if (leadTime) leadTime.textContent = `${lead.readingTime || '7 MIN READ'} · ${(lead.drawings || []).length} PLANS &amp; ${(lead.gallery || []).length} PERSPECTIVES`;
+      if (leadTime) leadTime.textContent = `${lead.readingTime || '7 MIN READ'} · ${(lead.drawings || []).length} SCHEMATIC PLANS · IEA PVPS`;
       if (leadTitle) leadTitle.textContent = lead.title;
       if (leadSummary) leadSummary.textContent = lead.summary;
       if (leadReadBtn) {
@@ -57,17 +57,17 @@
           <div class="side-card-img-wrap">
             <img src="${esc(a.image)}" alt="${esc(a.imageAlt)}" loading="lazy">
             <span class="side-badge">${esc(a.category.toUpperCase())}</span>
-            <span class="side-drawings-pill">📐 ${(a.drawings || []).length} Plans · 📷 ${(a.gallery || []).length} Photos</span>
+            <span class="side-drawings-pill">📐 ${(a.drawings || []).length} Architectural Drawings</span>
           </div>
           <div class="side-card-body">
             <div class="side-meta">
-              <span class="eyebrow">${esc(a.dossierNumber || 'DOSSIER')}</span>
-              <span class="side-time">${esc(a.readingTime || '5 min')}</span>
+              <span class="eyebrow">${esc(a.dossierNumber || 'GLOBAL DOSSIER')}</span>
+              <span class="side-time">${esc(a.readingTime || '6 min')}</span>
             </div>
             <h3>${esc(a.title)}</h3>
             <p>${esc(a.summary)}</p>
             <button class="side-read-btn" data-article-index="${idx + 1}">
-              Explore Article &amp; Drawings ↗
+              Read Architectural Dossier ↗
             </button>
           </div>
         </article>
@@ -88,7 +88,7 @@
     const visible = expanded ? filtered : filtered.slice(0, 6);
 
     if (dossierCountDisplay) {
-      dossierCountDisplay.textContent = `${String(filtered.length).padStart(2, '0')} ARCHITECTURAL CASE STUDIES &amp; PAPERS`;
+      dossierCountDisplay.textContent = `${String(filtered.length).padStart(2, '0')} PEER-INDEXED RESEARCH PAPERS`;
     }
 
     if (filtered.length === 0) {
@@ -100,16 +100,14 @@
     list.innerHTML = visible.map((a, i) => {
       const globalIndex = articles.findIndex(x => x.id === a.id);
       const drawingsCount = (a.drawings || []).length;
-      const photosCount = (a.gallery || []).length;
 
       return `
         <article class="journal-card" data-topic="${esc(a.topic || '')}">
           <div class="journal-cover-wrap">
             <img class="journal-cover" src="${esc(a.image)}" alt="${esc(a.imageAlt)}" loading="lazy">
-            <span class="journal-badge">${esc(a.dossierNumber || 'CASE STUDY')}</span>
+            <span class="journal-badge">${esc(a.dossierNumber || 'DOSSIER')}</span>
             <div class="journal-card-media-count">
-              <span>📐 ${drawingsCount} Plans</span>
-              <span>📷 ${photosCount} Views</span>
+              <span>📐 ${drawingsCount} Technical Drawing${drawingsCount > 1 ? 's' : ''}</span>
             </div>
           </div>
           <div class="journal-card-body">
@@ -121,8 +119,8 @@
             <p class="journal-summary">${esc(a.summary)}</p>
             <div class="journal-card-footer">
               <span class="journal-date">${esc(a.date)}</span>
-              <button class="journal-btn" data-global-index="${globalIndex}" aria-label="Explore project article and plans: ${esc(a.title)}">
-                Explore Case &amp; Drawings <span>↗</span>
+              <button class="journal-btn" data-global-index="${globalIndex}" aria-label="Explore research paper and drawings: ${esc(a.title)}">
+                Read Dossier &amp; Plans <span>↗</span>
               </button>
             </div>
           </div>
@@ -159,13 +157,13 @@
       <!-- Masthead -->
       <div class="article-masthead">
         <div class="article-meta-bar">
-          <span class="article-dossier-tag">${esc(a.dossierNumber || 'CASE STUDY')}</span>
+          <span class="article-dossier-tag">${esc(a.dossierNumber || 'RESEARCH DOSSIER')}</span>
           <span class="article-category-tag">${esc(a.category)}</span>
-          <span class="article-read-time">${esc(a.readingTime || '6 min read')} · ARCHDAILY RESEARCH FORMAT</span>
+          <span class="article-read-time">${esc(a.readingTime || '6 min read')} · PEER REVIEWED</span>
         </div>
         <h2>${esc(a.title)}</h2>
         <div class="article-byline">
-          <span>ATELIER DAOUDI ARCHITECTURAL EDITORIAL</span>
+          <span>ATELIER DAOUDI ARCHITECTURAL REVIEW &amp; RESEARCH</span>
           <span>PUBLISHED: ${esc(a.date)}</span>
           <span class="article-issn">ISSN ARCH-2026-DZ</span>
         </div>
@@ -174,7 +172,7 @@
       <!-- Project Specification Fact Sheet (ArchDaily Style) -->
       ${a.specs ? `
         <div class="article-fact-sheet">
-          <div class="fact-sheet-title">PROJECT &amp; RESEARCH SPECIFICATION SHEET</div>
+          <div class="fact-sheet-title">INTERNATIONAL RESEARCH SPECIFICATION &amp; METHODOLOGY</div>
           <div class="fact-sheet-grid">
             ${Object.entries(a.specs).map(([k, v]) => `
               <div class="fact-item">
@@ -186,15 +184,14 @@
         </div>
       ` : ''}
 
-      <!-- Interactive Tab Bar (Overview, Drawings, Photos) -->
+      <!-- Interactive Tab Bar -->
       <div class="article-tabs" role="tablist">
         <button class="article-tab active" data-tab-target="#tab-narrative">Overview &amp; Analysis</button>
-        <button class="article-tab" data-tab-target="#tab-drawings">
-          Architectural Drawings &amp; Plans (${(a.drawings || []).length})
-        </button>
-        <button class="article-tab" data-tab-target="#tab-gallery">
-          Project Photography &amp; Perspectives (${(a.gallery || []).length})
-        </button>
+        ${a.drawings && a.drawings.length ? `
+          <button class="article-tab" data-tab-target="#tab-drawings">
+            Architectural Drawings &amp; Diagrams (${a.drawings.length})
+          </button>
+        ` : ''}
       </div>
 
       <!-- TAB 1: NARRATIVE & OVERVIEW -->
@@ -239,16 +236,15 @@
         ` : ''}
       </div>
 
-      <!-- TAB 2: ARCHITECTURAL DRAWINGS & PLANS (المخططات المعمارية) -->
-      <div id="tab-drawings" class="article-tab-panel">
-        <div class="drawings-section-header">
-          <h3>Architectural Drawings, Blueprints &amp; Technical Diagrams</h3>
-          <p>Explore high-resolution orthographic floor plans, bioclimatic sections, and axonometrics for this study.</p>
-        </div>
+      <!-- TAB 2: ARCHITECTURAL DRAWINGS & PLANS -->
+      ${a.drawings && a.drawings.length ? `
+        <div id="tab-drawings" class="article-tab-panel">
+          <div class="drawings-section-header">
+            <h3>Architectural Drawings, Blueprints &amp; Technical Diagrams</h3>
+            <p>Explore orthographic projections, environmental sections, and isometric details for this research topic.</p>
+          </div>
 
-        ${a.drawings && a.drawings.length ? `
           <div class="drawings-viewer">
-            <!-- Active Drawing Display -->
             <div class="active-drawing-frame">
               <img id="viewer-drawing-img" src="${esc(a.drawings[0].url)}" alt="${esc(a.drawings[0].title)}">
               <div class="drawing-caption-overlay" id="viewer-drawing-caption">
@@ -256,7 +252,6 @@
               </div>
             </div>
 
-            <!-- Drawings Selector Grid -->
             <div class="drawings-thumbnails-strip">
               ${a.drawings.map((d, dIdx) => `
                 <button class="drawing-thumb-btn ${dIdx === 0 ? 'active' : ''}" data-drawing-index="${dIdx}">
@@ -267,27 +262,8 @@
               `).join('')}
             </div>
           </div>
-        ` : '<p class="muted">No technical drawings registered for this project.</p>'}
-      </div>
-
-      <!-- TAB 3: PROJECT PHOTOGRAPHY & PERSPECTIVES (معرض الصور) -->
-      <div id="tab-gallery" class="article-tab-panel">
-        <div class="drawings-section-header">
-          <h3>Project Perspectives &amp; Visual Documentation</h3>
-          <p>Architectural perspectives documenting spatial sequences, material assemblies, and day/evening lighting.</p>
         </div>
-
-        ${a.gallery && a.gallery.length ? `
-          <div class="article-gallery-grid">
-            ${a.gallery.map((g, gIdx) => `
-              <figure class="gallery-photo-item">
-                <img src="${esc(g.url)}" alt="${esc(g.caption)}" loading="lazy">
-                <figcaption>${esc(g.caption)}</figcaption>
-              </figure>
-            `).join('')}
-          </div>
-        ` : '<p class="muted">No perspective photos registered for this project.</p>'}
-      </div>
+      ` : ''}
 
       <!-- Sources Block -->
       <div class="article-sources-block">
@@ -308,7 +284,7 @@
       <!-- Navigation & Action Bar -->
       <div class="article-nav-bar">
         <button id="article-prev-btn" class="nav-article-btn">
-          <span>← Previous Case Study</span>
+          <span>← Previous Dossier</span>
           <small>${esc(articles[prevIndex].title)}</small>
         </button>
         <button id="article-citation-btn" class="action-btn">
@@ -318,7 +294,7 @@
           <span>Print / PDF Document</span>
         </button>
         <button id="article-next-btn" class="nav-article-btn">
-          <span>Next Case Study →</span>
+          <span>Next Dossier →</span>
           <small>${esc(articles[nextIndex].title)}</small>
         </button>
       </div>
@@ -364,7 +340,7 @@
     };
 
     document.querySelector('#article-citation-btn').onclick = e => {
-      const cite = `Atelier Daoudi. (${a.date.slice(0,4)}). ${a.title}. Atelier Daoudi Architectural Review & Case Studies, Vol. 04. Retrieved from https://atelierdaoudi27.online/`;
+      const cite = `Atelier Daoudi. (${a.date.slice(0,4)}). ${a.title}. Atelier Daoudi Architectural Review, Vol. 04. Retrieved from https://atelierdaoudi27.online/`;
       navigator.clipboard.writeText(cite).then(() => {
         e.target.innerText = '✓ Citation Copied';
         setTimeout(() => { e.target.innerText = 'Copy Citation (APA/Harvard)'; }, 2500);

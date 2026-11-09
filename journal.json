@@ -1,65 +1,36 @@
 {
   "updatedAt": "2026-11-09",
-  "dossier": "VOL. 04 — ARCHDAILY FORMAT ARCHITECTURAL REVIEW & CASE STUDIES",
+  "dossier": "VOL. 04 — GLOBAL ARCHITECTURAL REVIEW & CASE STUDIES (ARCHDAILY FORMAT)",
   "articles": [
     {
-      "id": "solar-architecture-performance-2026-10-29",
-      "title": "Solar Architecture: Design for a Lifetime, Not Just Peak Power",
+      "id": "solar-envelope-bipv-international",
+      "title": "Solar Architecture: Designing for a Lifetime, Not Just Peak Power",
       "category": "Renewable Energy & BIPV",
       "topic": "Renewable",
-      "summary": "Bridging academic solar envelope research with built educational architecture: evaluating rear cavity convective aerodynamics, fire safety barriers, and 30-year lifecycle maintenance.",
+      "summary": "An international technical dossier evaluating building-integrated photovoltaics (BIPV): boundary-layer aerodynamics, 150mm convective air chimneys, and long-term envelope durability according to IEA PVPS Task 13.",
       "date": "2026-11-09",
       "readingTime": "7 min read",
-      "dossierNumber": "CASE STUDY 01 / BIPV",
+      "dossierNumber": "GLOBAL DOSSIER 01 / BIPV",
       "image": "assets/journal-solar-performance.svg",
       "imageAlt": "Axonometric diagram of BIPV roof matrix and ventilated facade showing rear convective cooling cavity",
-      "imageCredit": "Technical Axonometric & Aerodynamic Flow Diagram · Atelier Daoudi Research",
+      "imageCredit": "Technical Axonometric & Aerodynamic Flow Diagram · International Solar Architecture Review",
       "specs": {
-        "Typology": "Educational Campus & Solar Envelope",
-        "Gross Area": "7,400 m²",
-        "Location": "Mostaganem, Algeria",
-        "Photovoltaic Tech": "Glass-Glass Frameless Monocrystalline BIPV",
-        "Cavity Depth": "150mm Continuous Convective Chimney",
-        "Standards": "IEA PVPS Task 13 / CWCT Weatherproofing"
+        "Focus": "Building-Integrated Photovoltaic Envelopes",
+        "Reference Standard": "IEA PVPS Task 13 / Task 15 Guidelines",
+        "Cavity Specification": "150mm Uninterrupted Convective Chimney",
+        "Cell Technology": "Glass-Glass Frameless Monocrystalline Silicon",
+        "Thermal Boundary": "Stack-Effect Purge (v ≥ 0.85 m/s)",
+        "Weatherproofing": "CWCT Rain-tight Performance Certification"
       },
       "drawings": [
         {
-          "title": "Solar Envelope Axonometric & Thermal Flow",
+          "title": "BIPV Envelope Axonometric & Thermal Flow",
           "type": "Axonometric Drawing",
           "url": "assets/journal-solar-performance.svg",
-          "caption": "Axonometric projection showing building mass, solar incident vectors, and 150mm convective cooling cavity."
-        },
-        {
-          "title": "Campus Master Plan & Courtyard Microclimate",
-          "type": "Master Plan",
-          "url": "assets/mostaganem-secondary-800-1.webp",
-          "caption": "Site integration and solar orientation: orienting primary classroom wings along east-west axis."
-        },
-        {
-          "title": "Evening Facade Illumination & Louver Detail",
-          "type": "Facade Perspective",
-          "url": "assets/mostaganem-secondary-800-5.webp",
-          "caption": "Night perspective revealing modular fenestration rhythm and structural cantilever supports."
+          "caption": "Axonometric projection illustrating building mass, solar irradiance angles, and rear 150mm convective cooling chimney."
         }
       ],
-      "gallery": [
-        {
-          "url": "assets/mostaganem-secondary-800-1.webp",
-          "caption": "Central educational courtyard featuring solar-shading overhangs and generous bioclimatic gathering areas."
-        },
-        {
-          "url": "assets/mostaganem-secondary-800-2.webp",
-          "caption": "Exterior entrance perspective highlighting robust material palette and vertical sunscreen baguettes."
-        },
-        {
-          "url": "assets/mostaganem-secondary-800-3.webp",
-          "caption": "Aerial view of educational blocks showing integrated rooftop solar matrix orientation."
-        },
-        {
-          "url": "assets/mostaganem-secondary-800-6.webp",
-          "caption": "Night architectural visualization demonstrating illuminated circulation corridors and double-height hall."
-        }
-      ],
+      "gallery": [],
       "keyTakeaways": [
         "Photovoltaic panels integrated into facades operate under significantly higher thermal stress than ground mounts.",
         "A minimum 150mm ventilated rear cavity is mandatory to generate a convective stack draft, reducing panel temperature by up to 14°C and restoring electrical yield.",
@@ -67,10 +38,10 @@
         "Sub-frame design must allow single-module replacement without dismantling adjacent cladding components."
       ],
       "paragraphs": [
-        "In contemporary architectural discourse, the building envelope is no longer a passive skin; it has evolved into an active power-generating organ. In ArchDaily's continuous coverage of global sustainable architecture, integrating solar technology into prominent public and educational complexes represents the frontier of low-carbon design. Yet, an October 2026 technical assessment from IEA PVPS Task 13 establishes that evaluation metrics developed for utility-scale solar farms fail to reflect the architectural and thermodynamic demands of building-integrated photovoltaics (BIPV).",
-        "The primary design challenge lies in boundary-layer physics. Operating solar cells experience an efficiency drop of approximately 0.4% per degree Celsius rise above standard test conditions (25°C). In Mediterranean and North African climates, unventilated cladding modules routinely reach 70°C, causing an immediate 18% loss in generation capacity and accelerating polymer degradation. By detailing an uninterrupted 150mm convective air chimney behind the module matrix, a thermo-siphon draft is generated: cool air drawn from the building base continuously purges radiant heat before it can conduct into the structural substrate.",
-        "Spatial and pedagogical layout must align with solar geometry. In our design studies for 800-student educational campuses in Mostaganem, classroom wings are oriented along the East-West axis to capture optimal southern irradiance on roof matrices while deep architectural overhangs shade vision glazing. The integrated solar elements double as brise-soleil sunshades, demonstrating how renewable energy infrastructure can define an authentic regional architectural identity rather than appearing as an afterthought.",
-        "Atelier Daoudi editorial perspective: Never evaluate BIPV purely on peak installed capacity (kWp). A complete architectural proposal must provide side-by-side life-cycle cost comparisons: an insulated rainscreen baseline versus a BIPV-clad envelope. Document access routes, cable conduit redundancy, and individual panel demountability. A visually striking solar facade cannot compensate for premature seal failures or inaccessible inverters."
+        "In global architectural discourse, the building envelope has transitioned from an inert barrier into an active, energy-generating organ. In leading international publications like ArchDaily and Detail, building-integrated photovoltaics (BIPV) are celebrated as the cornerstone of zero-energy architecture. However, an October 2026 technical assessment from IEA PVPS Task 13 underscores that testing standards developed for utility-scale solar farms fail to account for the unique mechanical, structural, and thermal boundary conditions of buildings.",
+        "Operating solar cells experience a physical efficiency drop of approximately 0.4% per degree Celsius rise above standard test conditions (25°C). On building facades in sunny climates, unventilated cladding modules routinely exceed 70°C, causing an immediate 18% loss in generation capacity and accelerated degradation of encapsulation polymers. Designing an active 150mm convective air chimney behind the module matrix creates a thermo-siphon chimney draft: cool air drawn from the building base continuously purges radiant heat before it can conduct into the structural substrate.",
+        "The IEA PVPS technical framework establishes that solar integration must take place in early schematic coordination, when orientation, fenestration ratios, and maintenance access can be co-designed. Combining building-integrated photovoltaics with exterior shading louvers provides dual performance: eliminating summer solar heat gain across vision glass while capturing high-angle summer irradiance for local HVAC consumption.",
+        "Editorial perspective: Never evaluate BIPV purely on peak installed capacity (kWp). A complete architectural proposal must provide side-by-side life-cycle cost comparisons: an insulated rainscreen baseline versus a BIPV-clad envelope. Document access routes, cable conduit redundancy, and individual panel demountability. A visually striking solar facade cannot compensate for premature seal failures or inaccessible inverters."
       ],
       "practiceImplications": "When specifying BIPV, require suppliers to certify envelope weatherproofing (CWCT standard) independently of module electrical warranties. Calibrate rear ventilation cavities to exceed 12 ACH to ensure long-term polymer stability.",
       "sources": [
@@ -93,59 +64,30 @@
       "title": "Thermodynamics of Passive Envelopes: Overhang Geometry & Thermal Lag",
       "category": "Bioclimatic Physics",
       "topic": "Passive",
-      "summary": "Analyzing floor plan organization, overhang cutoff geometry, and heavy masonry thermal mass: a case study in high-performance contemporary residential architecture.",
+      "summary": "Mathematical coordination of solar cutoff angles, high-capacity thermal mass, and convective night purge: achieving indoor thermal equilibrium without mechanical cooling dependence.",
       "date": "2026-11-09",
       "readingTime": "6 min read",
-      "dossierNumber": "CASE STUDY 02 / PASSIVE RESIDENCE",
-      "image": "assets/plan-isometric.jpg",
-      "imageAlt": "3D isometric architectural floor plan rendering showing furnished spatial layout, cross-ventilation openings, and balcony overhangs",
-      "imageCredit": "3D Isometric Floor Plan & Spatial Layout Study · Atelier Daoudi Architecture",
+      "dossierNumber": "GLOBAL DOSSIER 02 / PASSIVE PHYSICS",
+      "image": "assets/journal-passive-physics.svg",
+      "imageAlt": "Bioclimatic cross-section diagram showing calibrated summer overhang, deep winter sun penetration, and night purge stack",
+      "imageCredit": "Environmental Thermodynamic Cross-Section · Passive Architecture Review",
       "specs": {
-        "Typology": "Contemporary Bioclimatic Private Residence",
-        "Built Area": "380 m² (Two Levels + Roof Garden)",
-        "Overhang Depth": "1.80m Calibrated Cantilevered Balconies",
-        "Thermal Mass": "300mm Heavy Dense Stone & Reinforced Slabs",
-        "Solar Cutoff": "74° Summer Solstice / 28° Winter Solstice",
-        "Comfort Standard": "ASHRAE Standard 55 / Passivhaus Mediterranean"
+        "Field": "Bioclimatic Architecture & Solar Geometry",
+        "Methodology": "Passivhaus Mediterranean Standards / US DOE Solar Principles",
+        "Overhang Geometry": "Calibrated Cutoff (74° Summer / 28° Winter)",
+        "Thermal Lag": "10 to 12 Hours Phase Shift (Heavy Mineral Mass)",
+        "Ventilation Protocol": "Nocturnal Stack Purge (ΔT = 8°C Cooling Relief)",
+        "Target Metric": "ASHRAE Standard 55 Operative Comfort Envelope"
       },
       "drawings": [
         {
-          "title": "Isometric 3D Architectural Floor Plan",
-          "type": "Isometric Plan",
-          "url": "assets/plan-isometric.jpg",
-          "caption": "Furnished 3D plan showing open-plan living, spatial thresholds, and perimeter cross-ventilation apertures."
-        },
-        {
-          "title": "2D-to-3D Spatial Circulation & Floor Layout",
-          "type": "Floor Plan Analysis",
-          "url": "assets/plan-2d-to-3d.jpg",
-          "caption": "Transformation study linking technical 2D AutoCAD layout with volumetric daylight penetration."
-        },
-        {
-          "title": "Bioclimatic Section & Thermal Phase Shift",
-          "type": "Thermodynamic Section",
+          "title": "Bioclimatic Environmental Section & Solar Cutoff",
+          "type": "Environmental Section",
           "url": "assets/journal-passive-physics.svg",
-          "caption": "Environmental section illustrating high-angle summer sun exclusion, deep winter solar penetration, and stack chimney draft."
+          "caption": "Thermodynamic section illustrating solar angle interception, thermal mass charging, and convective night chimney."
         }
       ],
-      "gallery": [
-        {
-          "url": "assets/villa-12x12-1.webp",
-          "caption": "Contemporary villa facade with layered cantilevered balconies providing deep seasonal shading."
-        },
-        {
-          "url": "assets/villa-12x12-2.webp",
-          "caption": "Entrance perspective showcasing contrasting mineral finishes, warm wood composite soffits, and glass balustrades."
-        },
-        {
-          "url": "assets/villa-1170x1315-1.webp",
-          "caption": "Corner perspective demonstrating private roof terrace and geometric volume interlocks."
-        },
-        {
-          "url": "assets/villa-1170x1315-3.webp",
-          "caption": "Garden frontage showing perimeter landscaping acting as a microclimatic evaporative buffer."
-        }
-      ],
+      "gallery": [],
       "keyTakeaways": [
         "Glazing ratio and orientation dictate 60% of cooling load before mechanical systems are even specified.",
         "A calibrated overhang completely excludes high-angle summer rays (74° altitude) while admitting winter heating (28°).",
@@ -153,10 +95,10 @@
         "Induced stack ventilation enables effective night-time thermal purging, releasing stored heat to cool night air."
       ],
       "paragraphs": [
-        "Sustainable architecture begins long before mechanical equipment is considered. In the spirit of ArchDaily's in-depth residential monographs, true architectural sustainability is rooted in floor plan morphology, cross-ventilation axes, and precise solar cutoff geometry. By analyzing our furnished 3D isometric plans alongside climatic section diagrams, we examine how architectural layout directly regulates internal microclimate.",
-        "Diurnal thermal phase shift serves as the primary environmental buffer. In regions with intense daytime sunshine and cool desert or coastal night breezes, heavy mineral construction (250–300mm reinforced concrete slabs and stone blockwork) functions as a heat battery. Rather than allowing solar radiant heat to conduct immediately into living spaces, the thermal wave is delayed by 10 to 12 hours. By the time this stored energy migrates to interior room surfaces, night has arrived, and natural cross-ventilation flushes the heat away.",
-        "The architectural section is the core tool of the bioclimatic designer. Cantilevered floor slabs and generous balconies perform double duty: they expand living areas outdoors into sheltered terraces while projecting outward exactly far enough (1.80m) to achieve complete solar shade on vision glazing during the high summer sun (altitude > 70°). In winter, when the sun drops to 28°, rays slip beneath the overhang and strike the polished floor mass, providing clean, zero-carbon passive heating.",
-        "Atelier Daoudi editorial perspective: Avoid the contemporary trap of 'glazed transparency' without seasonal solar control. An unshaded glass box in a warm climate is an environmental liability, regardless of heat pump efficiency. Passive strategies must be simulated using real local meteorological year (TMY) data to verify that peak operative temperatures remain strictly within the ASHRAE 55 comfort envelope."
+        "In international architectural research, sustainable design begins with envelope geometry rather than mechanical equipment. Passive solar architecture treats the building envelope as a self-regulating thermal machine, aligning spatial orientation and massing with seasonal solar paths and diurnal temperature swings.",
+        "The core mechanism rests on diurnal phase shift. In arid and warm-temperate zones characterized by high daytime irradiance and cool night breezes, high-density mineral partitions (250–300mm stone or heavy concrete) act as a thermal sponge. Heat absorbed during peak sun hours is delayed by 10 to 12 hours. By the time this thermal wave reaches the interior living envelope, outdoor ambient temperatures have dropped, allowing cool nocturnal air currents to purge the stored heat harmlessly.",
+        "The architectural section is the primary tool of the bioclimatic architect. Calculating precise solar cutoff angles allows cantilevered overhangs and brise-soleil louvers to block 100% of high summer solar rays (altitude > 70°), eliminating solar heat gain through vision glass. In winter, when the sun drops below 30°, incident rays pass beneath the overhang and strike exposed interior floor slabs, providing free, zero-emission passive heating.",
+        "Editorial perspective: Avoid the contemporary trap of 'glazed transparency' without seasonal solar control. An unshaded glass box in a warm climate is an environmental liability, regardless of heat pump efficiency. Passive strategies must be simulated using real local meteorological year (TMY) data to verify that peak operative temperatures remain strictly within the ASHRAE 55 comfort envelope."
       ],
       "practiceImplications": "Calculate overhang projection depth using precise local summer solstice solar altitudes. Pair south-facing glazing with uncarpeted high-mass stone or polished concrete flooring to absorb passive gains directly.",
       "sources": [
@@ -179,59 +121,30 @@
       "title": "Targeting Upfront Embodied Carbon: Structural Longevity & Material Reuse",
       "category": "Circular Construction",
       "topic": "Carbon",
-      "summary": "Case study of a 550-unit residential urban ensemble: quantifying upfront carbon emissions (Modules A1–A5), local material sourcing, and reversible mechanical dry joints.",
+      "summary": "Analyzing upfront embodied carbon (Modules A1–A5): why structural longevity, low-clinker binders, and reversible mechanical dry joints determine the true footprint of global architecture.",
       "date": "2026-11-09",
       "readingTime": "7 min read",
-      "dossierNumber": "CASE STUDY 03 / URBAN HOUSING",
-      "image": "assets/mostaganem-550-1.webp",
-      "imageAlt": "Large-scale contemporary residential ensemble showing rhythm of balconies, shared landscaped courtyards, and mineral facades",
-      "imageCredit": "550-Unit Residential Urban Project · Atelier Daoudi Architectural Studies",
+      "dossierNumber": "GLOBAL DOSSIER 03 / CIRCULARITY",
+      "image": "assets/journal-carbon-lifecycle.svg",
+      "imageAlt": "Life-cycle carbon comparison bar chart contrasting standard practice against low-carbon circular specification",
+      "imageCredit": "Analytical Carbon Accounting Diagram · EN 15978 & WorldGBC Framework",
       "specs": {
-        "Typology": "Large-Scale Public Housing & Urban Quarter",
-        "Program": "550 Housing Units + Commercial Ground Plinths",
-        "Site Location": "Mostaganem, Algeria",
-        "Upfront Carbon": "310 kg CO₂e/m² (vs 620 kg/m² standard baseline)",
-        "Concrete Mix": "CEM II/B-V with 35% Pozzolanic & Slag Replacement",
-        "Framework": "World Green Building Council / EN 15978 Standards"
+        "Discipline": "Whole-Life Carbon Assessment (LCA)",
+        "Standards": "EN 15978 / World Green Building Council Framework",
+        "Target Benchmark": "Upfront Carbon < 350 kg CO₂e/m² GFA",
+        "Binder Innovation": "Calcined Clay & Pozzolanic Clinker Replacement (CEM III)",
+        "Circular Strategy": "Design for Deconstruction (Module D Recovery Credits)",
+        "Durability Lifespan": "60 to 100 Years Core Structure Service Life"
       },
       "drawings": [
         {
           "title": "Whole-Life Carbon Assessment Diagram",
           "type": "Lifecycle Diagram",
           "url": "assets/journal-carbon-lifecycle.svg",
-          "caption": "Comparative analysis of upfront carbon (A1-A5) versus operational carbon (B6) and circular recovery credits (Module D)."
-        },
-        {
-          "title": "100-Unit Residential Master Site Plan",
-          "type": "Master Plan",
-          "url": "assets/mostaganem-100-1.webp",
-          "caption": "Comprehensive urban layout showing building orientation, road hierarchy, and landscaped public courtyards."
-        },
-        {
-          "title": "Courtyard Spatial Integration & Daylight Path",
-          "type": "Site Perspective",
-          "url": "assets/mostaganem-550-5.webp",
-          "caption": "Perspective of central garden courtyard between housing blocks, promoting communal life and natural wind channeling."
+          "caption": "Comparative analysis of upfront carbon (A1-A5) versus operational emissions (B6) and circular recovery credits (Module D)."
         }
       ],
-      "gallery": [
-        {
-          "url": "assets/mostaganem-550-1.webp",
-          "caption": "Main boulevard elevation showing rhythm of balconies, sunshades, and commercial ground floor plinth."
-        },
-        {
-          "url": "assets/mostaganem-550-2.webp",
-          "caption": "Corner view highlighting building volume breaks that reduce perceived mass and admit sea breezes."
-        },
-        {
-          "url": "assets/mostaganem-550-6.webp",
-          "caption": "Night perspective of central landscaped courtyard with pedestrian-scaled lighting and seating."
-        },
-        {
-          "url": "assets/mostaganem-100-5.webp",
-          "caption": "Residential facade studies exploring durable mineral finishes that withstand coastal salinity."
-        }
-      ],
+      "gallery": [],
       "keyTakeaways": [
         "Upfront embodied carbon (Modules A1–A5) is released into the atmosphere before the building is even occupied.",
         "As grids decarbonize, upfront structural materials represent over 70% of total whole-life carbon.",
@@ -239,10 +152,10 @@
         "Designing for deconstruction (Module D) turns building elements into future material banks."
       ],
       "paragraphs": [
-        "In international architectural journalism, housing projects are increasingly judged not only by spatial quality, but by their total carbon accountability. The World Green Building Council’s report 'Bringing Embodied Carbon Upfront' irreversibly changed the metrics of green architecture: the emissions generated during raw material extraction, concrete batching, transportation, and structural assembly (Modules A1–A5) are spent on day one.",
-        "In our master plan and architectural studies for the 550-unit residential project in Mostaganem, the primary structural challenge was balancing high-density housing requirements with low carbon intensity. By specifying concrete binders utilizing 35% pozzolanic industrial by-products and regional limestone calcined clays, the upfront carbon footprint of the structural frame was lowered from 620 kg CO₂e/m² to 310 kg CO₂e/m², saving thousands of tons of atmospheric carbon.",
-        "Tectonic durability is the ultimate circular strategy. High-density residential buildings must endure decades of heavy use with minimal maintenance. The facade assemblies utilize local stone aggregate infills, prefabricated mineral sill brackets, and mechanical dry-joint fixings. By eliminating wet adhesives and irreversible composite laminates, individual panels and balustrades can be repaired, unbolted, and recycled at the end of their operational lifecycle.",
-        "Atelier Daoudi editorial perspective: Renovation and structural retention must always be the first design option considered. Before drafting a new foundation, analyze whether an existing reinforced frame can be seismically reinforced, stripped of obsolete non-bearing infill, and retrofitted with a high-performance envelope. The greenest building is almost always the one that already exists."
+        "In international architectural journalism, buildings are increasingly judged by their total carbon accountability. The World Green Building Council’s landmark report 'Bringing Embodied Carbon Upfront' irreversibly altered the conversation: emissions released during mineral extraction, processing, transportation, and structural erection (Modules A1–A5) occur on day one. Once concrete is cast, that carbon cannot be clawed back through operational efficiency.",
+        "In standard institutional and commercial buildings, the load-bearing frame accounts for 60% to 75% of total upfront embodied carbon. Specifying low-carbon binder alternatives—such as blended cements incorporating pozzolanic volcanic ash, limestone calcined clay (LC3), or ground granulated blast-furnace slag (GGBS)—cuts structural emissions by over 50% without compromising structural integrity or seismic resistance.",
+        "Circularity must be treated as a tectonic detailing strategy. Standard construction relies on wet poured-in-place chemical adhesives, composite sandwiches, and irreversible anchors that condemn components to landfill at the end of the building's service life. By contrast, designing with mechanical dry connections, exposed demountable sub-frames, and standardized structural spans enables individual facade elements, partitions, and beams to be disassembled and repurposed cleanly.",
+        "Editorial perspective: Renovation and structural retention must always be the first design option considered. Before drafting a new foundation, analyze whether an existing reinforced frame can be seismically reinforced, stripped of obsolete non-bearing infill, and retrofitted with a high-performance envelope. The greenest building is almost always the one that already exists."
       ],
       "practiceImplications": "Establish an upfront carbon budget (< 450 kg CO₂e/m²) in the schematic phase. Specify certified Environmental Product Declarations (EPDs) for all concrete, rebar, and masonry within project tender documents.",
       "sources": [
@@ -265,20 +178,20 @@
       "title": "Acoustic & Daylight Morphologies in High-Capacity School Typologies",
       "category": "Educational Typology",
       "topic": "Typology",
-      "summary": "Architectural blueprints and environmental physics in 800–1,000 student secondary schools: light shelves, sound absorption baffles, and courtyard microclimates.",
+      "summary": "Environmental physics for large-scale educational facilities: bilateral daylight shelves, acoustic ceiling diffusion, and central courtyard microclimatic cooling.",
       "date": "2026-11-09",
       "readingTime": "6 min read",
-      "dossierNumber": "CASE STUDY 04 / SCHOOL DESIGN",
-      "image": "assets/mostaganem-middle-05-1.webp",
-      "imageAlt": "Type 05 Middle School contemporary facade showing vertical sunscreens and tree-lined promenade",
-      "imageCredit": "Type 05 Middle School Architectural Perspectives · Atelier Daoudi Studies",
+      "dossierNumber": "GLOBAL DOSSIER 04 / EDUCATIONAL MORPHOLOGY",
+      "image": "assets/journal-educational-acoustics.svg",
+      "imageAlt": "Classroom and central courtyard environmental section showing light shelves and acoustic diffusion baffles",
+      "imageCredit": "Educational Typology Environmental Section · Architectural Review Dossier",
       "specs": {
-        "Typology": "Middle & Secondary Educational Campus",
-        "Student Capacity": "800 to 1,000 Students",
-        "Location": "Mostaganem & Relizane, Algeria",
-        "Daylight Factor": "Average DF > 2.8% Across Deep Floor Plates",
-        "Acoustic Standard": "RT60 ≤ 0.52 s (BB93 Compliance)",
-        "Ventilation Rate": "12 Air Changes per Hour (Natural Convection)"
+        "Field": "Educational Architecture & Indoor Environmental Quality (IEQ)",
+        "Capacity Scale": "800 to 1,200 Student Facilities",
+        "Daylight Benchmark": "Average Daylight Factor DF > 2.8%",
+        "Acoustic Standard": "Reverberation Time RT60 ≤ 0.52 s (BB93 Compliance)",
+        "Speech Transmission": "STI ≥ 0.68 (Excellent Classroom Vocal Clarity)",
+        "Ventilation Strategy": "Courtyard-Fed Displacement (12 ACH Natural Convection)"
       },
       "drawings": [
         {
@@ -286,38 +199,9 @@
           "type": "Environmental Section",
           "url": "assets/journal-educational-acoustics.svg",
           "caption": "Section showing light shelf deflection to reflective ceiling, acoustic absorption baffles, and courtyard convective displacement."
-        },
-        {
-          "title": "3D Campus Site Plan & Circulation Axonometric",
-          "type": "3D Site Plan",
-          "url": "assets/mostaganem-middle-05-3.webp",
-          "caption": "Volumetric aerial perspective of educational blocks organized around acoustic buffer courtyards."
-        },
-        {
-          "title": "Interior 3D Learning Space Layout",
-          "type": "Layout Plan",
-          "url": "assets/plan-3d-layout.jpg",
-          "caption": "Spatial layout plan demonstrating perimeter daylight distribution, collaborative clusters, and wide egress corridors."
         }
       ],
-      "gallery": [
-        {
-          "url": "assets/mostaganem-middle-05-1.webp",
-          "caption": "Main administration and classroom entrance with rhythm of vertical louvers protecting vision glazing."
-        },
-        {
-          "url": "assets/mostaganem-middle-05-2.webp",
-          "caption": "Promenade perspective showing integration of native palm trees providing pedestrian shade."
-        },
-        {
-          "url": "assets/relizane-secondary-1000-1.webp",
-          "caption": "1,000-place secondary school courtyard in Relizane designed for outdoor assemblies and sports transitions."
-        },
-        {
-          "url": "assets/relizane-secondary-1000-3.webp",
-          "caption": "Educational wing elevation with horizontal cantilevered concrete brise-soleil bands."
-        }
-      ],
+      "gallery": [],
       "keyTakeaways": [
         "Classrooms designed with bilateral daylighting and exterior light shelves achieve daylight autonomy across 85% of school hours.",
         "Excessive reverberation time (RT60 > 0.8s) reduces speech comprehension in students by up to 35%.",
@@ -325,10 +209,10 @@
         "Central landscaped courtyards serve as thermal and acoustic buffers between academic wings and sports areas."
       ],
       "paragraphs": [
-        "In ArchDaily's extensive repository of educational architecture, school buildings are recognized as profound social and environmental instruments. Designing campuses that accommodate between 800 and 1,000 students—such as the Type 05 middle school and 1,000-place secondary facilities executed in Mostaganem and Relizane—demands rigorous coordination between acoustic clarity, natural illumination, and crowd circulation.",
+        "In global educational architecture, school facilities are recognized as vital social and cognitive environments. Campuses accommodating upwards of 800 students demand precise coordination between acoustic clarity, natural illumination, and crowd circulation.",
         "Daylight distribution in deep classrooms (7.5 to 9 meters) cannot be resolved by standard perimeter windows without inducing severe glare near the glass and dimness at the back. By integrating architectural light shelves—combining a reflective exterior horizontal projection with an interior specular baffle—high-angle daylight is intercepted, bounced off the high-reflectance white ceiling, and thrown deep into the classroom core. This achieves a uniform Daylight Factor (DF > 2.8%) without direct solar glare on student work desks.",
-        "Acoustic reverberation directly impacts cognitive performance. In standard masonry school buildings, untreated concrete surfaces create an echo chamber (reverberation times RT60 exceeding 1.2s), causing vocal fatigue for instructors and diminished comprehension for pupils. Suspending rhythmically spaced acoustic mineral baffles across the ceiling absorbs medium-and-high vocal frequencies, bringing RT60 down to an ideal 0.52 seconds in compliance with international Building Bulletin 93 criteria.",
-        "Atelier Daoudi editorial perspective: Treat courtyards and circulation corridors not merely as passage areas, but as environmental modulators. In high-density campuses, landscaped interior patios act as microclimatic cooling reservoirs: shaded trees and water elements lower ambient air temperatures by 3°C to 5°C, supplying classrooms with fresh, cool air through low-level acoustic trickle vents."
+        "Acoustic comfort is governed by strict speech transmission metrics (STI ≥ 0.68). In hard, unyielding concrete or plastered classrooms, sound reflections create an echo chamber where teachers must strain their voices and students miss crucial consonants. Installing suspended mineral acoustic baffles in rhythmic arrays across the ceiling breaks flutter echoes and absorbs medium-to-high frequency vocal reflections, maintaining reverberation times below 0.55 seconds.",
+        "Editorial perspective: Treat courtyards and circulation corridors not merely as passage areas, but as environmental modulators. In high-density campuses, landscaped interior patios act as microclimatic cooling reservoirs: shaded trees and water elements lower ambient air temperatures by 3°C to 5°C, supplying classrooms with fresh, cool air through low-level acoustic trickle vents."
       ],
       "practiceImplications": "Specify light shelves with a specular upper finish and diffuse lower surface. Target an acoustic absorption coefficient (NRC) ≥ 0.75 for at least 60% of classroom ceiling area to meet international BB93 acoustic standards.",
       "sources": [
@@ -351,20 +235,20 @@
       "title": "Adaptive Facade Skins: Ventilated Ceramic Louvers & Heat Gain Control",
       "category": "Envelope Engineering",
       "topic": "Envelope",
-      "summary": "Technical detail drawings and architectural perspectives: thermodynamics of 150mm ventilated rainscreen cavities and extruded terracotta sunscreens.",
+      "summary": "Technical detail drawings and architectural physics: thermodynamics of 150mm ventilated rainscreen cavities and extruded terracotta sunscreens in intense solar regimes.",
       "date": "2026-11-09",
       "readingTime": "5 min read",
-      "dossierNumber": "CASE STUDY 05 / FACADE ENGINEERING",
-      "image": "assets/plan-interior-design.jpg",
-      "imageAlt": "3D architectural interior design plan showing filtered daylight penetration through exterior ceramic louvers and interior living zones",
-      "imageCredit": "3D Interior & Envelope Daylighting Study · Atelier Daoudi Architecture",
+      "dossierNumber": "GLOBAL DOSSIER 05 / FACADE PHYSICS",
+      "image": "assets/journal-facade-shading.svg",
+      "imageAlt": "Wall section detail showing ventilated 150mm air cavity and angled terracotta louver sunscreen",
+      "imageCredit": "Ventilated Rainscreen Wall Section Detail · Facade Engineering Review",
       "specs": {
-        "Typology": "Contemporary Villa & Ventilated Rainscreen",
-        "Envelope System": "Extruded Terracotta Louvers + 150mm Air Gap",
-        "Insulation": "100mm Rigid Mineral Wool (λ = 0.034 W/mK)",
-        "Cavity Velocity": "v ≥ 0.85 m/s (Thermo-siphon Chimney Updraft)",
-        "Thermal Relief": "Surface ΔT = -18.5°C Compared to Bare Blockwork",
-        "Standards": "CWCT / European Standard EN 13830"
+        "Envelope Typology": "Ventilated Ceramic & Terracotta Rainscreen",
+        "Cavity Width": "150mm Clear Air Chimney",
+        "Insulation System": "100mm Continuous Mineral Wool (λ = 0.034 W/mK)",
+        "Stack Draft Velocity": "v ≥ 0.85 m/s on Solar-Exposed Walls",
+        "Thermal Relief": "Surface ΔT = -18.5°C Reduction vs Bare Wall",
+        "Applicable Standards": "Centre for Window and Cladding Technology (CWCT) / EN 13830"
       },
       "drawings": [
         {
@@ -372,38 +256,9 @@
           "type": "Technical Detail Section",
           "url": "assets/journal-facade-shading.svg",
           "caption": "Wall section showing angled terracotta louvers, 150mm air cavity draft, continuous insulation, and structural substrate."
-        },
-        {
-          "title": "3D Living Space & Spatial Layout Plan",
-          "type": "Interior Layout",
-          "url": "assets/plan-interior-design.jpg",
-          "caption": "Furnished plan illustrating the spatial sequence from shaded exterior loggia to open-concept living pavilion."
-        },
-        {
-          "title": "Ground Floor 3D Architectural Blueprint",
-          "type": "Ground Plan",
-          "url": "assets/villa-10x1415-1.webp",
-          "caption": "Three-dimensional ground floor plan detailing room relationships, private courtyard, and vehicle access."
         }
       ],
-      "gallery": [
-        {
-          "url": "assets/villa-10x1415-2.webp",
-          "caption": "Detailed interior living space showing relationship between floor-to-ceiling glazing and exterior louvered terrace."
-        },
-        {
-          "url": "assets/villa-10x1415-3.webp",
-          "caption": "Dining and kitchen pavilion looking out onto shaded perimeter gardens."
-        },
-        {
-          "url": "assets/villa-1170x1315-4.webp",
-          "caption": "Exterior facade perspective demonstrating geometric interplay of solid white mineral bands and warm terracotta infills."
-        },
-        {
-          "url": "assets/villa-12x12-4.webp",
-          "caption": "Garden terrace perspective showing seamless indoor-outdoor transition with flush thresholds."
-        }
-      ],
+      "gallery": [],
       "keyTakeaways": [
         "A ventilated ceramic rainscreen cavity dissipates up to 82% of incident solar radiant heat before it reaches the insulation.",
         "Stack-effect updraft velocity within a 140–160mm cavity consistently exceeds 0.85 m/s on solar-exposed walls.",
@@ -414,7 +269,7 @@
         "In modern architectural detail practice, the facade is an active climatic filter rather than a solid barrier. ArchDaily's technical facade showcases frequently highlight how ventilated rainscreens resolve the conflicting demands of contemporary architecture: expansive daylight openings, tactile material richness, and rigorous thermal efficiency in punishing coastal climates.",
         "The physics of the ventilated rainscreen rests on the separation of functions. The outer cladding (extruded terracotta baguettes or ceramic panels) absorbs the brute force of solar radiation and wind-driven rain. Behind these panels lies an open 150mm air cavity: radiant heat is converted into convective kinetic energy, driving an upward air current (velocity > 0.85 m/s) that exhausts heat at the parapet. As a result, the insulated structural wall behind stays cool, dropping surface temperatures by up to 18.5°C.",
         "Materiality in maritime environments demands absolute chemical stability. Terracotta fired at high temperatures (exceeding 1,150°C) is entirely inert against ultraviolet degradation and salt-spray crystallization. Mounted on extruded anodized aluminum sub-frames with stainless steel clips, the system accommodates thermal expansion silently while avoiding unsightly sealant stains across building faces.",
-        "Atelier Daoudi editorial perspective: When designing contemporary facades, prioritize physical longevity over transient surface trends. A properly engineered ventilated ceramic rainscreen requires zero painting, zero sealant replacement on panel joints, and preserves its color and structural integrity for fifty years or more."
+        "Editorial perspective: When designing contemporary facades, prioritize physical longevity over transient surface trends. A properly engineered ventilated ceramic rainscreen requires zero painting, zero sealant replacement on panel joints, and preserves its color and structural integrity for fifty years or more."
       ],
       "practiceImplications": "Ensure open joints at the bottom and top of the facade have a free ventilation area of at least 50 cm² per linear meter of wall to prevent airflow stagnation in the cavity.",
       "sources": [
@@ -433,20 +288,20 @@
       "title": "The Urban Microclimate: Porous Fabrics, Albedo Effects & Courtyard Typologies",
       "category": "Urban Morphology",
       "topic": "Urban",
-      "summary": "Mitigating Urban Heat Islands in Mediterranean coastal cities: street canyon aspect ratios, cool roof albedos (SRI ≥ 82), and civic aquatic architecture.",
+      "summary": "Mitigating Urban Heat Islands in dense coastal settlements: street canyon aspect ratios (H/W), cool roof albedo (SRI ≥ 82), and sea breeze funneling.",
       "date": "2026-11-09",
       "readingTime": "6 min read",
-      "dossierNumber": "CASE STUDY 06 / URBAN BIOCLIMATISM",
-      "image": "assets/relizane-pool-1.webp",
-      "imageAlt": "Semi-Olympic aquatic sports complex exterior showing dynamic roof canopy and landscaped urban approaches",
-      "imageCredit": "Semi-Olympic Swimming Pool Civic Complex · Atelier Daoudi Architecture",
+      "dossierNumber": "GLOBAL DOSSIER 06 / URBAN BIOCLIMATISM",
+      "image": "assets/journal-urban-microclimate.svg",
+      "imageAlt": "Urban morphology cross-section showing shaded pedestrian canyons, courtyard cool pools, and high-albedo roofs",
+      "imageCredit": "Urban Microclimate & Morphology Section · Bioclimatic Urbanism Review",
       "specs": {
-        "Typology": "Civic Sports Complex & Urban Water Infrastructure",
-        "Program": "Semi-Olympic Swimming Pool + Civic Grounds",
-        "Location": "Relizane & Oran, Algeria",
-        "Canyon Aspect Ratio": "H/W = 1.35 Optimal Street Shading",
-        "Roof Albedo": "Solar Reflectance Index SRI ≥ 82 (Cool Roof)",
-        "Microclimate Drop": "ΔT -3.8°C Ambient Street Temperature"
+        "Field": "Urban Morphology & Microclimatic Mitigation",
+        "Aspect Ratio": "H/W = 1.2 to 1.5 (Shaded Canyon Index)",
+        "Surface Albedo": "Solar Reflectance Index SRI ≥ 82 (Cool Roofs)",
+        "Canyon Relief": "ΔT -3.8°C Ambient Air Temperature Reduction",
+        "Thermal Comfort": "+65% Comfortable Hours (Outdoor PET Metric)",
+        "Standards": "US EPA Urban Heat Island Mitigation / WMO Guidelines"
       },
       "drawings": [
         {
@@ -454,38 +309,9 @@
           "type": "Urban Cross-Section",
           "url": "assets/journal-urban-microclimate.svg",
           "caption": "Microclimate section contrasting high-albedo roofs with shaded pedestrian street canyons and nocturnal cool-air pools."
-        },
-        {
-          "title": "Civic Aquatic Complex Spatial Site Plan",
-          "type": "Master Plan",
-          "url": "assets/oran-pool-1.webp",
-          "caption": "Site plan and public forecourt design channeling prevailing winds and creating civic open space."
-        },
-        {
-          "title": "Neighborhood Pool Transverse Perspective",
-          "type": "Axonometric Study",
-          "url": "assets/oran-pool-2.webp",
-          "caption": "Perspective of public sports complex integrating perimeter water retention basins and tree canopies."
         }
       ],
-      "gallery": [
-        {
-          "url": "assets/relizane-pool-1.webp",
-          "caption": "Main approach to the Semi-Olympic pool in Relizane featuring dramatic structural canopy."
-        },
-        {
-          "url": "assets/relizane-pool-2.webp",
-          "caption": "Side elevation highlighting natural clerestory daylighting bands that eliminate daytime artificial lighting."
-        },
-        {
-          "url": "assets/oran-pool-4.webp",
-          "caption": "Interior perspective of aquatic hall showing glulam/steel roof trusses and acoustic ceiling baffles."
-        },
-        {
-          "url": "assets/oran-pool-5.webp",
-          "caption": "Exterior night render displaying illuminated public plaza and transparent glazed concourse."
-        }
-      ],
+      "gallery": [],
       "keyTakeaways": [
         "Urban Heat Island effects can elevate city center nocturnal temperatures by 4°C to 7°C above surrounding rural areas.",
         "Optimizing urban street aspect ratios (H/W between 1.2 and 1.5) provides essential mutual building shade during peak summer hours.",
@@ -495,8 +321,8 @@
       "paragraphs": [
         "In global urban design platforms like ArchDaily, urban resilience is understood as the collective performance of architecture, public voids, and water infrastructure. Rapid urbanization across Mediterranean cities has created dense heat-trapping surfaces where dark asphalt and concrete raise nocturnal temperatures 4°C to 7°C above the rural baseline.",
         "Architectural morphology provides direct microclimatic relief. By designing urban street canyons with height-to-width ratios (H/W) between 1.2 and 1.5, buildings cast mutual shade across pedestrian sidewalks throughout the critical hours between 11:00 and 16:00. This geometry prevents pavement from absorbing radiant heat, lowering ambient street temperatures by up to 3.8°C.",
-        "Civic sports facilities, such as the Semi-Olympic swimming pool in Relizane and the neighborhood pool in Oran, function as active environmental catalysts in the urban fabric. Large-span high-albedo roof structures (SRI ≥ 82) reflect solar irradiance into the upper atmosphere, while surrounding landscaped plazas with native shade vegetation and water features serve as evaporative cooling islands for public well-being.",
-        "Atelier Daoudi editorial perspective: Urban planning and individual building design must coordinate with regional meteorological wind vectors. In coastal settlements, aligning primary street axes within 15 degrees of prevailing summer sea breezes funnels natural ventilative currents deep into the residential urban fabric, cleansing air and enhancing pedestrian thermal comfort without energy expenditure."
+        "Civic architecture functions as an active environmental catalyst in the urban fabric. Large-span high-albedo roof structures (SRI ≥ 82) reflect solar irradiance into the upper atmosphere, while surrounding landscaped plazas with native shade vegetation and water features serve as evaporative cooling islands for public well-being.",
+        "Editorial perspective: Urban planning and individual building design must coordinate with regional meteorological wind vectors. In coastal settlements, aligning primary street axes within 15 degrees of prevailing summer sea breezes funnels natural ventilative currents deep into the residential urban fabric, cleansing air and enhancing pedestrian thermal comfort without energy expenditure."
       ],
       "practiceImplications": "Specify cool-roof membrane products tested in accordance with ASTM E1980. Orient open courtyard loggias toward seasonal night breeze directions to facilitate convective thermal flushing.",
       "sources": [
