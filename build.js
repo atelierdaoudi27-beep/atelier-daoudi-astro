@@ -47,4 +47,13 @@ if (fs.existsSync(assetsSrc)) {
   console.log(`✓ Copied assets folder (${count} files: WebP projects & SVG diagrams)`);
 }
 
+// Copy portfolio directory recursively
+const portfolioSrc = path.join(__dirname, 'portfolio');
+const portfolioDest = path.join(distDir, 'portfolio');
+
+if (fs.existsSync(portfolioSrc)) {
+  fs.cpSync(portfolioSrc, portfolioDest, { recursive: true });
+  console.log('✓ Copied portfolio/ folder');
+}
+
 console.log('Build completed successfully! Output ready in dist/');

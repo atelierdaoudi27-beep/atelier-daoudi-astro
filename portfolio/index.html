@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Atelier Daoudi — Selected Architectural Portfolio (10 Projects)</title>
+  <meta name="description" content="Explore 10 selected architectural contributions across educational facilities, residential housing ensembles, contemporary private villas, and civic sports complexes by Abdelkarim Daoudi.">
+  <meta name="theme-color" content="#eeece5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Crect width='60' height='60' fill='%23262923'/%3E%3Ctext x='8' y='41' font-size='32' fill='%23eeece5'%3EAD%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="canonical" href="https://atelierdaoudi27.online/portfolio">
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">
+      <span class="monogram">AD<span>⌜</span></span>
+      <span>ATELIER DAOUDI<small>ARCHITECTURE &amp; RESEARCH</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="/#journal">The Journal</a>
+      <a href="/#dossiers">Research Dossiers</a>
+      <a href="/portfolio" class="active-nav">Selected Work <sup>10</sup></a>
+      <a href="/#studio">The Studio</a>
+      <a href="/#expertise">Expertise</a>
+    </nav>
+    <a class="nav-contact" href="/#contact">Let’s talk <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="work section" style="padding-top: 60px;">
+      <div class="section-top">
+        <div>
+          <span class="eyebrow">PORTFOLIO ARCHIVE / 10 SELECTED CONTRIBUTIONS</span>
+          <h2>Built Works &amp; Design Studies.</h2>
+        </div>
+        <p>
+          Ten selected contributions across educational campuses, large-scale residential ensembles,<br class="desktop">
+          private contemporary villas, and sports facilities in Mostaganem, Oran, and Relizane.
+        </p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="active" data-filter="All" aria-pressed="true">All work <sup>10</sup></button>
+        <button data-filter="Education" aria-pressed="false">Education</button>
+        <button data-filter="Residential" aria-pressed="false">Residential</button>
+        <button data-filter="Sports &amp; leisure" aria-pressed="false">Sports &amp; leisure</button>
+        <span id="count" aria-live="polite">10 SELECTED PROJECTS</span>
+      </div>
+
+      <div class="projects" id="projects"></div>
+      
+      <p class="portfolio-note">
+        All 10 projects feature full architectural perspective galleries and project facts. Click any card to launch the interactive viewer.
+      </p>
+    </section>
+
+    <!-- Return to Journal CTA -->
+    <section class="editorial-divider-strip">
+      <div class="strip-content">
+        <div class="strip-block">
+          <strong>RESEARCH</strong>
+          <span>SCHOLARLY REVIEW DOSSIERS</span>
+        </div>
+        <div class="strip-quote">
+          <p>“Explore our peer-indexed architectural dossiers in building-integrated photovoltaics, passive solar physics, and whole-life carbon.”</p>
+          <a href="/#journal" style="color: #c49b4f; text-decoration: underline; font-size: 13px; font-family: sans-serif; display: inline-block; margin-top: 8px;">
+            Open ArchDaily-Style Editorial Review ↗
+          </a>
+        </div>
+        <div class="strip-block right-align">
+          <strong>VOL. 04</strong>
+          <span>PEER-INDEXED REVIEW</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="/">ATELIER DAOUDI</a>
+    <span>Architecture with purpose &amp; research.</span>
+    <a href="#">Back to top ↑</a>
+  </footer>
+
+  <dialog id="gallery">
+    <div class="modal-top">
+      <span id="gallery-category"></span>
+      <button class="close" aria-label="Close project">✕</button>
+    </div>
+    <div class="gallery-layout">
+      <div>
+        <img id="gallery-image" alt="">
+        <div class="gallery-controls">
+          <button id="previous" aria-label="Previous image">←</button>
+          <span id="slide-number" aria-live="polite"></span>
+          <button id="next" aria-label="Next image">→</button>
+        </div>
+      </div>
+      <div class="gallery-text">
+        <span class="eyebrow">SELECTED CONTRIBUTION</span>
+        <h2 id="gallery-title"></h2>
+        <p id="gallery-description"></p>
+        <dl id="gallery-facts"></dl>
+        <p class="muted">A selection from 10 projects to which I have actively contributed.</p>
+        <div id="thumbs"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="/app.js"></script>
+</body>
+</html>

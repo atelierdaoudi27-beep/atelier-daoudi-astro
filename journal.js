@@ -9,6 +9,17 @@
   const journalMore = document.querySelector('#journal-more');
   const articleDialog = document.querySelector('#article-dialog');
   const articleBody = document.querySelector('#article-body');
+  const dossierCountDisplay = document.querySelector('#dossier-count-display');
+
+  // Spotlight elements
+  const leadCard = document.querySelector('#lead-story-card');
+  const leadImg = document.querySelector('#lead-img');
+  const leadCategory = document.querySelector('#lead-category');
+  const leadTime = document.querySelector('#lead-time');
+  const leadTitle = document.querySelector('#lead-title');
+  const leadSummary = document.querySelector('#lead-summary');
+  const leadReadBtn = document.querySelector('#lead-read-btn');
+  const sideContainer = document.querySelector('#side-stories-container');
 
   const esc = s => String(s || '').replace(/[&<>"']/g, c => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
@@ -19,53 +30,111 @@
     return articles.filter(a => a.topic === currentFilter || a.category.toLowerCase().includes(currentFilter.toLowerCase()));
   }
 
+  function renderSpotlight() {
+    if (!articles || articles.length === 0) return;
+
+    // Lead Article (First in list or Solar Architecture)
+    const lead = articles[0];
+    if (lead && leadTitle) {
+      if (leadImg) {
+        leadImg.src = lead.image;
+        leadImg.alt = lead.imageAlt || lead.title;
+      }
+      if (leadCategory) leadCategory.textContent = lead.category.toUpperCase();
+      if (leadTime) leadTime.textContent = `${lead.readingTime || '6 MIN READ'} · IEA PVPS & RESEARCH STANDARDS`;
+      if (leadTitle) leadTitle.textContent = lead.title;
+      if (leadSummary) leadSummary.textContent = lead.summary;
+      if (leadReadBtn) {
+        leadReadBtn.onclick = () => openArticle(0);
+      }
+    }
+
+    // Side Articles (2nd and 3rd in list)
+    if (sideContainer && articles.length > 2) {
+      const sideArticles = articles.slice(1, 3);
+      sideContainer.innerHTML = sideArticles.map((a, idx) => `
+        <article class="spotlight-side-card" data-article-index="${idx + 1}">
+          <div class="side-card-img-wrap">
+            <img src="${esc(a.image)}" alt="${esc(a.imageAlt)}" loading="lazy">
+            <span class="side-badge">${esc(a.category.toUpperCase())}</span>
+          </div>
+          <div class="side-card-body">
+            <div class="side-meta">
+              <span class="eyebrow">${esc(a.dossierNumber || 'DOSSIER')}</span>
+              <span class="side-time">${esc(a.readingTime || '5 min')}</span>
+            </div>
+            <h3>${esc(a.title)}</h3>
+            <p>${esc(a.summary)}</p>
+            <button class="side-read-btn" data-article-index="${idx + 1}">
+              Read Perspective ↗
+            </button>
+          </div>
+        </article>
+      `).join('');
+
+      sideContainer.querySelectorAll('[data-article-index]').forEach(el => {
+        el.onclick = (e) => {
+          e.stopPropagation();
+          const idx = parseInt(el.dataset.articleIndex, 10);
+          if (!isNaN(idx)) openArticle(idx);
+        };
+      });
+    }
+  }
+
   function renderGrid() {
     const filtered = getFilteredArticles();
-    const visible = expanded ? filtered : filtered.slice(0, 3);
+    const visible = expanded ? filtered : filtered.slice(0, 6);
+
+    if (dossierCountDisplay) {
+      dossierCountDisplay.textContent = `${String(filtered.length).padStart(2, '0')} PEER-INDEXED PAPERS`;
+    }
 
     if (filtered.length === 0) {
-      list.innerHTML = `<div class="journal-empty"><p>No research dossiers found in this topic.</p></div>`;
+      list.innerHTML = `<div class="journal-empty"><p>No research dossiers found in this specialization.</p></div>`;
       if (journalMore) journalMore.hidden = true;
       return;
     }
 
-    list.innerHTML = visible.map((a, i) => `
-      <article class="journal-card" data-topic="${esc(a.topic || '')}">
-        <div class="journal-cover-wrap">
-          <img class="journal-cover" src="${esc(a.image)}" alt="${esc(a.imageAlt)}" loading="lazy">
-          <span class="journal-badge">${esc(a.dossierNumber || 'DOSSIER')}</span>
-        </div>
-        <div class="journal-card-body">
-          <div class="journal-card-meta">
-            <span class="eyebrow">${esc(a.category)}</span>
-            <span class="journal-time">${esc(a.readingTime || '5 min read')}</span>
+    list.innerHTML = visible.map((a, i) => {
+      const globalIndex = articles.findIndex(x => x.id === a.id);
+      return `
+        <article class="journal-card" data-topic="${esc(a.topic || '')}">
+          <div class="journal-cover-wrap">
+            <img class="journal-cover" src="${esc(a.image)}" alt="${esc(a.imageAlt)}" loading="lazy">
+            <span class="journal-badge">${esc(a.dossierNumber || 'RESEARCH DOSSIER')}</span>
           </div>
-          <h3>${esc(a.title)}</h3>
-          <p class="journal-summary">${esc(a.summary)}</p>
-          <div class="journal-card-footer">
-            <span class="journal-date">${esc(a.date)}</span>
-            <button class="journal-btn" data-article-id="${esc(a.id)}" aria-label="Read complete research paper: ${esc(a.title)}">
-              Read Research Dossier <span>↗</span>
-            </button>
+          <div class="journal-card-body">
+            <div class="journal-card-meta">
+              <span class="eyebrow">${esc(a.category)}</span>
+              <span class="journal-time">${esc(a.readingTime || '5 min read')}</span>
+            </div>
+            <h3>${esc(a.title)}</h3>
+            <p class="journal-summary">${esc(a.summary)}</p>
+            <div class="journal-card-footer">
+              <span class="journal-date">${esc(a.date)}</span>
+              <button class="journal-btn" data-global-index="${globalIndex}" aria-label="Read complete research paper: ${esc(a.title)}">
+                Read Research Dossier <span>↗</span>
+              </button>
+            </div>
           </div>
-        </div>
-      </article>
-    `).join('');
+        </article>
+      `;
+    }).join('');
 
-    // Attach click events
+    // Attach click events to grid cards
     list.querySelectorAll('.journal-btn').forEach(btn => {
       btn.onclick = () => {
-        const id = btn.dataset.articleId;
-        const index = articles.findIndex(x => x.id === id);
-        if (index !== -1) {
-          openArticle(index);
+        const idx = parseInt(btn.dataset.globalIndex, 10);
+        if (!isNaN(idx) && idx !== -1) {
+          openArticle(idx);
         }
       };
     });
 
     if (journalMore) {
-      journalMore.hidden = filtered.length <= 3;
-      journalMore.textContent = expanded ? 'Show latest dossiers ↑' : `Browse full research archive (${filtered.length} papers) ↓`;
+      journalMore.hidden = filtered.length <= 6;
+      journalMore.textContent = expanded ? 'Show initial selection ↑' : `Browse full research archive (${filtered.length} dossiers) ↓`;
     }
   }
 
@@ -82,7 +151,7 @@
         <div class="article-meta-bar">
           <span class="article-dossier-tag">${esc(a.dossierNumber || 'RESEARCH DOSSIER')}</span>
           <span class="article-category-tag">${esc(a.category)}</span>
-          <span class="article-read-time">${esc(a.readingTime || '6 min read')} · PEER CITATIONS</span>
+          <span class="article-read-time">${esc(a.readingTime || '6 min read')} · PEER REVIEWED</span>
         </div>
         <h2>${esc(a.title)}</h2>
         <div class="article-byline">
@@ -96,7 +165,7 @@
         <div class="article-takeaways">
           <div class="takeaways-header">
             <span class="takeaways-icon">◈</span>
-            <strong>EXECUTIVE SUMMARY &amp; KEY TAKEAWAYS</strong>
+            <strong>EXECUTIVE SUMMARY &amp; ARCHITECTURAL TAKEAWAYS</strong>
           </div>
           <ul>
             ${a.keyTakeaways.map(t => `<li>${esc(t)}</li>`).join('')}
@@ -171,7 +240,7 @@
     };
 
     document.querySelector('#article-citation-btn').onclick = e => {
-      const cite = `Atelier Daoudi. (${a.date.slice(0,4)}). ${a.title}. Atelier Daoudi Architectural Review, Vol. 04. Retrieved from https://atelierdaoudi27.online/journal`;
+      const cite = `Atelier Daoudi. (${a.date.slice(0,4)}). ${a.title}. Atelier Daoudi Architectural Review, Vol. 04. Retrieved from https://atelierdaoudi27.online/`;
       navigator.clipboard.writeText(cite).then(() => {
         e.target.innerText = '✓ Citation Copied';
         setTimeout(() => { e.target.innerText = 'Copy Citation (APA/Harvard)'; }, 2500);
@@ -197,52 +266,21 @@
     }
   });
 
-  // Filter Bar generation
-  function setupJournalFilterUI() {
-    const journalSection = document.querySelector('#journal');
-    if (!journalSection) return;
-
-    let filterBar = journalSection.querySelector('.journal-filters');
-    if (!filterBar) {
-      filterBar = document.createElement('div');
-      filterBar.className = 'journal-filters';
-      filterBar.setAttribute('role', 'group');
-      filterBar.setAttribute('aria-label', 'Filter research papers by topic');
-      
-      const topics = [
-        { label: 'All Dossiers', filter: 'All' },
-        { label: 'Renewable & BIPV', filter: 'Renewable' },
-        { label: 'Bioclimatic Physics', filter: 'Passive' },
-        { label: 'Carbon & Circularity', filter: 'Carbon' },
-        { label: 'Educational Typologies', filter: 'Typology' },
-        { label: 'Adaptive Envelopes', filter: 'Envelope' },
-        { label: 'Urban Morphology', filter: 'Urban' }
-      ];
-
-      filterBar.innerHTML = topics.map((t, idx) => `
-        <button class="${idx === 0 ? 'active' : ''}" data-topic-filter="${t.filter}" aria-pressed="${idx === 0}">
-          ${t.label}
-        </button>
-      `).join('');
-
-      const sectionTop = journalSection.querySelector('.section-top');
-      if (sectionTop && sectionTop.nextElementSibling) {
-        journalSection.insertBefore(filterBar, sectionTop.nextElementSibling);
-      }
-
-      filterBar.querySelectorAll('button').forEach(btn => {
-        btn.onclick = () => {
-          filterBar.querySelectorAll('button').forEach(b => {
-            b.classList.remove('active');
-            b.setAttribute('aria-pressed', 'false');
-          });
-          btn.classList.add('active');
-          btn.setAttribute('aria-pressed', 'true');
-          currentFilter = btn.dataset.topicFilter;
-          renderGrid();
-        };
-      });
-    }
+  // Setup Topic Filters
+  function setupFilters() {
+    const filterButtons = document.querySelectorAll('.journal-filters [data-topic-filter]');
+    filterButtons.forEach(btn => {
+      btn.onclick = () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+        currentFilter = btn.dataset.topicFilter;
+        renderGrid();
+      };
+    });
   }
 
   if (journalMore) {
@@ -253,7 +291,7 @@
   }
 
   // Fetch journal.json
-  fetch('/journal.json', { cache: 'no-cache' })
+  fetch('journal.json', { cache: 'no-cache' })
     .then(r => {
       if (!r.ok) throw new Error('Failed to load journal');
       return r.json();
@@ -263,7 +301,8 @@
       if (journalDate) {
         journalDate.innerHTML = `<span>EDITORIAL REVIEW · VOL. 04</span> · <span>UPDATED ${esc(data.updatedAt)}</span>`;
       }
-      setupJournalFilterUI();
+      renderSpotlight();
+      setupFilters();
       renderGrid();
     })
     .catch(err => {
