@@ -49,7 +49,7 @@ nav sup{color:var(--accent);font-weight:bold}
 .archdaily-masthead em{font-weight:400;color:var(--accent)}
 .masthead-desc{max-width:880px;font-size:15px;line-height:1.85;color:var(--muted);margin:0}
 
-/* Spotlight Grid (1 Major Lead Card + 2 Stacked Side Cards) */
+/* Spotlight Grid */
 .editorial-spotlight-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:35px;margin-bottom:65px}
 
 /* Lead Feature Card */
@@ -77,6 +77,8 @@ nav sup{color:var(--accent);font-weight:bold}
 .side-card-img-wrap{position:relative;aspect-ratio:2;background:#dfded6;overflow:hidden}
 .side-card-img-wrap img{width:100%;height:100%;object-fit:cover}
 .side-badge{position:absolute;bottom:10px;left:10px;background:#232721e6;color:#f5f4ee;font-size:8px;letter-spacing:1px;padding:3px 7px;font-family:'Courier New',monospace}
+.side-drawings-pill{position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.92);color:var(--ink);font-size:9px;padding:3px 7px;font-family:'Courier New',monospace;border:1px solid var(--line)}
+
 .side-card-body{padding:20px;display:flex;flex-direction:column;flex-grow:1}
 .side-meta{display:flex;justify-content:space-between;margin-bottom:8px}
 .side-card-body .eyebrow{font-size:9px;color:var(--accent);letter-spacing:1px;font-weight:bold}
@@ -106,6 +108,8 @@ nav sup{color:var(--accent);font-weight:bold}
 .journal-card:hover .journal-cover{transform:scale(1.04)}
 .journal-badge{position:absolute;top:10px;left:10px;background:rgba(41,45,39,0.92);color:#eeece5;font-size:9px;letter-spacing:1px;padding:4px 8px;font-family:'Courier New',monospace;font-weight:bold}
 
+.journal-card-media-count{position:absolute;bottom:10px;right:10px;display:flex;gap:6px;background:rgba(255,255,255,0.92);padding:3px 8px;font-size:9px;font-family:'Courier New',monospace;border:1px solid var(--line)}
+
 .journal-card-body{padding:22px 20px;display:flex;flex-direction:column;flex-grow:1}
 .journal-card-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:10px}
 .journal-card-meta .eyebrow{color:var(--accent);font-weight:600;font-size:9px}
@@ -122,7 +126,7 @@ nav sup{color:var(--accent);font-weight:bold}
 .journal-disclaimer{font-size:11px;color:var(--muted);text-align:center;max-width:700px;line-height:1.6}
 
 /* ========================================================================= */
-/* TRANSITION STRIP (BETWEEN JOURNAL & PORTFOLIO)                            */
+/* TRANSITION STRIP                                                          */
 /* ========================================================================= */
 .editorial-divider-strip{background:#292d27;color:#eeece5;padding:42px 5%;border-top:1px solid #41473e;border-bottom:1px solid #41473e}
 .strip-content{display:grid;grid-template-columns:1fr 2fr 1fr;gap:30px;align-items:center}
@@ -201,31 +205,48 @@ footer{padding:32px 5%;display:flex;justify-content:space-between;align-items:ce
 .footer-brand{font-size:13px;letter-spacing:2px;color:var(--ink)}
 
 /* ========================================================================= */
-/* ARTICLE READER MODAL (HIGH-END EDITORIAL REVIEW)                          */
+/* ARTICLE READER MODAL (RICH ARCHDAILY MONOGRAPH FORMAT)                    */
 /* ========================================================================= */
-#article-dialog{max-width:960px;width:94vw;padding:0;border:0;background:var(--bg);max-height:94vh;overflow-y:auto}
+#article-dialog{max-width:1050px;width:95vw;padding:0;border:0;background:var(--bg);max-height:94vh;overflow-y:auto}
 #article-dialog .modal-top{padding:18px 30px;margin-bottom:0;position:sticky;top:0;background:var(--bg);z-index:10}
 
 #article-body{padding:20px 40px 60px}
-.article-masthead{border-bottom:1px solid var(--line);padding-bottom:25px;margin-bottom:30px}
-.article-meta-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px;font-size:11px}
+.article-masthead{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:25px}
+.article-meta-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:14px;font-size:11px}
 .article-dossier-tag{background:var(--dossier-tag);color:#fff;padding:4px 10px;font-family:'Courier New',monospace;font-size:10px;font-weight:bold;letter-spacing:1px}
 .article-category-tag{color:var(--accent);font-weight:600;letter-spacing:1px;text-transform:uppercase}
 .article-read-time{margin-left:auto;color:var(--muted);font-family:'Courier New',monospace;font-size:10px}
 
-.article-masthead h2{font-family:Georgia,serif;font-size:clamp(32px,3.8vw,48px);line-height:1.15;font-weight:normal;letter-spacing:-1px;margin:0 0 20px}
-.article-byline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:15px;font-size:10px;letter-spacing:1.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:14px}
+.article-masthead h2{font-family:Georgia,serif;font-size:clamp(30px,3.6vw,46px);line-height:1.15;font-weight:normal;letter-spacing:-1px;margin:0 0 16px}
+.article-byline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:15px;font-size:10px;letter-spacing:1.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
 .article-issn{font-family:'Courier New',monospace}
 
+/* Project Fact Sheet (ArchDaily Style) */
+.article-fact-sheet{background:#f3f1e9;border:1px solid var(--line);padding:20px 24px;margin-bottom:30px}
+.fact-sheet-title{font-family:'Courier New',monospace;font-size:10px;font-weight:bold;letter-spacing:1.5px;color:var(--dossier-tag);margin-bottom:14px;border-bottom:1px solid #dfded6;padding-bottom:6px}
+.fact-sheet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px 24px}
+.fact-item{display:flex;flex-direction:column;gap:4px}
+.fact-label{font-size:10px;color:var(--muted);font-family:'Courier New',monospace;letter-spacing:0.5px}
+.fact-value{font-size:12.5px;color:var(--ink);font-weight:600;line-height:1.4}
+
+/* Interactive Tabs Bar */
+.article-tabs{display:flex;gap:10px;border-bottom:2px solid var(--line);margin-bottom:30px;overflow-x:auto}
+.article-tab{background:transparent;border:0;padding:12px 20px;font-size:13px;font-family:'Courier New',monospace;letter-spacing:0.5px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s;white-space:nowrap}
+.article-tab:hover{color:var(--ink)}
+.article-tab.active{color:var(--ink);border-bottom-color:var(--ink);font-weight:bold}
+
+.article-tab-panel{display:none}
+.article-tab-panel.active{display:block}
+
 /* Takeaways Box */
-.article-takeaways{background:#f3f1e9;border-left:4px solid var(--accent);padding:24px 28px;margin:25px 0 35px}
-.takeaways-header{display:flex;align-items:center;gap:10px;margin-bottom:14px;color:var(--accent);font-family:'Courier New',monospace;font-size:11px;letter-spacing:1px}
+.article-takeaways{background:#f3f1e9;border-left:4px solid var(--accent);padding:22px 26px;margin:20px 0 30px}
+.takeaways-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--accent);font-family:'Courier New',monospace;font-size:11px;letter-spacing:1px}
 .takeaways-icon{font-size:16px}
 .article-takeaways ul{margin:0;padding-left:20px}
 .article-takeaways li{font-size:13.5px;line-height:1.75;color:var(--ink);margin-bottom:8px}
 
 /* Technical Diagram Figure */
-.article-diagram-figure{margin:35px 0;background:#dedbd0;border:1px solid var(--line);padding:14px}
+.article-diagram-figure{margin:30px 0;background:#dedbd0;border:1px solid var(--line);padding:14px}
 .diagram-container{width:100%;overflow:hidden;background:#fdfaf3}
 .article-diagram-img{width:100%;height:auto;display:block}
 figcaption{padding:14px 8px 6px;font-size:12px;color:var(--ink);line-height:1.6}
@@ -238,14 +259,43 @@ figcaption small{color:var(--muted);font-size:11px}
 .lead-paragraph::first-letter{float:left;font-size:52px;line-height:42px;padding-top:4px;padding-right:12px;padding-bottom:0;font-family:Georgia,serif;color:var(--accent)}
 
 /* Practice Implications Box */
-.article-practice-box{background:#292d27;color:#f0eee6;padding:26px 30px;margin:40px 0;border-left:4px solid var(--gold)}
+.article-practice-box{background:#292d27;color:#f0eee6;padding:24px 28px;margin:35px 0;border-left:4px solid var(--gold)}
 .practice-header{font-family:'Courier New',monospace;font-size:11px;letter-spacing:1.5px;color:var(--gold);margin-bottom:12px}
 .article-practice-box p{font-size:14px;line-height:1.8;margin:0;color:#d8dbce}
 
+/* ========================================================================= */
+/* DRAWINGS & PLANS TAB (المخططات المعمارية)                                  */
+/* ========================================================================= */
+.drawings-section-header{margin-bottom:25px}
+.drawings-section-header h3{font-family:Georgia,serif;font-size:24px;margin:0 0 8px;font-weight:normal}
+.drawings-section-header p{font-size:13px;color:var(--muted);margin:0}
+
+.drawings-viewer{background:#dfded6;border:1px solid var(--line);padding:16px;margin-bottom:30px}
+.active-drawing-frame{position:relative;background:#fff;border:1px solid var(--line);margin-bottom:16px;overflow:hidden;min-height:380px;display:grid;place-items:center}
+.active-drawing-frame img{max-width:100%;max-height:650px;object-fit:contain;display:block}
+.drawing-caption-overlay{background:#232721f0;color:#eee;padding:12px 18px;font-size:12px;line-height:1.5;width:100%}
+
+.drawings-thumbnails-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.drawing-thumb-btn{background:#fff;border:1px solid var(--line);padding:8px;text-align:left;display:flex;flex-direction:column;gap:6px;transition:all .2s}
+.drawing-thumb-btn:hover{border-color:var(--ink);box-shadow:0 4px 10px rgba(0,0,0,0.06)}
+.drawing-thumb-btn.active{border-color:var(--dossier-tag);border-width:2px;background:#f3f5f0}
+.thumb-type{font-size:9px;font-family:'Courier New',monospace;color:var(--accent);font-weight:bold;letter-spacing:0.5px}
+.drawing-thumb-btn img{width:100%;height:100px;object-fit:cover;background:#eee}
+.drawing-thumb-btn small{font-size:11px;color:var(--ink);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ========================================================================= */
+/* PROJECT PHOTOGRAPHY GALLERY TAB (معرض الصور)                              */
+/* ========================================================================= */
+.article-gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px}
+.gallery-photo-item{margin:0;background:#fff;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.gallery-photo-item img{width:100%;height:320px;object-fit:cover;display:block;transition:transform .4s}
+.gallery-photo-item:hover img{transform:scale(1.025)}
+.gallery-photo-item figcaption{padding:14px;font-size:12px;color:var(--muted);line-height:1.6;background:#f8f7f2}
+
 /* Sources Block */
-.article-sources-block{border-top:1px solid var(--line);padding-top:30px;margin-top:45px}
+.article-sources-block{border-top:1px solid var(--line);padding-top:25px;margin-top:40px}
 .article-sources-block h3{font-family:Georgia,serif;font-size:22px;font-weight:normal;margin-bottom:10px}
-.sources-note{font-size:12px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.sources-note{font-size:12px;color:var(--muted);margin-bottom:18px;line-height:1.6}
 .sources-list{list-style:none;padding:0;margin:0}
 .sources-list li{margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #e0dfd6}
 .sources-list a{display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:13px;color:var(--ink);transition:color .2s}
@@ -254,7 +304,7 @@ figcaption small{color:var(--muted);font-size:11px}
 .source-link{font-family:'Courier New',monospace;font-size:11px;color:var(--accent);white-space:nowrap}
 
 /* Article Nav Bar */
-.article-nav-bar{display:grid;grid-template-columns:1fr auto auto 1fr;gap:15px;align-items:center;border-top:1px solid var(--line);padding-top:30px;margin-top:45px}
+.article-nav-bar{display:grid;grid-template-columns:1fr auto auto 1fr;gap:15px;align-items:center;border-top:1px solid var(--line);padding-top:25px;margin-top:35px}
 .nav-article-btn{background:transparent;border:1px solid var(--line);padding:14px 18px;text-align:left;display:flex;flex-direction:column;gap:5px;transition:all .2s}
 .nav-article-btn:hover{border-color:var(--ink);background:#f2f0e8}
 .nav-article-btn span{font-size:10px;font-family:'Courier New',monospace;letter-spacing:1px;color:var(--accent)}
@@ -297,9 +347,10 @@ input,select,textarea{background:#f8f7f2;border:1px solid #bfc4b5;padding:12px;w
 
 /* Print */
 @media print{
-  header,nav,footer,.filters,.projects,.studio,.expertise,.statement,.contact,#gallery,#brief,#journal-more,.journal-filters,.article-nav-bar,.close,.top-dossier-bar,.editorial-divider-strip{display:none!important}
+  header,nav,footer,.filters,.projects,.studio,.expertise,.statement,.contact,#gallery,#brief,#journal-more,.journal-filters,.article-nav-bar,.close,.top-dossier-bar,.editorial-divider-strip,.article-tabs{display:none!important}
   body,#article-dialog{background:#fff!important;color:#000!important;padding:0!important;max-width:100%!important}
   #article-body{padding:0!important}
+  .article-tab-panel{display:block!important}
   .article-takeaways{background:#f5f5f5!important;border-left:4px solid #333!important}
   .article-practice-box{background:#eee!important;color:#000!important;border-left:4px solid #000!important}
 }
@@ -309,6 +360,7 @@ input,select,textarea{background:#f8f7f2;border:1px solid #bfc4b5;padding:12px;w
 @media(max-width:1024px){
   .editorial-spotlight-grid{grid-template-columns:1fr;gap:30px}
   .journal-grid{grid-template-columns:1fr 1fr}
+  .article-gallery-grid{grid-template-columns:1fr}
   .strip-content{grid-template-columns:1fr;text-align:center}
   .strip-block.right-align{text-align:center}
   .article-nav-bar{grid-template-columns:1fr 1fr;gap:10px}
@@ -363,6 +415,7 @@ input,select,textarea{background:#f8f7f2;border:1px solid #bfc4b5;padding:12px;w
   .eyebrow{font-size:9px}
   .brand{letter-spacing:1px}
   .nav-contact span{margin-left:10px}
+  .fact-sheet-grid{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}

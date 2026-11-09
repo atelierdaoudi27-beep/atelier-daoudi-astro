@@ -33,7 +33,7 @@
   function renderSpotlight() {
     if (!articles || articles.length === 0) return;
 
-    // Lead Article (First in list or Solar Architecture)
+    // Lead Article
     const lead = articles[0];
     if (lead && leadTitle) {
       if (leadImg) {
@@ -41,7 +41,7 @@
         leadImg.alt = lead.imageAlt || lead.title;
       }
       if (leadCategory) leadCategory.textContent = lead.category.toUpperCase();
-      if (leadTime) leadTime.textContent = `${lead.readingTime || '6 MIN READ'} · IEA PVPS & RESEARCH STANDARDS`;
+      if (leadTime) leadTime.textContent = `${lead.readingTime || '7 MIN READ'} · ${(lead.drawings || []).length} PLANS &amp; ${(lead.gallery || []).length} PERSPECTIVES`;
       if (leadTitle) leadTitle.textContent = lead.title;
       if (leadSummary) leadSummary.textContent = lead.summary;
       if (leadReadBtn) {
@@ -49,7 +49,7 @@
       }
     }
 
-    // Side Articles (2nd and 3rd in list)
+    // Side Articles
     if (sideContainer && articles.length > 2) {
       const sideArticles = articles.slice(1, 3);
       sideContainer.innerHTML = sideArticles.map((a, idx) => `
@@ -57,6 +57,7 @@
           <div class="side-card-img-wrap">
             <img src="${esc(a.image)}" alt="${esc(a.imageAlt)}" loading="lazy">
             <span class="side-badge">${esc(a.category.toUpperCase())}</span>
+            <span class="side-drawings-pill">📐 ${(a.drawings || []).length} Plans · 📷 ${(a.gallery || []).length} Photos</span>
           </div>
           <div class="side-card-body">
             <div class="side-meta">
@@ -66,7 +67,7 @@
             <h3>${esc(a.title)}</h3>
             <p>${esc(a.summary)}</p>
             <button class="side-read-btn" data-article-index="${idx + 1}">
-              Read Perspective ↗
+              Explore Article &amp; Drawings ↗
             </button>
           </div>
         </article>
@@ -87,34 +88,41 @@
     const visible = expanded ? filtered : filtered.slice(0, 6);
 
     if (dossierCountDisplay) {
-      dossierCountDisplay.textContent = `${String(filtered.length).padStart(2, '0')} PEER-INDEXED PAPERS`;
+      dossierCountDisplay.textContent = `${String(filtered.length).padStart(2, '0')} ARCHITECTURAL CASE STUDIES &amp; PAPERS`;
     }
 
     if (filtered.length === 0) {
-      list.innerHTML = `<div class="journal-empty"><p>No research dossiers found in this specialization.</p></div>`;
+      list.innerHTML = `<div class="journal-empty"><p>No articles found in this specialization.</p></div>`;
       if (journalMore) journalMore.hidden = true;
       return;
     }
 
     list.innerHTML = visible.map((a, i) => {
       const globalIndex = articles.findIndex(x => x.id === a.id);
+      const drawingsCount = (a.drawings || []).length;
+      const photosCount = (a.gallery || []).length;
+
       return `
         <article class="journal-card" data-topic="${esc(a.topic || '')}">
           <div class="journal-cover-wrap">
             <img class="journal-cover" src="${esc(a.image)}" alt="${esc(a.imageAlt)}" loading="lazy">
-            <span class="journal-badge">${esc(a.dossierNumber || 'RESEARCH DOSSIER')}</span>
+            <span class="journal-badge">${esc(a.dossierNumber || 'CASE STUDY')}</span>
+            <div class="journal-card-media-count">
+              <span>📐 ${drawingsCount} Plans</span>
+              <span>📷 ${photosCount} Views</span>
+            </div>
           </div>
           <div class="journal-card-body">
             <div class="journal-card-meta">
               <span class="eyebrow">${esc(a.category)}</span>
-              <span class="journal-time">${esc(a.readingTime || '5 min read')}</span>
+              <span class="journal-time">${esc(a.readingTime || '6 min read')}</span>
             </div>
             <h3>${esc(a.title)}</h3>
             <p class="journal-summary">${esc(a.summary)}</p>
             <div class="journal-card-footer">
               <span class="journal-date">${esc(a.date)}</span>
-              <button class="journal-btn" data-global-index="${globalIndex}" aria-label="Read complete research paper: ${esc(a.title)}">
-                Read Research Dossier <span>↗</span>
+              <button class="journal-btn" data-global-index="${globalIndex}" aria-label="Explore project article and plans: ${esc(a.title)}">
+                Explore Case &amp; Drawings <span>↗</span>
               </button>
             </div>
           </div>
@@ -122,7 +130,7 @@
       `;
     }).join('');
 
-    // Attach click events to grid cards
+    // Attach click events
     list.querySelectorAll('.journal-btn').forEach(btn => {
       btn.onclick = () => {
         const idx = parseInt(btn.dataset.globalIndex, 10);
@@ -146,76 +154,161 @@
     const prevIndex = (currentIndex - 1 + articles.length) % articles.length;
     const nextIndex = (currentIndex + 1) % articles.length;
 
+    // Render article reader
     articleBody.innerHTML = `
+      <!-- Masthead -->
       <div class="article-masthead">
         <div class="article-meta-bar">
-          <span class="article-dossier-tag">${esc(a.dossierNumber || 'RESEARCH DOSSIER')}</span>
+          <span class="article-dossier-tag">${esc(a.dossierNumber || 'CASE STUDY')}</span>
           <span class="article-category-tag">${esc(a.category)}</span>
-          <span class="article-read-time">${esc(a.readingTime || '6 min read')} · PEER REVIEWED</span>
+          <span class="article-read-time">${esc(a.readingTime || '6 min read')} · ARCHDAILY RESEARCH FORMAT</span>
         </div>
         <h2>${esc(a.title)}</h2>
         <div class="article-byline">
-          <span>ATELIER DAOUDI RESEARCH &amp; EDITORIAL</span>
+          <span>ATELIER DAOUDI ARCHITECTURAL EDITORIAL</span>
           <span>PUBLISHED: ${esc(a.date)}</span>
           <span class="article-issn">ISSN ARCH-2026-DZ</span>
         </div>
       </div>
 
-      ${a.keyTakeaways && a.keyTakeaways.length ? `
-        <div class="article-takeaways">
-          <div class="takeaways-header">
-            <span class="takeaways-icon">◈</span>
-            <strong>EXECUTIVE SUMMARY &amp; ARCHITECTURAL TAKEAWAYS</strong>
+      <!-- Project Specification Fact Sheet (ArchDaily Style) -->
+      ${a.specs ? `
+        <div class="article-fact-sheet">
+          <div class="fact-sheet-title">PROJECT &amp; RESEARCH SPECIFICATION SHEET</div>
+          <div class="fact-sheet-grid">
+            ${Object.entries(a.specs).map(([k, v]) => `
+              <div class="fact-item">
+                <span class="fact-label">${esc(k)}</span>
+                <strong class="fact-value">${esc(v)}</strong>
+              </div>
+            `).join('')}
           </div>
-          <ul>
-            ${a.keyTakeaways.map(t => `<li>${esc(t)}</li>`).join('')}
-          </ul>
         </div>
       ` : ''}
 
-      <figure class="article-diagram-figure">
-        <div class="diagram-container">
-          <img class="article-diagram-img" src="${esc(a.image)}" alt="${esc(a.imageAlt)}">
-        </div>
-        <figcaption>
-          <strong>FIGURE 1.0:</strong> ${esc(a.imageCredit)}
-          <br><small>${esc(a.imageAlt)}</small>
-        </figcaption>
-      </figure>
-
-      <div class="article-prose">
-        ${a.paragraphs.map((p, idx) => `
-          <p class="${idx === 0 ? 'lead-paragraph' : ''}">${esc(p)}</p>
-        `).join('')}
+      <!-- Interactive Tab Bar (Overview, Drawings, Photos) -->
+      <div class="article-tabs" role="tablist">
+        <button class="article-tab active" data-tab-target="#tab-narrative">Overview &amp; Analysis</button>
+        <button class="article-tab" data-tab-target="#tab-drawings">
+          Architectural Drawings &amp; Plans (${(a.drawings || []).length})
+        </button>
+        <button class="article-tab" data-tab-target="#tab-gallery">
+          Project Photography &amp; Perspectives (${(a.gallery || []).length})
+        </button>
       </div>
 
-      ${a.practiceImplications ? `
-        <div class="article-practice-box">
-          <div class="practice-header">
-            <strong>IMPLICATIONS FOR ARCHITECTURAL PRACTICE</strong>
+      <!-- TAB 1: NARRATIVE & OVERVIEW -->
+      <div id="tab-narrative" class="article-tab-panel active">
+        ${a.keyTakeaways && a.keyTakeaways.length ? `
+          <div class="article-takeaways">
+            <div class="takeaways-header">
+              <span class="takeaways-icon">◈</span>
+              <strong>EXECUTIVE SUMMARY &amp; ARCHITECTURAL PRINCIPLES</strong>
+            </div>
+            <ul>
+              ${a.keyTakeaways.map(t => `<li>${esc(t)}</li>`).join('')}
+            </ul>
           </div>
-          <p>${esc(a.practiceImplications)}</p>
-        </div>
-      ` : ''}
+        ` : ''}
 
+        <!-- Primary Featured Figure -->
+        <figure class="article-diagram-figure">
+          <div class="diagram-container">
+            <img class="article-diagram-img" id="active-hero-diagram" src="${esc(a.image)}" alt="${esc(a.imageAlt)}">
+          </div>
+          <figcaption>
+            <strong>FIGURE 1.0:</strong> ${esc(a.imageCredit)}
+            <br><small>${esc(a.imageAlt)}</small>
+          </figcaption>
+        </figure>
+
+        <!-- Article Prose Paragraphs -->
+        <div class="article-prose">
+          ${a.paragraphs.map((p, idx) => `
+            <p class="${idx === 0 ? 'lead-paragraph' : ''}">${esc(p)}</p>
+          `).join('')}
+        </div>
+
+        ${a.practiceImplications ? `
+          <div class="article-practice-box">
+            <div class="practice-header">
+              <strong>IMPLICATIONS FOR ARCHITECTURAL PRACTICE &amp; EXECUTION</strong>
+            </div>
+            <p>${esc(a.practiceImplications)}</p>
+          </div>
+        ` : ''}
+      </div>
+
+      <!-- TAB 2: ARCHITECTURAL DRAWINGS & PLANS (المخططات المعمارية) -->
+      <div id="tab-drawings" class="article-tab-panel">
+        <div class="drawings-section-header">
+          <h3>Architectural Drawings, Blueprints &amp; Technical Diagrams</h3>
+          <p>Explore high-resolution orthographic floor plans, bioclimatic sections, and axonometrics for this study.</p>
+        </div>
+
+        ${a.drawings && a.drawings.length ? `
+          <div class="drawings-viewer">
+            <!-- Active Drawing Display -->
+            <div class="active-drawing-frame">
+              <img id="viewer-drawing-img" src="${esc(a.drawings[0].url)}" alt="${esc(a.drawings[0].title)}">
+              <div class="drawing-caption-overlay" id="viewer-drawing-caption">
+                <strong>${esc(a.drawings[0].title)}</strong> — ${esc(a.drawings[0].caption)}
+              </div>
+            </div>
+
+            <!-- Drawings Selector Grid -->
+            <div class="drawings-thumbnails-strip">
+              ${a.drawings.map((d, dIdx) => `
+                <button class="drawing-thumb-btn ${dIdx === 0 ? 'active' : ''}" data-drawing-index="${dIdx}">
+                  <span class="thumb-type">${esc(d.type)}</span>
+                  <img src="${esc(d.url)}" alt="${esc(d.title)}">
+                  <small>${esc(d.title)}</small>
+                </button>
+              `).join('')}
+            </div>
+          </div>
+        ` : '<p class="muted">No technical drawings registered for this project.</p>'}
+      </div>
+
+      <!-- TAB 3: PROJECT PHOTOGRAPHY & PERSPECTIVES (معرض الصور) -->
+      <div id="tab-gallery" class="article-tab-panel">
+        <div class="drawings-section-header">
+          <h3>Project Perspectives &amp; Visual Documentation</h3>
+          <p>Architectural perspectives documenting spatial sequences, material assemblies, and day/evening lighting.</p>
+        </div>
+
+        ${a.gallery && a.gallery.length ? `
+          <div class="article-gallery-grid">
+            ${a.gallery.map((g, gIdx) => `
+              <figure class="gallery-photo-item">
+                <img src="${esc(g.url)}" alt="${esc(g.caption)}" loading="lazy">
+                <figcaption>${esc(g.caption)}</figcaption>
+              </figure>
+            `).join('')}
+          </div>
+        ` : '<p class="muted">No perspective photos registered for this project.</p>'}
+      </div>
+
+      <!-- Sources Block -->
       <div class="article-sources-block">
-        <h3>Primary Institutional Citations &amp; Technical Literature</h3>
-        <p class="sources-note">The architectural claims in this dossier are directly anchored in peer-reviewed standards and primary technical documentation from international agencies:</p>
+        <h3>Primary Institutional Citations &amp; Technical Standards</h3>
+        <p class="sources-note">Claims and engineering calculations in this dossier are directly referenced from peer-reviewed institutional publications:</p>
         <ul class="sources-list">
           ${a.sources.map(s => `
             <li>
               <a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">
                 <span class="source-title">${esc(s.title)}</span>
-                <span class="source-link">External Reference ↗</span>
+                <span class="source-link">Institutional Reference ↗</span>
               </a>
             </li>
           `).join('')}
         </ul>
       </div>
 
+      <!-- Navigation & Action Bar -->
       <div class="article-nav-bar">
         <button id="article-prev-btn" class="nav-article-btn">
-          <span>← Previous Dossier</span>
+          <span>← Previous Case Study</span>
           <small>${esc(articles[prevIndex].title)}</small>
         </button>
         <button id="article-citation-btn" class="action-btn">
@@ -225,13 +318,44 @@
           <span>Print / PDF Document</span>
         </button>
         <button id="article-next-btn" class="nav-article-btn">
-          <span>Next Dossier →</span>
+          <span>Next Case Study →</span>
           <small>${esc(articles[nextIndex].title)}</small>
         </button>
       </div>
     `;
 
-    // Connect nav buttons
+    // Connect Tab Switching
+    articleBody.querySelectorAll('.article-tab').forEach(tab => {
+      tab.onclick = () => {
+        articleBody.querySelectorAll('.article-tab').forEach(t => t.classList.remove('active'));
+        articleBody.querySelectorAll('.article-tab-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        const target = articleBody.querySelector(tab.dataset.tabTarget);
+        if (target) target.classList.add('active');
+      };
+    });
+
+    // Connect Drawings Selector
+    if (a.drawings && a.drawings.length) {
+      const viewerImg = articleBody.querySelector('#viewer-drawing-img');
+      const viewerCaption = articleBody.querySelector('#viewer-drawing-caption');
+      articleBody.querySelectorAll('.drawing-thumb-btn').forEach(btn => {
+        btn.onclick = () => {
+          articleBody.querySelectorAll('.drawing-thumb-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const d = a.drawings[parseInt(btn.dataset.drawingIndex, 10)];
+          if (d && viewerImg) {
+            viewerImg.src = d.url;
+            viewerImg.alt = d.title;
+            if (viewerCaption) {
+              viewerCaption.innerHTML = `<strong>${esc(d.title)}</strong> (${esc(d.type)}) — ${esc(d.caption)}`;
+            }
+          }
+        };
+      });
+    }
+
+    // Connect Navigation & Actions
     document.querySelector('#article-prev-btn').onclick = () => openArticle(prevIndex);
     document.querySelector('#article-next-btn').onclick = () => openArticle(nextIndex);
     
@@ -240,7 +364,7 @@
     };
 
     document.querySelector('#article-citation-btn').onclick = e => {
-      const cite = `Atelier Daoudi. (${a.date.slice(0,4)}). ${a.title}. Atelier Daoudi Architectural Review, Vol. 04. Retrieved from https://atelierdaoudi27.online/`;
+      const cite = `Atelier Daoudi. (${a.date.slice(0,4)}). ${a.title}. Atelier Daoudi Architectural Review & Case Studies, Vol. 04. Retrieved from https://atelierdaoudi27.online/`;
       navigator.clipboard.writeText(cite).then(() => {
         e.target.innerText = '✓ Citation Copied';
         setTimeout(() => { e.target.innerText = 'Copy Citation (APA/Harvard)'; }, 2500);
