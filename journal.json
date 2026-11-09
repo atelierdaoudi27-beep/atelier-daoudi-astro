@@ -3,6 +3,177 @@
   "dossier": "VOL. 04 — GLOBAL ARCHITECTURAL REVIEW & CASE STUDIES (ARCHDAILY FORMAT)",
   "articles": [
     {
+      "id": "mass-timber-clt-thermodynamics",
+      "title": "Mass Timber & Double-Skin Greenhouse Buffer Thermodynamics",
+      "category": "Mass Timber & Bio-Climatic Envelopes",
+      "topic": "Carbon",
+      "summary": "Structural tectonics of 5-ply Cross-Laminated Timber coupled with a 900mm solar loggia buffer: achieving negative embodied carbon (-420 kg CO₂e/m³) and a 46% heating load reduction through biophilic thermal massing.",
+      "date": "2026-11-09",
+      "readingTime": "8 min read",
+      "dossierNumber": "SPECIAL FEATURE 01 / MASS TIMBER TECTONICS",
+      "image": "assets/article-mass-timber-clt.svg",
+      "imageAlt": "Architectural section drawing of 5-ply CLT slab, glulam column, and 900mm double-skin solar greenhouse buffer",
+      "imageCredit": "Architectural Section & Thermodynamics Tectonic Detail · Atelier Daoudi International Architectural Review",
+      "specs": {
+        "Structural System": "5-Ply Cross-Laminated Timber (CLT 200mm) + Glued-Laminated Columns",
+        "Fire Resistance Rating": "REI 90 / REI 120 (Standard Charring Rate 0.65 mm/min per EN 1995-1-2)",
+        "Thermal Buffer Depth": "900mm Ventilated Greenhouse Solar Loggia (Zone Buffer)",
+        "Embodied Carbon Balance": "-420 kg CO₂e/m³ Sequestered Biogenic Carbon",
+        "Annual Heating Reduction": "46% Reduction vs Standard Baseline (PHPP Verified)",
+        "Hygroscopic Regulation": "45% to 55% Stabilized Indoor Relative Humidity Buffer"
+      },
+      "drawings": [
+        {
+          "title": "CLT Structural Section & Greenhouse Buffer Detail",
+          "type": "Architectural Section & Heat Flux Diagram",
+          "url": "assets/article-mass-timber-clt.svg",
+          "caption": "Section drawing illustrating 5-ply CLT floor slab, glulam column, double-skin greenhouse loggia, solar radiation absorption, and natural convective stack effect."
+        }
+      ],
+      "gallery": [],
+      "keyTakeaways": [
+        "Cross-laminated timber (CLT) replaces energy-intensive steel and concrete while locking away biogenic carbon for centuries.",
+        "A charring rate of 0.65 mm/min creates a natural insulating carbon layer during fire exposure, protecting structural integrity without toxic coatings.",
+        "Pairing mass timber with a 900mm double-skin greenhouse buffer provides a seasonal solar collector in winter and a ventilated thermal shield in summer.",
+        "Exposed interior timber panels act as natural hygroscopic sponges, maintaining indoor humidity at optimal respiratory comfort (45–55% RH)."
+      ],
+      "paragraphs": [
+        "As international architecture accelerates toward net-zero embodied carbon, mass timber has emerged as the defining structural material of the decade. Unlike reinforced concrete or structural steel—responsible for over 14% of global greenhouse emissions—sustainably harvested Cross-Laminated Timber (CLT) sequesters approximately 1 metric ton of atmospheric CO₂ per cubic meter of timber, transforming high-performance buildings into terrestrial carbon sinks.",
+        "However, the true architectural potential of mass timber is realized when engineered tectonics intersect with passive building physics. By integrating a 900mm double-skin greenhouse loggia along the primary solar orientation, the building envelope functions as an unconditioned thermal capacitor. During sub-zero winter mornings, low-angle solar rays heat the intermediate air volume, generating a microclimatic buffer that halves transmission heat loss through the primary timber envelope.",
+        "Structural fire engineering for mass timber leverages predictable charring dynamics according to Eurocode 5 (EN 1995-1-2). Exposed CLT panels exposed to standard ISO 834 fire curves form a char layer at a uniform rate of 0.65 mm/min. Because wood possesses remarkably low thermal conductivity (λ ≈ 0.13 W/mK), the unburned core beneath the char remains at ambient structural temperatures, retaining load-bearing capacity far longer than unprotected steel beams.",
+        "Editorial perspective: Specifying mass timber is not merely an aesthetic choice of exposed wood grain; it requires complete structural pre-fabrication with millimeter CNC tolerances and airtight weatherproofing detailing. When combined with biophilic ventilation and perimeter solar loggias, CLT delivers architecture that is structurally honest, ecologically restorative, and thermally resilient across changing climate extremes."
+      ],
+      "practiceImplications": "Specify certified PEFC/FSC timber with third-party Environmental Product Declarations (EPD). Ensure connection brackets utilize concealed steel knife plates to maintain fire ratings, and integrate acoustic decoupling elastomeric strips between floor slabs and bearing walls to meet ISO 717 acoustic criteria.",
+      "sources": [
+        {
+          "title": "ETH Zurich Institute of Structural Engineering — Mass Timber Performance & Charring Mechanics",
+          "url": "https://ibk.ethz.ch/"
+        },
+        {
+          "title": "Council on Tall Buildings and Urban Habitat (CTBUH) — Mass Timber Tall Buildings Research",
+          "url": "https://global.ctbuh.org/"
+        },
+        {
+          "title": "WoodWorks Wood Products Council — Architectural Design Guides for Cross-Laminated Timber",
+          "url": "https://www.woodworks.org/"
+        }
+      ]
+    },
+    {
+      "id": "kinetic-parametric-shading-physics",
+      "title": "Kinetic & Parametric Screens: Algorithmic Shading & Solar Vector Tracking",
+      "category": "Computational Facades & Solar Physics",
+      "topic": "Envelope",
+      "summary": "Responsive origami tessellations, dynamic solar geometry, and glare-free daylight autonomy: how algorithmic kinetic screens slash peak chiller loads by 42% while preserving external views.",
+      "date": "2026-11-09",
+      "readingTime": "8 min read",
+      "dossierNumber": "SPECIAL FEATURE 02 / COMPUTATIONAL ENVELOPES",
+      "image": "assets/article-kinetic-shading.svg",
+      "imageAlt": "Solar vector altitude tracking diagram and exploded axonometric detail of responsive kinetic origami shading module",
+      "imageCredit": "Parametric Geometry & Solar Ray Vector Diagram · Atelier Daoudi International Architectural Review",
+      "specs": {
+        "Facade Category": "Dynamic Computational Façade & Adaptive Screen",
+        "Shading Geometry": "Parametric Origami Tessellation (Triangulated Mashrabiya)",
+        "Solar Cut-off Performance": "SHGC 0.18 (Closed High-Sun) vs SHGC 0.62 (Open Winter)",
+        "Spatial Daylight Autonomy": "sDA 300/50% = 78% Achieved Across 12m Floor Plate",
+        "Peak Cooling Reduction": "-42% Chiller Load in Climate Zones 3B / Mediterranean",
+        "Visual Comfort Index": "Discomfort Glare Index DGI < 19 (EN 14501 Imperceptible)"
+      },
+      "drawings": [
+        {
+          "title": "Kinetic Solar Vector & Parametric Node Elevation",
+          "type": "Solar Vector Diagram & Exploded Facade Axonometric",
+          "url": "assets/article-kinetic-shading.svg",
+          "caption": "Architectural diagram comparing 72° summer solstice solar ray deflection against 28° winter solar penetration, alongside laser-cut micro-perforated origami louvers and actuator joints."
+        }
+      ],
+      "gallery": [],
+      "keyTakeaways": [
+        "Static brise-soleil compromises either summer shading or winter daylight; kinetic screens adapt continuously to exact solar azimuth and solar altitude.",
+        "Triangulated origami folding patterns offer immense structural rigidity against wind shear while operating via minimal low-power actuator nodes.",
+        "A 700mm ventilated air buffer between the kinetic screen and the interior curtain wall vents 65% of solar radiation before it strikes thermal glazing.",
+        "Micro-perforated anodized panels preserve outward occupant sightlines and outdoor connectivity even when in fully deployed sun-shading mode."
+      ],
+      "paragraphs": [
+        "In regions subject to intense solar radiation—such as North Africa, the Mediterranean basin, and the Gulf—glazed corporate and institutional buildings have historically faced a paradoxical dilemma: floor-to-ceiling glass creates intolerable radiant heat gain and severe discomfort glare, forcing massive HVAC chiller plants to run continuously at peak capacity.",
+        "Parametric kinetic facades represent the convergence of vernacular Mashrabiya principles and algorithmic building physics. Driven by astronomical solar tracking algorithms and real-time roof pyranometer data, dynamic triangular panels articulated with shape-memory alloys or micro-servo actuators fold and unfold in continuous synchrony with the sun's trajectory across the celestial dome.",
+        "At summer noon, when solar altitude reaches 72°, the origami panels fold into their maximum shading geometry, dropping the Solar Heat Gain Coefficient (SHGC) to 0.18. Conversely, during low winter azimuths (28° altitude), the modules expand open to capture diffuse daylight and passive solar heat. Computer daylight simulations demonstrate that spatial daylight autonomy (sDA 300/50%) reaches an extraordinary 78%, eliminating artificial daytime lighting across deep 12-meter floor plans.",
+        "Editorial perspective: Kinetic facades must prioritize mechanical simplicity and maintenance longevity over whimsical kinetic spectacle. Pneumatic or low-friction rotary pivots powered by self-contained micro-photovoltaic cells eliminate extensive internal wiring. When engineered with robust laser-cut bronze or maritime-grade anodized aluminum, the kinetic envelope becomes a living, breathing climatic skin that cuts building operational carbon nearly in half."
+      ],
+      "practiceImplications": "Conduct dynamic radiance simulations (using Radiance or Ladybug Tools) during schematic design to map daylight glare probability (DGP) alongside cooling loads. Ensure kinetic pivot bearings are rated for salt-spray exposure (ISO 9227) and high-dust wind conditions.",
+      "sources": [
+        {
+          "title": "Façade Tectonics Institute — International Conference on Kinetic and Adaptive Building Skins",
+          "url": "https://facadetectonics.org/"
+        },
+        {
+          "title": "Lawrence Berkeley National Laboratory — Advanced Fenestration and Shading Systems",
+          "url": "https://facades.lbl.gov/"
+        },
+        {
+          "title": "CIBSE Guide A — Environmental Design & Solar Heat Gain Calculation Standards",
+          "url": "https://www.cibse.org/"
+        }
+      ]
+    },
+    {
+      "id": "modern-courtyard-bioclimatic-physics",
+      "title": "The Modern Courtyard House: Wind Catchers & Passive Evaporative Physics",
+      "category": "Bioclimatic Vernacular & Passive Physics",
+      "topic": "Passive",
+      "summary": "Thermodynamic cross-section of contemporary courtyard typologies: thermal siphon stack effect, Badgir wind catchers, and heavy thermal mass delivering zero-energy microclimatic cooling.",
+      "date": "2026-11-09",
+      "readingTime": "9 min read",
+      "dossierNumber": "SPECIAL FEATURE 03 / BIOCLIMATIC VERNACULAR",
+      "image": "assets/article-courtyard-bioclimatic.svg",
+      "imageAlt": "Bioclimatic architectural section through courtyard house showing wind tower, solar chimney, central water basin, and air currents",
+      "imageCredit": "Bioclimatic Thermodynamic Cross-Section · Atelier Daoudi International Architectural Review",
+      "specs": {
+        "Typology": "Contemporary Central Courtyard (Patio Central Bioclimatique)",
+        "Thermal Mass": "500mm Compressed Stabilized Earth Block (CSEB) / Local Limestone",
+        "Thermal Phase Shift": "10.4 Hours Diurnal Thermal Lag",
+        "Evaporative Cooling ΔT": "-7.5°C Wet-Bulb Temperature Depression",
+        "Passive Ventilation Rate": "8.2 Air Changes per Hour (ACH) via Bernoulli Stack Effect",
+        "Embodied Carbon Footprint": "-68% Lower Embodied Carbon vs Conventional RC Frame"
+      },
+      "drawings": [
+        {
+          "title": "Bioclimatic Courtyard Cross-Section & Thermodynamic Flow",
+          "type": "Architectural Section Drawing",
+          "url": "assets/article-courtyard-bioclimatic.svg",
+          "caption": "Section drawing illustrating prevailing breeze capture aloft via Badgir wind catcher, evaporative cooling water basin, 500mm rammed earth thermal lag, and solar chimney thermal stack exhaust."
+        }
+      ],
+      "gallery": [],
+      "keyTakeaways": [
+        "The introverted courtyard acts as a private microclimatic reservoir, pooling dense cool night air that resists midday solar displacement.",
+        "Water features in shaded courtyards depress dry-bulb temperatures by up to 7.5°C through natural latent heat absorption (adiabatic cooling).",
+        "A South-facing solar chimney induces a continuous Bernoulli suction draft, exhausting stale indoor air and drawing fresh breezes through living rooms.",
+        "500mm thick earthen or stone walls provide a 10.4-hour thermal phase shift, releasing daytime exterior heat only after midnight when night breezes purge it."
+      ],
+      "paragraphs": [
+        "For millennia, vernacular architecture across North Africa, Andalusia, and the Middle East relied on the courtyard house (Dār / Patio) not merely as a cultural sanctuary, but as a sophisticated thermodynamic engine. Today, as global architecture grapples with extreme urban heat islands and erratic energy grids, contemporary architects are rediscovering the courtyard as the ultimate model of passive resilience.",
+        "The physics of the courtyard house operate through three interconnected microclimatic phenomena: thermal mass phase shifting, evaporative psychrometric cooling, and buoyancy-driven thermal stack drafts. Massive perimeter walls constructed from 500mm compressed stabilized earth blocks (CSEB) or regional limestone provide volumetric thermal capacitance. When ambient midday temperatures reach 41°C, the inner wall surface temperature remains at a comfortable 22°C, delaying peak heat penetration by 10.4 hours.",
+        "At the center of the courtyard, an evaporative water mirror surrounded by citrus and jasmine trees creates a micro-oasis. As hot dry air moves across the water surface, sensible heat is converted into latent heat, dropping ambient temperatures by up to 7.5°C while elevating relative humidity into human comfort bands. Simultaneously, an elevated Badgir wind tower catches high-velocity laminar breezes aloft and channels them downward over the pool, while a south-facing black solar chimney at the opposite wing heats up and generates an upward Bernoulli draft, maintaining 8.2 air changes per hour completely free of electrical power.",
+        "Editorial perspective: The courtyard house offers a masterclass in spatial porosity and introverted serenity. In dense contemporary urban developments, it eliminates street-level noise pollution (attenuating traffic sound down to 34 dBA) while providing private daylight and cross-ventilation. Rather than designing hermetically sealed glass prisms dependent on mechanical chillers, architects must harness the courtyard's innate thermodynamic geometry to build sustainable, culturally rooted homes."
+      ],
+      "practiceImplications": "Calibrate courtyard width-to-height ratio (W/H between 1.0 and 1.5) to ensure self-shading during critical summer hours (11:00–15:00). Integrate operable high-level clerestory vents in living chambers to facilitate night-purge cooling.",
+      "sources": [
+        {
+          "title": "Hassan Fathy — Natural Energy and Vernacular Architecture (The University of Chicago Press)",
+          "url": "https://press.uchicago.edu/"
+        },
+        {
+          "title": "Center for the Built Environment (CBE), UC Berkeley — Thermal Comfort in Naturally Ventilated Buildings",
+          "url": "https://cbe.berkeley.edu/"
+        },
+        {
+          "title": "UNESCO World Heritage Centre — Bioclimatic Urban Fabrics & Traditional Earthen Architecture",
+          "url": "https://whc.unesco.org/"
+        }
+      ]
+    },
+    {
       "id": "solar-envelope-bipv-international",
       "title": "Solar Architecture: Designing for a Lifetime, Not Just Peak Power",
       "category": "Renewable Energy & BIPV",

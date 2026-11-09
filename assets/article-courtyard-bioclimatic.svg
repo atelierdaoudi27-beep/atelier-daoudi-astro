@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="courtBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f3ec"/>
+      <stop offset="100%" stop-color="#ebe7dc"/>
+    </linearGradient>
+    <pattern id="courtGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ded8c8" stroke-width="0.8"/>
+    </pattern>
+    <marker id="coolAir" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#2980b9"/>
+    </marker>
+    <marker id="warmAir" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#c0392b"/>
+    </marker>
+    <marker id="windCatch" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#16a085"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#courtBg)"/>
+  <rect width="1200" height="750" fill="url(#courtGrid)"/>
+
+  <!-- Border Frame -->
+  <rect x="35" y="35" width="1130" height="680" fill="none" stroke="#d0c9b6" stroke-width="1.5"/>
+  <rect x="42" y="42" width="1116" height="666" fill="none" stroke="#d0c9b6" stroke-width="0.75" stroke-dasharray="4,4"/>
+
+  <!-- Masthead -->
+  <text x="65" y="78" fill="#8d6e63" font-family="'Courier New', monospace" font-size="12" letter-spacing="3" font-weight="bold">ARCHDAILY RESEARCH DOSSIER / BIOCLIMATIC VERNACULAR TECTONICS</text>
+  <text x="65" y="118" fill="#2d3436" font-family="Georgia, serif" font-size="30" font-weight="normal">The Modern Courtyard House: Wind Catchers &amp; Passive Evaporative Physics</text>
+  <text x="65" y="142" fill="#636e72" font-family="Arial, sans-serif" font-size="13">Thermodynamic Cross-Section: Thermal Siphon Stack Effect, Badgir Catchment, and Heavy Thermal Mass</text>
+
+  <!-- Section Architectural Drawing -->
+  <g transform="translate(65, 175)">
+    <!-- Sub-heading -->
+    <text x="0" y="15" fill="#2d3436" font-family="Georgia, serif" font-size="17" font-weight="bold">Architectural Section: Passive Psychrometric Cycle &amp; Natural Convection Currents</text>
+
+    <!-- Ground Level -->
+    <line x1="0" y1="340" x2="1070" y2="340" stroke="#2d3436" stroke-width="2.5"/>
+
+    <!-- Left Wing (Living / Sleeping Chambers) -->
+    <!-- Foundation & Floor -->
+    <rect x="30" y="325" width="280" height="20" fill="#bcaaa4" stroke="#4e342e" stroke-width="1.5"/>
+    <!-- Rammed Earth Thick External Wall -->
+    <rect x="30" y="140" width="35" height="185" fill="#c7a788" stroke="#4e342e" stroke-width="2"/>
+    <text x="18" y="240" fill="#4e342e" font-family="'Courier New', monospace" font-size="9" transform="rotate(-90 18 240)">500mm CSEB RAMMED EARTH (10.4h THERMAL LAG)</text>
+    <!-- Interior Partition -->
+    <rect x="300" y="140" width="15" height="185" fill="#c7a788" stroke="#4e342e" stroke-width="1.5"/>
+    <!-- Roof Overhang / Pergola -->
+    <rect x="15" y="125" width="310" height="18" fill="#8d6e63" stroke="#4e342e" stroke-width="1.5"/>
+    <text x="120" y="230" fill="#2d3436" font-family="Georgia, serif" font-size="16">Shaded Living Chamber</text>
+    <text x="100" y="250" fill="#636e72" font-family="Arial, sans-serif" font-size="11">Deep daylighting via high clerestory vents</text>
+
+    <!-- CENTRAL COURTYARD (Microclimate Patio) -->
+    <rect x="315" y="325" width="410" height="20" fill="#e0d7c6" stroke="#4e342e" stroke-width="1.5"/>
+    <!-- Central Water Basin / Fountain (Evaporative cooling core) -->
+    <rect x="420" y="315" width="200" height="25" fill="#81d4fa" stroke="#0288d1" stroke-width="2"/>
+    <line x1="430" y1="328" x2="610" y2="328" stroke="#0277bd" stroke-width="1" stroke-dasharray="3,3"/>
+    <circle cx="520" cy="310" r="10" fill="#4fc3f7" stroke="#0288d1" stroke-width="1"/>
+    <text x="440" y="302" fill="#0277bd" font-family="'Courier New', monospace" font-size="10" font-weight="bold">EVAPORATIVE WATER BASIN (-7.5°C ΔT)</text>
+
+    <!-- Vegetation (Citrus / Jasmine for microclimate transpiration) -->
+    <circle cx="370" cy="275" r="28" fill="#81c784" fill-opacity="0.8" stroke="#388e3c" stroke-width="1.5"/>
+    <line x1="370" y1="303" x2="370" y2="325" stroke="#5d4037" stroke-width="4"/>
+    <text x="340" y="260" fill="#2e7d32" font-family="'Courier New', monospace" font-size="9">TRANSPIRATION</text>
+
+    <circle cx="670" cy="275" r="28" fill="#81c784" fill-opacity="0.8" stroke="#388e3c" stroke-width="1.5"/>
+    <line x1="670" y1="303" x2="670" y2="325" stroke="#5d4037" stroke-width="4"/>
+
+    <!-- Courtyard text -->
+    <text x="450" y="170" fill="#2d3436" font-family="Georgia, serif" font-size="18" font-weight="bold">Central Courtyard</text>
+    <text x="415" y="190" fill="#546e7a" font-family="Arial, sans-serif" font-size="11">Protected Microclimate Micro-reservoir</text>
+
+    <!-- Right Wing: Wind Tower (Badgir) & Solar Thermal Stack -->
+    <!-- Tower Body -->
+    <rect x="725" y="45" width="90" height="280" fill="#d7ccc8" stroke="#4e342e" stroke-width="2"/>
+    <!-- Wind scoop intake at top of tower -->
+    <polygon points="725,45 815,45 845,15 755,15" fill="#8d6e63" stroke="#4e342e" stroke-width="1.5"/>
+    <!-- Louvered openings at tower head -->
+    <rect x="735" y="55" width="25" height="40" fill="#efebe9" stroke="#4e342e" stroke-width="1"/>
+    <line x1="735" y1="65" x2="760" y2="65" stroke="#4e342e" stroke-width="1"/>
+    <line x1="735" y1="75" x2="760" y2="75" stroke="#4e342e" stroke-width="1"/>
+    <line x1="735" y1="85" x2="760" y2="85" stroke="#4e342e" stroke-width="1"/>
+    <!-- Solar Chimney Black Absorber (South side of tower) -->
+    <rect x="800" y="55" width="10" height="160" fill="#37474f"/>
+    <text x="825" y="125" fill="#c0392b" font-family="'Courier New', monospace" font-size="9" transform="rotate(90 825 125)">SOLAR CHIMNEY ABSORBER (65°C)</text>
+
+    <!-- Right Wing Living Area -->
+    <rect x="815" y="170" width="220" height="155" fill="#efebe9" stroke="#4e342e" stroke-width="1.5"/>
+    <rect x="815" y="155" width="230" height="16" fill="#8d6e63" stroke="#4e342e" stroke-width="1.5"/>
+    <rect x="1035" y="170" width="30" height="155" fill="#c7a788" stroke="#4e342e" stroke-width="2"/>
+    <rect x="725" y="325" width="340" height="20" fill="#bcaaa4" stroke="#4e342e" stroke-width="1.5"/>
+    <text x="860" y="240" fill="#2d3436" font-family="Georgia, serif" font-size="16">Intake Gallery</text>
+    <text x="840" y="260" fill="#636e72" font-family="Arial, sans-serif" font-size="11">Ventilated transitional space</text>
+
+    <!-- Airflow Physics Vector Arrows -->
+    <!-- Cool prevailing wind captured aloft -->
+    <path d="M 640 40 Q 710 40 740 65" fill="none" stroke="#16a085" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#windCatch)"/>
+    <text x="590" y="30" fill="#16a085" font-family="'Courier New', monospace" font-size="11" font-weight="bold">PREVAILING COOL BREEZE ALOFT (V = 4.2 m/s)</text>
+
+    <!-- Air forced down tower shaft over moisture -->
+    <path d="M 748 100 L 748 280 Q 748 310 710 310" fill="none" stroke="#2980b9" stroke-width="2.5" marker-end="url(#coolAir)"/>
+
+    <!-- Cool air across pool into living room -->
+    <path d="M 610 320 L 320 320 Q 250 320 220 270" fill="none" stroke="#2980b9" stroke-width="2.5" marker-end="url(#coolAir)"/>
+    <text x="350" y="355" fill="#2980b9" font-family="'Courier New', monospace" font-size="10" font-weight="bold">COOLED &amp; HUMIDIFIED AIR PLUME</text>
+
+    <!-- Hot air exhausting upward out of solar chimney stack (Bernoulli suction) -->
+    <path d="M 805 220 L 805 90 Q 805 40 850 35" fill="none" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="4,2" marker-end="url(#warmAir)"/>
+    <text x="860" y="45" fill="#c0392b" font-family="'Courier New', monospace" font-size="10" font-weight="bold">HOT EXHAUST PURGE (THERMAL CHIMNEY)</text>
+  </g>
+
+  <!-- Bottom Engineering Metrics Grid -->
+  <g transform="translate(65, 545)">
+    <!-- Metric 1 -->
+    <rect x="0" y="0" width="250" height="135" fill="#ffffff" stroke="#e0dcd0" rx="4"/>
+    <text x="20" y="32" fill="#718096" font-family="'Courier New', monospace" font-size="11" letter-spacing="1">THERMAL PHASE SHIFT</text>
+    <text x="20" y="70" fill="#8d6e63" font-family="Georgia, serif" font-size="34" font-weight="bold">10.4 hrs</text>
+    <text x="170" y="70" fill="#a0aec0" font-family="Arial, sans-serif" font-size="13">thermal lag</text>
+    <text x="20" y="100" fill="#4a5568" font-family="Arial, sans-serif" font-size="11">Peak midday heat wave (41°C at 2pm)</text>
+    <text x="20" y="116" fill="#2d3748" font-family="Arial, sans-serif" font-size="11" font-weight="bold">discharges into interior at midnight (21°C).</text>
+
+    <!-- Metric 2 -->
+    <rect x="270" y="0" width="250" height="135" fill="#ffffff" stroke="#e0dcd0" rx="4"/>
+    <text x="290" y="32" fill="#718096" font-family="'Courier New', monospace" font-size="11" letter-spacing="1">WET-BULB DEPRESSION</text>
+    <text x="290" y="70" fill="#0288d1" font-family="Georgia, serif" font-size="34" font-weight="bold">-7.5 °C</text>
+    <text x="415" y="70" fill="#a0aec0" font-family="Arial, sans-serif" font-size="13">delta T</text>
+    <text x="290" y="100" fill="#4a5568" font-family="Arial, sans-serif" font-size="11">Microclimate pool + vegetative transpiration</text>
+    <text x="290" y="116" fill="#2d3748" font-family="Arial, sans-serif" font-size="11" font-weight="bold">lowers ambient temperature without AC.</text>
+
+    <!-- Metric 3 -->
+    <rect x="540" y="0" width="250" height="135" fill="#ffffff" stroke="#e0dcd0" rx="4"/>
+    <text x="560" y="32" fill="#718096" font-family="'Courier New', monospace" font-size="11" letter-spacing="1">VENTILATION STACK DRAFT</text>
+    <text x="560" y="70" fill="#2e7d32" font-family="Georgia, serif" font-size="34" font-weight="bold">8.2 ACH</text>
+    <text x="695" y="70" fill="#a0aec0" font-family="Arial, sans-serif" font-size="13">air changes/h</text>
+    <text x="560" y="100" fill="#4a5568" font-family="Arial, sans-serif" font-size="11">Continuous passive air exchange driven</text>
+    <text x="560" y="116" fill="#2d3748" font-family="Arial, sans-serif" font-size="11" font-weight="bold">by Bernoulli suction and solar chimney.</text>
+
+    <!-- Metric 4 -->
+    <rect x="810" y="0" width="255" height="135" fill="#ffffff" stroke="#e0dcd0" rx="4"/>
+    <text x="830" y="32" fill="#718096" font-family="'Courier New', monospace" font-size="11" letter-spacing="1">EMBODIED CARBON</text>
+    <text x="830" y="70" fill="#16a085" font-family="Georgia, serif" font-size="34" font-weight="bold">-68%</text>
+    <text x="925" y="70" fill="#a0aec0" font-family="Arial, sans-serif" font-size="13">vs RC frame</text>
+    <text x="830" y="100" fill="#4a5568" font-family="Arial, sans-serif" font-size="11">CSEB compressed earth blocks reduce</text>
+    <text x="830" y="116" fill="#2d3748" font-family="Arial, sans-serif" font-size="11" font-weight="bold">quarrying, transport, and cement clinker.</text>
+  </g>
+</svg>
