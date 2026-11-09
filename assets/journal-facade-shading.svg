@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eeece5"/>
+      <stop offset="100%" stop-color="#e5e2d6"/>
+    </linearGradient>
+    <pattern id="grid5" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#dcd9ce" stroke-width="0.8"/>
+    </pattern>
+    <marker id="heatDeflect" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#c49b4f"/>
+    </marker>
+    <marker id="ventArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#588b8b"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGrad5)"/>
+  <rect width="1200" height="750" fill="url(#grid5)"/>
+
+  <!-- Frame -->
+  <rect x="35" y="35" width="1130" height="680" fill="none" stroke="#cccec3" stroke-width="1.5"/>
+  <rect x="42" y="42" width="1116" height="666" fill="none" stroke="#cccec3" stroke-width="0.75" stroke-dasharray="4,4"/>
+
+  <!-- Header Dossier Info -->
+  <text x="65" y="78" fill="#6b7459" font-family="'Courier New', monospace" font-size="12" letter-spacing="3" font-weight="bold">DOSSIER 05 / ADVANCED BUILDING ENVELOPE &amp; FACADE ENGINEERING</text>
+  <text x="65" y="118" fill="#292d27" font-family="Georgia, serif" font-size="32" font-weight="normal">Ventilated Terracotta &amp; Kinetic Rainscreen Systems in Arid Regimes</text>
+  <text x="65" y="142" fill="#6c7066" font-family="Arial, sans-serif" font-size="13">Empirical Thermodynamics of 150mm Air Cavities &amp; High-Albedo Ceramic Baguettes</text>
+
+  <!-- Detailed Wall Section -->
+  <!-- Interior Boundary Line -->
+  <line x1="820" y1="200" x2="820" y2="570" stroke="#292d27" stroke-width="2"/>
+  <text x="840" y="380" fill="#292d27" font-family="'Courier New', monospace" font-size="12" font-weight="bold">CONDITIONED INTERIOR (24°C)</text>
+
+  <!-- Structural Backing Wall (Reinforced Concrete / Dense Blockwork) -->
+  <rect x="680" y="210" width="140" height="350" fill="#a4ab9a" stroke="#292d27" stroke-width="2"/>
+  <text x="730" y="390" fill="#292d27" font-family="'Courier New', monospace" font-size="11" transform="rotate(-90 730,390)" font-weight="bold">STRUCTURAL SUBSTRATE (200mm)</text>
+
+  <!-- Continuous Exterior Mineral Wool Insulation -->
+  <rect x="580" y="210" width="100" height="350" fill="#d8d5c4" stroke="#292d27" stroke-width="1.5"/>
+  <!-- Insulation Hash Pattern -->
+  <g stroke="#b5b09c" stroke-width="1.5">
+    <path d="M 580,240 Q 630,225 680,240 M 580,280 Q 630,265 680,280 M 580,320 Q 630,305 680,320 M 580,360 Q 630,345 680,360 M 580,400 Q 630,385 680,400 M 580,440 Q 630,425 680,440 M 580,480 Q 630,465 680,480 M 580,520 Q 630,505 680,520"/>
+  </g>
+  <text x="620" y="390" fill="#292d27" font-family="'Courier New', monospace" font-size="11" transform="rotate(-90 620,390)" font-weight="bold">RIGID INSULATION (100mm, λ = 0.034)</text>
+
+  <!-- Ventilated Air Gap (150mm Cavity with Convective Updraft) -->
+  <rect x="440" y="210" width="140" height="350" fill="#eeece5" stroke="#cccec3" stroke-dasharray="3,3"/>
+  
+  <path d="M 510,550 L 510,230" fill="none" stroke="#588b8b" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#ventArrow)"/>
+  <path d="M 480,530 L 480,250" fill="none" stroke="#588b8b" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#ventArrow)"/>
+  <text x="470" y="420" fill="#2f5757" font-family="'Courier New', monospace" font-size="11" transform="rotate(-90 470,420)" font-weight="bold">NATURAL STACK DRAFT (v ≥ 0.85 m/s)</text>
+
+  <!-- Exterior Rainscreen: Angled Terracotta Baguettes -->
+  <g fill="#995d52" stroke="#292d27" stroke-width="2">
+    <!-- Louvers at 45 degree tilt -->
+    <polygon points="360,220 420,240 410,255 350,235"/>
+    <polygon points="360,280 420,300 410,315 350,295"/>
+    <polygon points="360,340 420,360 410,375 350,355"/>
+    <polygon points="360,400 420,420 410,435 350,415"/>
+    <polygon points="360,460 420,480 410,495 350,475"/>
+    <polygon points="360,520 420,540 410,555 350,535"/>
+  </g>
+  <text x="310" y="380" fill="#995d52" font-family="'Courier New', monospace" font-size="11" transform="rotate(-90 310,380)" font-weight="bold">EXTRUDED TERRACOTTA LOUVERS (45° CUTOFF)</text>
+
+  <!-- Incoming High-Intensity Solar Radiation -->
+  <line x1="140" y1="260" x2="350" y2="340" stroke="#c49b4f" stroke-width="3" marker-end="url(#heatDeflect)"/>
+  <line x1="140" y1="320" x2="350" y2="400" stroke="#c49b4f" stroke-width="3" marker-end="url(#heatDeflect)"/>
+  
+  <!-- Heat Reflection Vectors -->
+  <line x1="360" y1="340" x2="260" y2="280" stroke="#c49b4f" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#heatDeflect)"/>
+  <line x1="360" y1="400" x2="260" y2="340" stroke="#c49b4f" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#heatDeflect)"/>
+  <text x="140" y="240" fill="#a47d33" font-family="'Courier New', monospace" font-size="11" font-weight="bold">INCIDENT RADIATION: 850 W/m²</text>
+  <text x="140" y="440" fill="#a47d33" font-family="Georgia, serif" font-size="13">82% Solar Energy Blocked or Purged in Cavity</text>
+
+  <!-- Dimension Strings -->
+  <line x1="360" y1="580" x2="440" y2="580" stroke="#6c7066" stroke-width="1.5"/>
+  <line x1="440" y1="580" x2="580" y2="580" stroke="#6c7066" stroke-width="1.5"/>
+  <line x1="580" y1="580" x2="680" y2="580" stroke="#6c7066" stroke-width="1.5"/>
+  <line x1="680" y1="580" x2="820" y2="580" stroke="#6c7066" stroke-width="1.5"/>
+  
+  <text x="375" y="600" fill="#6c7066" font-family="monospace" font-size="10">80mm</text>
+  <text x="490" y="600" fill="#6c7066" font-family="monospace" font-size="10">140mm</text>
+  <text x="615" y="600" fill="#6c7066" font-family="monospace" font-size="10">100mm</text>
+  <text x="735" y="600" fill="#6c7066" font-family="monospace" font-size="10">200mm</text>
+
+  <!-- Bottom KPI Summary -->
+  <rect x="65" y="615" width="1070" height="75" fill="#f8f7f2" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="330" y1="615" x2="330" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="600" y1="615" x2="600" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="870" y1="615" x2="870" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+
+  <text x="85" y="638" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">SURFACE THERMAL RELIEF</text>
+  <text x="85" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">ΔT = -18.5°C</text>
+  <text x="85" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Compared to exposed uninsulated facade</text>
+
+  <text x="350" y="638" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">OVERALL HEAT TRANSFER</text>
+  <text x="350" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">U = 0.28 W/m²K</text>
+  <text x="350" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">High insulation continuous thermal break</text>
+
+  <text x="620" y="638" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">AIR CAVITY VELOCITY</text>
+  <text x="620" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">v &gt; 0.9 m/s</text>
+  <text x="620" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Thermo-siphon continuous heat removal</text>
+
+  <text x="890" y="638" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">ACOUSTIC DAMPING</text>
+  <text x="890" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">Rw + Ctr = 48 dB</text>
+  <text x="890" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Traffic and environmental noise isolation</text>
+</svg>

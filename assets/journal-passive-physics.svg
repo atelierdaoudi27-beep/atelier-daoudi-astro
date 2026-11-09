@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eeece5"/>
+      <stop offset="100%" stop-color="#e5e2d6"/>
+    </linearGradient>
+    <pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#dcd9ce" stroke-width="0.8"/>
+    </pattern>
+    <marker id="airArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#588b8b"/>
+    </marker>
+    <marker id="heatArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#c49b4f"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad2)"/>
+  <rect width="1200" height="750" fill="url(#grid2)"/>
+
+  <!-- Frame -->
+  <rect x="35" y="35" width="1130" height="680" fill="none" stroke="#cccec3" stroke-width="1.5"/>
+  <rect x="42" y="42" width="1116" height="666" fill="none" stroke="#cccec3" stroke-width="0.75" stroke-dasharray="4,4"/>
+
+  <!-- Header Dossier Info -->
+  <text x="65" y="78" fill="#6b7459" font-family="'Courier New', monospace" font-size="12" letter-spacing="3" font-weight="bold">DOSSIER 02 / BIOCLIMATIC DESIGN &amp; PASSIVE PHYSICS</text>
+  <text x="65" y="118" fill="#292d27" font-family="Georgia, serif" font-size="32" font-weight="normal">Thermodynamics of Passive Envelopes: Overhang Geometry &amp; Thermal Lag</text>
+  <text x="65" y="142" fill="#6c7066" font-family="Arial, sans-serif" font-size="13">Standard: Passivhaus Mediterranean Criteria &amp; US DOE Solar Envelope Principles</text>
+
+  <!-- Ground Line -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#292d27" stroke-width="3"/>
+  <path d="M 80,560 L 80,580 M 1120,560 L 1120,580" stroke="#292d27" stroke-width="2"/>
+  
+  <!-- Architectural Building Cross-Section -->
+  <!-- Foundation and Floor Slab (Thermal Mass) -->
+  <rect x="250" y="520" width="620" height="40" fill="#a4ab9a" stroke="#292d27" stroke-width="2"/>
+  <text x="470" y="545" fill="#292d27" font-family="'Courier New', monospace" font-size="12" font-weight="bold">HIGH THERMAL CAPACITY SLAB (300mm CONCRETE / STONE)</text>
+
+  <!-- Heavy Rear North Wall (Storage) -->
+  <rect x="250" y="240" width="60" height="280" fill="#88927e" stroke="#292d27" stroke-width="2"/>
+  <text x="210" y="380" fill="#292d27" font-family="'Courier New', monospace" font-size="11" transform="rotate(-90 210,380)" font-weight="bold">INSULATED NORTH MASS (U = 0.22 W/m²K)</text>
+
+  <!-- Roof Structure with Calibrated South Overhang -->
+  <polygon points="210,240 980,240 980,270 940,270 940,260 250,260 250,240" fill="#3b5249" stroke="#292d27" stroke-width="2"/>
+  
+  <!-- Solar Stack Chimney at Roof Ridge -->
+  <polygon points="340,240 340,160 410,160 410,240" fill="#dce0cf" stroke="#292d27" stroke-width="2"/>
+  <rect x="350" y="170" width="50" height="25" fill="#588b8b" opacity="0.3"/>
+  <text x="425" y="185" fill="#292d27" font-family="'Courier New', monospace" font-size="11" font-weight="bold">SOLAR INDUCED STACK VENTILATION (EXHAUST)</text>
+
+  <!-- South Glazed Facade with Louvers -->
+  <line x1="870" y1="270" x2="870" y2="520" stroke="#588b8b" stroke-width="4" opacity="0.7"/>
+  <!-- Calibrated Brise-Soleil (Overhang projection) -->
+  <line x1="870" y1="270" x2="980" y2="270" stroke="#292d27" stroke-width="5"/>
+  <line x1="870" y1="330" x2="940" y2="330" stroke="#6b7459" stroke-width="4"/>
+  <line x1="870" y1="390" x2="940" y2="390" stroke="#6b7459" stroke-width="4"/>
+  <line x1="870" y1="450" x2="940" y2="450" stroke="#6b7459" stroke-width="4"/>
+  <text x="955" y="340" fill="#6b7459" font-family="'Courier New', monospace" font-size="10">SHADING LOUVERS</text>
+
+  <!-- Solar Rays: Summer Solstice 74° -->
+  <circle cx="1060" cy="120" r="28" fill="#e2c17c"/>
+  <text x="1000" y="85" fill="#a47d33" font-family="'Courier New', monospace" font-size="12" font-weight="bold">SUMMER SUN (74° ALTITUDE)</text>
+  <line x1="1040" y1="140" x2="920" y2="270" stroke="#c49b4f" stroke-width="2.5" marker-end="url(#heatArrow)"/>
+  <line x1="920" y1="270" x2="880" y2="320" stroke="#c49b4f" stroke-width="2.5" stroke-dasharray="4,4"/>
+  <text x="990" y="295" fill="#c49b4f" font-family="Arial, sans-serif" font-size="11" font-weight="bold">BLOCKED BY OVERHANG</text>
+  <text x="990" y="310" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Zero direct solar gain on glazing</text>
+
+  <!-- Solar Rays: Winter Solstice 28° -->
+  <circle cx="1080" cy="380" r="24" fill="#d5b77a" opacity="0.8"/>
+  <text x="990" y="440" fill="#8c6a21" font-family="'Courier New', monospace" font-size="12" font-weight="bold">WINTER SUN (28° ALTITUDE)</text>
+  <line x1="1060" y1="380" x2="870" y2="440" stroke="#d5b77a" stroke-width="2.5" marker-end="url(#heatArrow)"/>
+  <line x1="870" y1="440" x2="380" y2="530" stroke="#d5b77a" stroke-width="2.5" stroke-dasharray="5,4" marker-end="url(#heatArrow)"/>
+  <text x="490" y="490" fill="#8c6a21" font-family="Georgia, serif" font-size="13">Direct Deep Solar Penetration: Thermal Mass Charging</text>
+
+  <!-- Natural Airflow Stream (Convective Night Purge) -->
+  <path d="M 890,500 Q 650,500 500,420 T 375,190" fill="none" stroke="#588b8b" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#airArrow)"/>
+  <text x="540" y="390" fill="#2f5757" font-family="'Courier New', monospace" font-size="11" font-weight="bold">CONVECTIVE NIGHT-PURGE STREAM</text>
+  <text x="540" y="405" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Cool sea breeze ingress (ΔT = 8°C release)</text>
+
+  <!-- Bottom KPI Summary -->
+  <rect x="65" y="610" width="1070" height="80" fill="#f8f7f2" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="330" y1="610" x2="330" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="600" y1="610" x2="600" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="870" y1="610" x2="870" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+
+  <text x="85" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">THERMAL PHASE SHIFT</text>
+  <text x="85" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">10 to 12 Hours</text>
+  <text x="85" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Delays peak heat release to night</text>
+
+  <text x="350" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">COOLING LOAD REDUCTION</text>
+  <text x="350" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">-45% HVAC Demand</text>
+  <text x="350" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Through geometry &amp; natural purge</text>
+
+  <text x="620" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">SOLAR HEAT GAIN (SHGC)</text>
+  <text x="620" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">SHGC ≤ 0.24</text>
+  <text x="620" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Calibrated summer shading cutoff</text>
+
+  <text x="890" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">DAYLIGHT AUTONOMY (sDA)</text>
+  <text x="890" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">sDA 78%</text>
+  <text x="890" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Uniform glare-free task illuminance</text>
+</svg>

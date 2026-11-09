@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eeece5"/>
+      <stop offset="100%" stop-color="#e5e2d6"/>
+    </linearGradient>
+    <linearGradient id="solarGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b5249"/>
+      <stop offset="100%" stop-color="#24342f"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#dcd9ce" stroke-width="0.8"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#6b7459"/>
+    </marker>
+    <marker id="sunArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#c49b4f"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect width="1200" height="750" fill="url(#grid)"/>
+
+  <!-- Technical border frame -->
+  <rect x="35" y="35" width="1130" height="680" fill="none" stroke="#cccec3" stroke-width="1.5"/>
+  <rect x="42" y="42" width="1116" height="666" fill="none" stroke="#cccec3" stroke-width="0.75" stroke-dasharray="4,4"/>
+
+  <!-- Header Dossier Info -->
+  <text x="65" y="78" fill="#6b7459" font-family="'Courier New', monospace" font-size="12" letter-spacing="3" font-weight="bold">DOSSIER 01 / RENEWABLE ARCHITECTURE &amp; BIPV ENVELOPE</text>
+  <text x="65" y="118" fill="#292d27" font-family="Georgia, serif" font-size="32" font-weight="normal">Solar Envelope: Lifecycle Integration &amp; Thermal Aerodynamics</text>
+  <text x="65" y="142" fill="#6c7066" font-family="Arial, sans-serif" font-size="13">Standard: IEA PVPS Task 13 / Task 15 Guidelines · Coordinated Building-Envelope Mechanics</text>
+
+  <!-- Sun Symbol & Ray Path -->
+  <circle cx="1020" cy="180" r="48" fill="#e2c17c" opacity="0.25"/>
+  <circle cx="1020" cy="180" r="32" fill="#c49b4f"/>
+  <circle cx="1020" cy="180" r="14" fill="#fdfaf3"/>
+  <text x="965" y="240" fill="#a47d33" font-family="'Courier New', monospace" font-size="11" letter-spacing="1">DIRECT IRRADIANCE</text>
+
+  <!-- Solar Rays to Facade and Roof -->
+  <line x1="970" y1="210" x2="780" y2="310" stroke="#c49b4f" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#sunArrow)"/>
+  <line x1="990" y1="230" x2="820" y2="390" stroke="#c49b4f" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#sunArrow)"/>
+  <line x1="950" y1="180" x2="620" y2="240" stroke="#c49b4f" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#sunArrow)"/>
+
+  <!-- Axonometric Building Geometry -->
+  <!-- Ground Shadow Plane -->
+  <polygon points="260,540 600,660 920,490 580,390" fill="#dedbd0" opacity="0.7"/>
+
+  <!-- Primary Massing -->
+  <!-- Roof Plane (BIPV Integrated) -->
+  <polygon points="320,340 590,210 880,330 610,460" fill="url(#solarGrad)" stroke="#1d2b26" stroke-width="2"/>
+  
+  <!-- Solar PV Cell Grids on Roof -->
+  <g stroke="#648378" stroke-width="1.2" opacity="0.85">
+    <line x1="387" y1="308" x2="677" y2="428"/>
+    <line x1="455" y1="275" x2="745" y2="395"/>
+    <line x1="522" y1="242" x2="812" y2="362"/>
+    <line x1="390" y1="370" x2="660" y2="240"/>
+    <line x1="465" y1="400" x2="735" y2="270"/>
+    <line x1="540" y1="430" x2="810" y2="300"/>
+  </g>
+
+  <!-- South-West Wall (Mass & Structural Core) -->
+  <polygon points="320,340 610,460 610,650 320,530" fill="#9da895" stroke="#292d27" stroke-width="2"/>
+
+  <!-- South-East Wall (Ventilated Photovoltaic Facade) -->
+  <polygon points="610,460 880,330 880,520 610,650" fill="#445b53" stroke="#292d27" stroke-width="2"/>
+
+  <!-- Facade PV Division lines -->
+  <g stroke="#8da89f" stroke-width="1.2">
+    <line x1="677" y1="428" x2="677" y2="618"/>
+    <line x1="745" y1="395" x2="745" y2="585"/>
+    <line x1="812" y1="362" x2="812" y2="552"/>
+    <line x1="610" y1="523" x2="880" y2="393"/>
+    <line x1="610" y1="586" x2="880" y2="456"/>
+  </g>
+
+  <!-- Rear Ventilation Air Cavity (Airflow Arrows) -->
+  <path d="M 625,640 Q 640,550 635,475" fill="none" stroke="#75b5a0" stroke-width="3" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <path d="M 760,575 Q 775,485 770,410" fill="none" stroke="#75b5a0" stroke-width="3" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text x="660" y="665" fill="#24453b" font-family="'Courier New', monospace" font-size="11" font-weight="bold">CONVECTIVE COOLING CAVITY (150mm AIRFLOW)</text>
+
+  <!-- Technical Callouts & Dimensions -->
+  <!-- Left Callout: Roof -->
+  <polyline points="480,290 220,290 220,230" fill="none" stroke="#6b7459" stroke-width="1.5"/>
+  <circle cx="480" cy="290" r="4" fill="#6b7459"/>
+  <text x="120" y="210" fill="#292d27" font-family="Georgia, serif" font-size="16">BIPV Roof Matrix</text>
+  <text x="120" y="230" fill="#6c7066" font-family="Arial, sans-serif" font-size="11">Frameless Monocrystalline modules</text>
+  <text x="120" y="246" fill="#6c7066" font-family="Arial, sans-serif" font-size="11">Tilt: 30° Optimal Annual Yield</text>
+
+  <!-- Right Callout: Ventilated Facade -->
+  <polyline points="790,480 970,480 970,420" fill="none" stroke="#6b7459" stroke-width="1.5"/>
+  <circle cx="790" cy="480" r="4" fill="#6b7459"/>
+  <text x="970" y="405" fill="#292d27" font-family="Georgia, serif" font-size="16">Ventilated PV Rainscreen</text>
+  <text x="970" y="425" fill="#6c7066" font-family="Arial, sans-serif" font-size="11">Rear stack effect dissipation</text>
+  <text x="970" y="441" fill="#6c7066" font-family="Arial, sans-serif" font-size="11">Thermal decoupling (ΔT &lt; 14°C)</text>
+
+  <!-- Bottom Data Grid / Key Performance Indicators -->
+  <rect x="65" y="610" width="1070" height="80" fill="#f8f7f2" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="330" y1="610" x2="330" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="600" y1="610" x2="600" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="870" y1="610" x2="870" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+
+  <text x="85" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">SYSTEM LIFECYCLE</text>
+  <text x="85" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">30+ Years</text>
+  <text x="85" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Envelope integrity warranty</text>
+
+  <text x="350" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">THERMAL LAG MITIGATION</text>
+  <text x="350" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">-38% Peak Heat</text>
+  <text x="350" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Dissipated via rear ventilation</text>
+
+  <text x="620" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">ANNUAL YIELD PREDICTION</text>
+  <text x="620" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">1,420 kWh/kWp</text>
+  <text x="620" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Mediterranean solar index</text>
+
+  <text x="890" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">REPLACEABILITY RATING</text>
+  <text x="890" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">Independent Sub-frame</text>
+  <text x="890" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Individual panel serviceability</text>
+</svg>

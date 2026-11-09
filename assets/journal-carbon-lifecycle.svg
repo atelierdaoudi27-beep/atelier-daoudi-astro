@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eeece5"/>
+      <stop offset="100%" stop-color="#e5e2d6"/>
+    </linearGradient>
+    <pattern id="grid3" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#dcd9ce" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGrad3)"/>
+  <rect width="1200" height="750" fill="url(#grid3)"/>
+
+  <!-- Frame -->
+  <rect x="35" y="35" width="1130" height="680" fill="none" stroke="#cccec3" stroke-width="1.5"/>
+  <rect x="42" y="42" width="1116" height="666" fill="none" stroke="#cccec3" stroke-width="0.75" stroke-dasharray="4,4"/>
+
+  <!-- Header Dossier Info -->
+  <text x="65" y="78" fill="#6b7459" font-family="'Courier New', monospace" font-size="12" letter-spacing="3" font-weight="bold">DOSSIER 03 / CIRCULAR CONSTRUCTION &amp; WHOLE-LIFE CARBON</text>
+  <text x="65" y="118" fill="#292d27" font-family="Georgia, serif" font-size="32" font-weight="normal">Whole-Life Carbon Assessment: Upfront Embodied vs. Operational Emissions</text>
+  <text x="65" y="142" fill="#6c7066" font-family="Arial, sans-serif" font-size="13">Methodology: EN 15978 &amp; World Green Building Council (WorldGBC) Framework</text>
+
+  <!-- Comparison Architecture Chart -->
+  <!-- Axis -->
+  <line x1="120" y1="520" x2="1080" y2="520" stroke="#292d27" stroke-width="2"/>
+  <line x1="120" y1="200" x2="120" y2="520" stroke="#292d27" stroke-width="2"/>
+  
+  <text x="75" y="210" fill="#6c7066" font-family="'Courier New', monospace" font-size="11" transform="rotate(-90 75,210)">kg CO₂e / m² GFA</text>
+
+  <!-- Grid lines -->
+  <line x1="120" y1="260" x2="1080" y2="260" stroke="#d5d8cc" stroke-dasharray="4,4"/>
+  <text x="80" y="265" fill="#888e80" font-family="monospace" font-size="11">1,000</text>
+  <line x1="120" y1="340" x2="1080" y2="340" stroke="#d5d8cc" stroke-dasharray="4,4"/>
+  <text x="85" y="345" fill="#888e80" font-family="monospace" font-size="11">750</text>
+  <line x1="120" y1="420" x2="1080" y2="420" stroke="#d5d8cc" stroke-dasharray="4,4"/>
+  <text x="85" y="425" fill="#888e80" font-family="monospace" font-size="11">500</text>
+
+  <!-- Baseline Bar (Conventional Standard Practice) -->
+  <!-- A1-A5 Upfront (Extraction, transport, concrete, steel) -->
+  <rect x="250" y="320" width="130" height="200" fill="#995d52" stroke="#292d27" stroke-width="1.5"/>
+  <!-- B6 Operational 60y -->
+  <rect x="250" y="210" width="130" height="110" fill="#c49b4f" stroke="#292d27" stroke-width="1.5"/>
+  <text x="245" y="550" fill="#292d27" font-family="Georgia, serif" font-size="16" font-weight="bold">Standard Practice</text>
+  <text x="255" y="570" fill="#6c7066" font-family="'Courier New', monospace" font-size="11">TOTAL: 1,180 kg/m²</text>
+  <text x="265" y="430" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Upfront: 620</text>
+  <text x="265" y="270" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Operation: 560</text>
+
+  <!-- Optimized Atelier Daoudi Protocol Bar (Circular Low-Carbon) -->
+  <!-- A1-A5 Upfront (Low-clinker pozzolanic concrete, local stone, timber) -->
+  <rect x="520" y="420" width="130" height="100" fill="#6b7459" stroke="#292d27" stroke-width="1.5"/>
+  <!-- B6 Operational (High efficiency envelope) -->
+  <rect x="520" y="350" width="130" height="70" fill="#445b53" stroke="#292d27" stroke-width="1.5"/>
+  <!-- Circular Recovery Credit (Module D) -->
+  <rect x="520" y="525" width="130" height="40" fill="#8da89f" stroke="#292d27" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <text x="500" y="585" fill="#292d27" font-family="Georgia, serif" font-size="16" font-weight="bold">Circular Specification</text>
+  <text x="525" y="602" fill="#24453b" font-family="'Courier New', monospace" font-size="11" font-weight="bold">TOTAL: 490 kg/m² (-58%)</text>
+  <text x="535" y="480" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Upfront: 310</text>
+  <text x="535" y="390" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Oper.: 220</text>
+  <text x="530" y="550" fill="#1b302a" font-family="'Courier New', monospace" font-size="10">REUSE CREDIT: -40</text>
+
+  <!-- Reduction Bracket & Highlight Callout -->
+  <path d="M 390,230 H 450 V 360 H 510" fill="none" stroke="#24453b" stroke-width="2"/>
+  <rect x="710" y="230" width="370" height="230" fill="#f8f7f2" stroke="#d5d8cc" stroke-width="1"/>
+  <text x="735" y="265" fill="#6b7459" font-family="'Courier New', monospace" font-size="11" letter-spacing="1">ARCHITECTURAL IMPLICATIONS</text>
+  <text x="735" y="295" fill="#292d27" font-family="Georgia, serif" font-size="20">Upfront Carbon is Irreversible</text>
+  <text x="735" y="325" fill="#6c7066" font-family="Arial, sans-serif" font-size="12" line-height="1.6">
+    <tspan x="735" dy="0">• 70% of lifecycle impact is locked in day 1.</tspan>
+    <tspan x="735" dy="22">• Concrete clinker replacement with calcined clays.</tspan>
+    <tspan x="735" dy="22">• Retaining existing foundations &amp; masonry cores.</tspan>
+    <tspan x="735" dy="22">• Reversible mechanical dry-joint detailing.</tspan>
+    <tspan x="735" dy="22">• Sourcing within 150km regional radius.</tspan>
+  </text>
+
+  <!-- Legend -->
+  <rect x="735" y="480" width="15" height="15" fill="#995d52"/>
+  <text x="760" y="492" fill="#292d27" font-family="Arial, sans-serif" font-size="11">Conventional Upfront Carbon (A1–A5)</text>
+  <rect x="735" y="505" width="15" height="15" fill="#6b7459"/>
+  <text x="760" y="517" fill="#292d27" font-family="Arial, sans-serif" font-size="11">Low-Carbon Optimized Upfront (A1–A5)</text>
+
+  <!-- Bottom KPI Summary -->
+  <rect x="65" y="610" width="1070" height="80" fill="#f8f7f2" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="330" y1="610" x2="330" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="600" y1="610" x2="600" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="870" y1="610" x2="870" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+
+  <text x="85" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">UPFRONT EMISSIONS DROP</text>
+  <text x="85" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">-50% Initial Impact</text>
+  <text x="85" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Targeted structural mix designs</text>
+
+  <text x="350" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">REGIONAL MATERIAL PROXIMITY</text>
+  <text x="350" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">&lt; 150 km Radius</text>
+  <text x="350" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Aggregates, stone &amp; terracotta</text>
+
+  <text x="620" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">DESIGN FOR DECONSTRUCTION</text>
+  <text x="620" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">Module D Circularity</text>
+  <text x="620" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Dry mechanical fixing protocols</text>
+
+  <text x="890" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">60-YEAR EMISSION PAYBACK</text>
+  <text x="890" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">Net Positive Balance</text>
+  <text x="890" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">When coupled with onsite PV</text>
+</svg>

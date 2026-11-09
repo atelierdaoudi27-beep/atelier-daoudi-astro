@@ -1,0 +1,238 @@
+{
+  "updatedAt": "2026-11-08",
+  "dossier": "VOL. 04 — PEER-INDEXED ARCHITECTURAL RESEARCH",
+  "articles": [
+    {
+      "id": "solar-architecture-performance-2026-10-29",
+      "title": "Solar Architecture: Design for a Lifetime, Not Just Peak Power",
+      "category": "Renewable Energy & BIPV",
+      "topic": "Renewable",
+      "summary": "New IEA PVPS guidelines shift building-integrated photovoltaics (BIPV) from simple peak power ratings to whole-building envelope durability, rear convective cooling, and replaceability over a 30-year lifecycle.",
+      "date": "2026-11-08",
+      "readingTime": "6 min read",
+      "dossierNumber": "DOSSIER 01 / IEA PVPS",
+      "image": "assets/journal-solar-performance.svg",
+      "imageAlt": "Axonometric diagram of BIPV roof matrix and ventilated facade showing rear convective cooling cavity",
+      "imageCredit": "Original technical diagram · Atelier Daoudi Research · Architectural envelope mechanics",
+      "keyTakeaways": [
+        "Photovoltaic panels integrated into facades operate under significantly higher thermal stress than ground mounts.",
+        "A minimum 150mm ventilated rear cavity is mandatory to generate a convective stack draft, reducing panel temperature by up to 14°C and restoring electrical yield.",
+        "Envelope integrity and weatherproofing warranties must remain independent from solar cell electrical warranties.",
+        "Sub-frame design must allow single-module replacement without dismantling adjacent cladding components."
+      ],
+      "paragraphs": [
+        "A solar façade has more than one job. It generates clean electrical power while simultaneously serving as the primary weather barrier, acoustic damper, and visual identity of the building envelope. An October 2026 technical assessment from IEA PVPS Task 13 establishes that evaluation metrics developed for utility-scale solar farms fail to reflect the mechanical and thermodynamic demands of building-integrated photovoltaics (BIPV). In architecture, fire safety clearances, moisture migration, and structural dead loads sit directly alongside kilowatt-hour output.",
+        "The fundamental challenge lies in thermal boundary physics. Operating photovoltaic cells exhibit an efficiency drop of approximately 0.4% per degree Celsius rise above standard test conditions (25°C). Unventilated cladding modules routinely exceed 70°C in Mediterranean summer conditions, resulting in an immediate 18% loss in generation capacity and accelerated delamination of encapsulation polymers. Designing an active 150mm convective air chimney behind the module assembly creates a thermo-siphon draft that draws cooler ambient air from the building base, purging heat before it penetrates the structural wall.",
+        "The IEA PVPS technical framework establishes that solar integration must take place in early schematic coordination, when orientation, fenestration ratios, and maintenance access can be co-designed. Combining building-integrated photovoltaics with exterior shading louvers provides dual performance: eliminating summer solar heat gain across vision glass while capturing high-angle summer irradiance for local HVAC consumption.",
+        "Atelier Daoudi editorial perspective: Never evaluate BIPV purely on peak installed capacity (kWp). A rigorous architectural proposal must present side-by-side life-cycle cost comparisons: an insulated rainscreen baseline versus a BIPV-clad envelope. Document access routes, cable conduit redundancy, and individual panel demountability. A visually striking solar facade cannot compensate for premature seal failures or inaccessible inverters."
+      ],
+      "practiceImplications": "When specifying BIPV, require suppliers to certify envelope weatherproofing (CWCT standard) independently of module electrical warranties. Calibrate rear ventilation cavities to exceed 12 ACH to ensure long-term polymer stability.",
+      "sources": [
+        {
+          "title": "IEA PVPS Task 13 — Optimisation of Photovoltaic Systems for Different Applications (October 2026)",
+          "url": "https://iea-pvps.org/fact-sheets/t13-fs-optimisation-systems-different-applications/"
+        },
+        {
+          "title": "IEA PVPS Task 15 — Building-Integrated Photovoltaics: A Technical Guidebook (2025)",
+          "url": "https://iea-pvps.org/key-topics/book-building-integrated-photovoltaics-a-technical-guidebook/"
+        },
+        {
+          "title": "Natural Resources Canada — Building-Integrated Photovoltaic Performance & Envelope Integration",
+          "url": "https://natural-resources.canada.ca/energy-efficiency/building-integrated-photovoltaics"
+        }
+      ]
+    },
+    {
+      "id": "passive-envelope-thermodynamics",
+      "title": "Thermodynamics of Passive Envelopes: Overhang Geometry & Thermal Lag",
+      "category": "Bioclimatic Physics",
+      "topic": "Passive",
+      "summary": "Coordinating solar cutoff angles, high-capacity thermal mass, and convective night purge to maintain indoor comfort in warm-temperate and Mediterranean climates without mechanical cooling dependance.",
+      "date": "2026-11-08",
+      "readingTime": "5 min read",
+      "dossierNumber": "DOSSIER 02 / PASSIVHAUS & US DOE",
+      "image": "assets/journal-passive-physics.svg",
+      "imageAlt": "Bioclimatic cross-section diagram showing calibrated summer overhang, deep winter sun penetration, and night purge stack",
+      "imageCredit": "Original technical diagram · Atelier Daoudi Research · Building physics & thermodynamic section",
+      "keyTakeaways": [
+        "Glazing ratio and orientation dictate 60% of cooling load before mechanical systems are even specified.",
+        "A calibrated overhang completely excludes high-angle summer rays (74° altitude) while admitting winter heating (28°).",
+        "High-density stone and concrete slabs provide a 10 to 12 hour thermal phase shift, buffering midday heat.",
+        "Induced stack ventilation enables effective night-time thermal purging, releasing stored heat to cool night air."
+      ],
+      "paragraphs": [
+        "Sustainable architecture begins long before mechanical equipment is considered. Passive solar design treats the building form itself as a thermodynamic machine, tuning envelope geometry to local climate curves, solar coordinates, and prevailing nocturnal breezes. According to the US Department of Energy Passive Solar Design principles, the successful integration of thermal mass, orientation, and natural ventilation dramatically lowers both baseline demand and equipment sizing.",
+        "The core mechanism rests on diurnal phase shift. In regions characterized by high solar irradiance and significant day-to-night temperature swings (such as North Africa and southern Europe), heavy masonry partitions (250–300mm) absorb excess heat during peak hours. Rather than conducting directly into inhabited spaces, the thermal wave is delayed by 10 to 12 hours. By the time this stored energy reaches the interior surfaces, the outdoor ambient temperature has dropped, allowing natural cross-ventilation and solar chimney exhaust to purge the heat harmlessly.",
+        "Glazing design must balance daylight autonomy with solar heat gain. Large south-facing openings must be coupled with calculated brise-soleil projections: projecting far enough to achieve a total solar cutoff during summer solstice (altitude > 70°), while allowing low-angle winter sunlight (altitude < 30°) to strike the floor slab and provide passive solar heating during cool months.",
+        "Atelier Daoudi editorial perspective: Avoid the contemporary trap of 'glazed transparency' without seasonal solar control. An unshaded glass box in a warm climate is an environmental liability, regardless of heat pump efficiency. Passive strategies must be simulated using real local meteorological year (TMY) data to verify that peak operative temperatures remain strictly within the ASHRAE 55 comfort envelope."
+      ],
+      "practiceImplications": "Calculate overhang projection depth using precise local summer solstice solar altitudes. Pair south-facing glazing with uncarpeted high-mass stone or polished concrete flooring to absorb passive gains directly.",
+      "sources": [
+        {
+          "title": "US Department of Energy — Passive Solar Home Design Guidelines",
+          "url": "https://www.energy.gov/energysaver/passive-solar-home-design"
+        },
+        {
+          "title": "Passivhaus Institut — Passive House Standards for Warm & Mediterranean Climates",
+          "url": "https://passivehouse.com/"
+        },
+        {
+          "title": "ASHRAE Standard 55 — Thermal Environmental Conditions for Human Occupancy",
+          "url": "https://www.ashrae.org/technical-resources/standards-and-guidelines"
+        }
+      ]
+    },
+    {
+      "id": "whole-life-carbon-circularity",
+      "title": "Targeting Upfront Embodied Carbon: Structural Longevity & Material Reuse",
+      "category": "Circular Construction",
+      "topic": "Carbon",
+      "summary": "Why the first 100 days of construction determine 50% of a building's 60-year emissions. Implementing low-clinker concretes, regional materials, and reversible dry-joint detailing.",
+      "date": "2026-11-08",
+      "readingTime": "7 min read",
+      "dossierNumber": "DOSSIER 03 / WORLDGBC",
+      "image": "assets/journal-carbon-lifecycle.svg",
+      "imageAlt": "Life-cycle carbon comparison bar chart contrasting standard practice against low-carbon circular specification",
+      "imageCredit": "Original analytical diagram · Atelier Daoudi Research · EN 15978 carbon accounting",
+      "keyTakeaways": [
+        "Upfront embodied carbon (Modules A1–A5) is released into the atmosphere before the building is even occupied.",
+        "As grids decarbonize, upfront structural materials represent over 70% of total whole-life carbon.",
+        "Replacing Portland clinker with calcined clay, pozzolans, and blast furnace slag reduces structural concrete emissions by up to 55%.",
+        "Designing for deconstruction (Module D) turns building elements into future material banks."
+      ],
+      "paragraphs": [
+        "The World Green Building Council’s landmark report 'Bringing Embodied Carbon Upfront' irreversibly altered the sustainability dialogue. For decades, green building focused almost entirely on operational energy—utility bills, lighting efficiency, and insulation. Yet emissions produced during raw material extraction, processing, transportation, and assembly (Modules A1–A5) happen at the very beginning. Once concrete is poured and steel erected, that carbon debt cannot be reclaimed through operational savings.",
+        "In a standard educational or residential reinforced concrete frame building, the structure accounts for between 60% and 75% of total upfront embodied carbon. Specifying low-carbon binder alternatives—such as CEM II or CEM III blends incorporating pozzolanic materials, fly ash, or limestone calcined clay (LC3)—substantially reduces environmental footprint without compromising structural load-bearing capacity or durability.",
+        "Circularity must be treated as a tectonic design strategy. Standard construction relies on wet poured-in-place chemical adhesives, composite sandwiches, and irreversible anchors that condemn components to landfill at the end of the building's service life. By contrast, designing with mechanical dry connections, exposed demountable sub-frames, and standardized structural spans enables individual facade elements, partitions, and beams to be disassembled and repurposed cleanly.",
+        "Atelier Daoudi editorial perspective: Renovation and structural retention must always be the first design option considered. Before drafting a new foundation, analyze whether an existing reinforced frame can be seismically reinforced, stripped of obsolete non-bearing infill, and retrofitted with a high-performance envelope. The greenest building is almost always the one that already exists."
+      ],
+      "practiceImplications": "Establish an upfront carbon budget (< 450 kg CO₂e/m²) in the schematic phase. Specify certified Environmental Product Declarations (EPDs) for all concrete, rebar, and masonry within project tender documents.",
+      "sources": [
+        {
+          "title": "World Green Building Council — Bringing Embodied Carbon Upfront (Whole-Life Carbon Framework)",
+          "url": "https://worldgbc.org/article/bringing-embodied-carbon-upfront/"
+        },
+        {
+          "title": "EN 15978: Sustainability of Construction Works — Assessment of Environmental Performance of Buildings",
+          "url": "https://www.iso.org/standard/60459.html"
+        },
+        {
+          "title": "Institution of Structural Engineers (IStructE) — How to Calculate Embodied Carbon",
+          "url": "https://www.istructe.org/resources/guidance/how-to-calculate-embodied-carbon/"
+        }
+      ]
+    },
+    {
+      "id": "educational-morphology-acoustics",
+      "title": "Acoustic & Daylight Morphologies in High-Capacity School Typologies",
+      "category": "Educational Typology",
+      "topic": "Typology",
+      "summary": "Spatial morphology and indoor environmental quality metrics for 800-to-1,000-student secondary schools: balancing daylight autonomy, glare exclusion, and speech clarity.",
+      "date": "2026-11-08",
+      "readingTime": "6 min read",
+      "dossierNumber": "DOSSIER 04 / UNESCO & BB93",
+      "image": "assets/journal-educational-acoustics.svg",
+      "imageAlt": "Classroom and central courtyard environmental section showing light shelves and acoustic diffusion baffles",
+      "imageCredit": "Original technical diagram · Atelier Daoudi Research · Educational typology physics",
+      "keyTakeaways": [
+        "Classrooms designed with bilateral daylighting and exterior light shelves achieve daylight autonomy across 85% of school hours.",
+        "Excessive reverberation time (RT60 > 0.8s) reduces speech comprehension in students by up to 35%.",
+        "Acoustic ceiling baffles combined with perimeter sound-absorbing tackboards bring RT60 below 0.55s.",
+        "Central landscaped courtyards serve as thermal and acoustic buffers between academic wings and sports areas."
+      ],
+      "paragraphs": [
+        "Educational architecture presents a demanding dual physics challenge: spaces must maximize daylight to stimulate cognitive alertness while rigorously suppressing acoustic reverberation and thermal solar glare. In secondary schools accommodating between 800 and 1,000 students—such as the regional projects executed across Mostaganem and Relizane—the building envelope and spatial plan directly determine pedagogical performance.",
+        "Daylight distribution in deep classroom floor plates (typically 7 to 9 meters deep) cannot be solved by standard unilateral windows. Placing windows only on one perimeter wall produces severe contrast glare near the glass and deep gloom on the opposite desks. The architectural solution is the calibrated exterior-interior light shelf: high daylight is intercepted, reflected onto the high-albedo white ceiling, and thrown deep into the classroom core, providing an even Daylight Factor (DF > 2.8%) without direct solar patches on study surfaces.",
+        "Acoustic comfort is governed by strict speech transmission metrics (STI ≥ 0.68). In hard, unyielding concrete or plastered classrooms, sound reflections create an echo chamber where teachers must strain their voices and students miss crucial consonants. Installing suspended mineral acoustic baffles in rhythmic arrays across the ceiling breaks flutter echoes and absorbs medium-to-high frequency vocal reflections, maintaining reverberation times below 0.55 seconds.",
+        "Atelier Daoudi editorial perspective: Treat courtyards and circulation corridors not merely as passage areas, but as environmental modulators. In high-density campuses, landscaped interior patios act as microclimatic cooling reservoirs: shaded trees and water elements lower ambient air temperatures by 3°C to 5°C, supplying classrooms with fresh, cool air through low-level acoustic trickle vents."
+      ],
+      "practiceImplications": "Specify light shelves with a specular upper finish and diffuse lower surface. Target an acoustic absorption coefficient (NRC) ≥ 0.75 for at least 60% of classroom ceiling area to meet international BB93 acoustic standards.",
+      "sources": [
+        {
+          "title": "UK Department for Education — Building Bulletin 93: Acoustic Design of Schools (Performance Standards)",
+          "url": "https://www.gov.uk/government/publications/bb93-acoustic-design-of-schools-performance-standards"
+        },
+        {
+          "title": "UNESCO — Guidelines for Educational Facilities Design & Climate-Resilient Learning Environments",
+          "url": "https://www.unesco.org/en/education"
+        },
+        {
+          "title": "CIBSE Lighting Guide 5: Lighting for Education — Daylight Autonomy and Glare Criteria",
+          "url": "https://www.cibse.org/"
+        }
+      ]
+    },
+    {
+      "id": "ventilated-facade-skins",
+      "title": "Adaptive Facade Skins: Ventilated Ceramic Louvers & Heat Gain Control",
+      "category": "Envelope Engineering",
+      "topic": "Envelope",
+      "summary": "Technical analysis of ventilated double-skin facades in Mediterranean conditions: natural thermo-siphon draft, solar heat gain coefficient (SHGC) control, and durability of terracotta rainscreens.",
+      "date": "2026-11-08",
+      "readingTime": "5 min read",
+      "dossierNumber": "DOSSIER 05 / FACADE PHYSICS",
+      "image": "assets/journal-facade-shading.svg",
+      "imageAlt": "Wall section detail showing ventilated 150mm air cavity and angled terracotta louver sunscreen",
+      "imageCredit": "Original technical diagram · Atelier Daoudi Research · Facade engineering detail",
+      "keyTakeaways": [
+        "A ventilated ceramic rainscreen cavity dissipates up to 82% of incident solar radiant heat before it reaches the insulation.",
+        "Stack-effect updraft velocity within a 140–160mm cavity consistently exceeds 0.85 m/s on solar-exposed walls.",
+        "Extruded terracotta louvers combine extreme UV and coastal salinity durability with warm, tactile architectural character.",
+        "Continuous mineral wool insulation eliminates thermal bridging at floor slab edges."
+      ],
+      "paragraphs": [
+        "In modern architectural design, the building skin is no longer a static divider; it is an active climatic filter. In climates characterized by intense direct summer solar radiation and coastal humidity, single-layer masonry walls or conventional external insulation finishing systems (EIFS) suffer from severe heat soaking, thermal cracking, and moisture entrapment over time.",
+        "The ventilated rainscreen system decouples the exterior weathering and shading layer from the thermal insulation barrier. By introducing an uninterrupted 140mm to 160mm air cavity behind angled terracotta louvers or ceramic tiles, solar energy absorbed by the outer cladding is immediately converted into convective heat. The warmed air expands and rises, creating a continuous chimney draft that exits through continuous parapet vents, leaving the insulated inner wall significantly cooler (surface ΔT up to -18.5°C).",
+        "Material selection in coastal environments requires careful consideration of chemical degradation. Extruded terracotta baguettes fired at high temperatures (over 1,100°C) are completely immune to ultraviolet degradation, thermal warping, and sea-salt corrosion. Their modular assembly on extruded aluminum support brackets provides natural thermal expansion joints while allowing individual elements to be replaced if damaged.",
+        "Atelier Daoudi editorial perspective: When designing contemporary facades, prioritize physical longevity over transient surface trends. A properly engineered ventilated ceramic rainscreen requires zero painting, zero sealant replacement on panel joints, and preserves its color and structural integrity for fifty years or more."
+      ],
+      "practiceImplications": "Ensure open joints at the bottom and top of the facade have a free ventilation area of at least 50 cm² per linear meter of wall to prevent airflow stagnation in the cavity.",
+      "sources": [
+        {
+          "title": "Centre for Window and Cladding Technology (CWCT) — Standard for Systemised Building Envelopes",
+          "url": "https://www.cwct.co.uk/"
+        },
+        {
+          "title": "European Standard EN 13830 — Curtain Walling & Rainscreen Cladding Product Standard",
+          "url": "https://www.en-standard.eu/"
+        }
+      ]
+    },
+    {
+      "id": "urban-microclimate-albedo",
+      "title": "The Urban Microclimate: Porous Fabrics, Albedo Effects & Courtyard Typologies",
+      "category": "Urban Morphology",
+      "topic": "Urban",
+      "summary": "Mitigating the Urban Heat Island (UHI) effect in North African coastal cities through building height-to-width ratios, cool roof albedo (SRI ≥ 82), and sea breeze funneling.",
+      "date": "2026-11-08",
+      "readingTime": "6 min read",
+      "dossierNumber": "DOSSIER 06 / URBAN BIOCLIMATISM",
+      "image": "assets/journal-urban-microclimate.svg",
+      "imageAlt": "Urban morphology cross-section showing shaded pedestrian canyons, courtyard cool pools, and high-albedo roofs",
+      "imageCredit": "Original analytical diagram · Atelier Daoudi Research · Urban microclimate section",
+      "keyTakeaways": [
+        "Urban Heat Island effects can elevate city center nocturnal temperatures by 4°C to 7°C above surrounding rural areas.",
+        "Optimizing urban street aspect ratios (H/W between 1.2 and 1.5) provides essential mutual building shade during peak summer hours.",
+        "High-albedo cool roofs (Solar Reflectance Index ≥ 82) cut building thermal gain and reduce local air temperature rise.",
+        "Courtyard matrices act as microclimatic cool-air sinks, trapping nocturnal density currents and sheltering pedestrian movement."
+      ],
+      "paragraphs": [
+        "Buildings do not exist in isolation; they interact continuously with the surrounding urban canopy layer. Rapid urbanization across Mediterranean and North African coastal cities has replaced natural vegetated surfaces with dense, dark asphalt and concrete, creating localized Urban Heat Islands (UHI) that trap solar radiation and eliminate night-time cooling relief.",
+        "Architectural morphology offers powerful tools to counter this phenomenon. By coordinating building heights and street widths to achieve aspect ratios (H/W) between 1.2 and 1.5, neighboring structures cast continuous mutual shade onto street surfaces and sidewalks. This geometry prevents the ground plane from acting as a massive thermal battery, lowering ambient canyon air temperatures by up to 3.8°C compared to broad unshaded avenues.",
+        "Roof surfaces, which represent 20% to 25% of the total urban footprint, are critical intervention zones. Applying high-albedo white minerals or specialized cool coatings with a Solar Reflectance Index (SRI) of 82 or higher reflects more than 80% of solar radiation directly back into space rather than storing it as heat. When combined with traditional courtyard typologies that retain dense cool night air pools, neighborhoods enjoy dramatically extended outdoor thermal comfort periods.",
+        "Atelier Daoudi editorial perspective: Urban planning and individual building design must coordinate with regional meteorological wind vectors. In coastal settlements, aligning primary street axes within 15 degrees of prevailing summer sea breezes funnels natural ventilative currents deep into the residential urban fabric, cleansing air and enhancing pedestrian thermal comfort without energy expenditure."
+      ],
+      "practiceImplications": "Specify cool-roof membrane products tested in accordance with ASTM E1980. Orient open courtyard loggias toward seasonal night breeze directions to facilitate convective thermal flushing.",
+      "sources": [
+        {
+          "title": "US Environmental Protection Agency (EPA) — Reducing Urban Heat Islands: Compendium of Strategies",
+          "url": "https://www.epa.gov/heatislands"
+        },
+        {
+          "title": "World Meteorological Organization (WMO) — Urban Microclimate & Bioclimatic Urban Design Guidelines",
+          "url": "https://wmo.int/"
+        }
+      ]
+    }
+  ]
+}

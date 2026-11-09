@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eeece5"/>
+      <stop offset="100%" stop-color="#e5e2d6"/>
+    </linearGradient>
+    <pattern id="grid4" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#dcd9ce" stroke-width="0.8"/>
+    </pattern>
+    <marker id="lightArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#c49b4f"/>
+    </marker>
+    <marker id="coolArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#588b8b"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGrad4)"/>
+  <rect width="1200" height="750" fill="url(#grid4)"/>
+
+  <!-- Frame -->
+  <rect x="35" y="35" width="1130" height="680" fill="none" stroke="#cccec3" stroke-width="1.5"/>
+  <rect x="42" y="42" width="1116" height="666" fill="none" stroke="#cccec3" stroke-width="0.75" stroke-dasharray="4,4"/>
+
+  <!-- Header Dossier Info -->
+  <text x="65" y="78" fill="#6b7459" font-family="'Courier New', monospace" font-size="12" letter-spacing="3" font-weight="bold">DOSSIER 04 / EDUCATIONAL MORPHOLOGY &amp; INDOOR ENVIRONMENTAL QUALITY</text>
+  <text x="65" y="118" fill="#292d27" font-family="Georgia, serif" font-size="32" font-weight="normal">Acoustic &amp; Daylight Physics in High-Capacity School Typologies</text>
+  <text x="65" y="142" fill="#6c7066" font-family="Arial, sans-serif" font-size="13">Based on 800–1000 Student Educational Facilities (Mostaganem &amp; Relizane Prototypes)</text>
+
+  <!-- Section Drawing -->
+  <!-- Ground -->
+  <line x1="80" y1="540" x2="1120" y2="540" stroke="#292d27" stroke-width="2.5"/>
+
+  <!-- Courtyard Zone (Left/Center) -->
+  <rect x="140" y="520" width="300" height="20" fill="#a4ab9a"/>
+  <!-- Trees / Biophilic buffer -->
+  <circle cx="240" cy="460" r="45" fill="#6b7459" opacity="0.6"/>
+  <circle cx="280" cy="440" r="55" fill="#445b53" opacity="0.7"/>
+  <rect x="255" y="460" width="10" height="60" fill="#292d27"/>
+  <text x="180" y="510" fill="#24342f" font-family="'Courier New', monospace" font-size="11" font-weight="bold">MICROCLIMATIC COURTYARD</text>
+
+  <!-- Classroom Envelope Structure -->
+  <!-- Floor Slabs -->
+  <rect x="440" y="520" width="600" height="20" fill="#6c7066"/>
+  <rect x="440" y="240" width="600" height="25" fill="#3b5249"/>
+  <!-- Classroom Corridor Partition -->
+  <rect x="1000" y="265" width="40" height="255" fill="#88927e"/>
+  
+  <!-- Facade Wall with Light Shelf -->
+  <rect x="440" y="265" width="20" height="60" fill="#292d27"/>
+  <rect x="440" y="440" width="20" height="80" fill="#292d27"/>
+  
+  <!-- Architectural Light Shelf (Exterior + Interior Deflector) -->
+  <line x1="410" y1="380" x2="520" y2="380" stroke="#292d27" stroke-width="6"/>
+  <text x="350" y="375" fill="#292d27" font-family="'Courier New', monospace" font-size="11" font-weight="bold">LIGHT SHELF</text>
+
+  <!-- Glazing Units -->
+  <!-- Clerestory Window (Above Shelf) -->
+  <line x1="450" y1="325" x2="450" y2="380" stroke="#588b8b" stroke-width="3" opacity="0.8"/>
+  <!-- Vision Window (Below Shelf) -->
+  <line x1="450" y1="380" x2="450" y2="440" stroke="#588b8b" stroke-width="3" opacity="0.8"/>
+
+  <!-- High-Angle Solar Rays Deflected to Ceiling -->
+  <line x1="320" y1="280" x2="440" y2="370" stroke="#c49b4f" stroke-width="2.5" marker-end="url(#lightArrow)"/>
+  <line x1="440" y1="370" x2="680" y2="265" stroke="#c49b4f" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#lightArrow)"/>
+  <line x1="680" y1="265" x2="880" y2="400" stroke="#c49b4f" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.7"/>
+  <text x="560" y="295" fill="#c49b4f" font-family="Georgia, serif" font-size="13">Reflected Diffuse Light: Penetrates 9m into Classroom Depth</text>
+
+  <!-- Acoustic Baffles on Classroom Ceiling -->
+  <g fill="#9da895" stroke="#292d27" stroke-width="1.5">
+    <rect x="520" y="265" width="14" height="35"/>
+    <rect x="570" y="265" width="14" height="35"/>
+    <rect x="620" y="265" width="14" height="35"/>
+    <rect x="670" y="265" width="14" height="35"/>
+    <rect x="720" y="265" width="14" height="35"/>
+    <rect x="770" y="265" width="14" height="35"/>
+    <rect x="820" y="265" width="14" height="35"/>
+    <rect x="870" y="265" width="14" height="35"/>
+  </g>
+  <text x="640" y="325" fill="#292d27" font-family="'Courier New', monospace" font-size="11" font-weight="bold">ACOUSTIC ABSORPTION BAFFLES (RT₆₀ ≤ 0.55s)</text>
+
+  <!-- Sound Waves Diffusion Arc -->
+  <path d="M 600,460 A 30,30 0 0,1 640,430" fill="none" stroke="#6b7459" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <path d="M 590,460 A 50,50 0 0,1 660,410" fill="none" stroke="#6b7459" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="600" y="480" fill="#6c7066" font-family="'Courier New', monospace" font-size="10">SPEECH CLARITY ZONE (STI ≥ 0.68)</text>
+
+  <!-- Cool Courtyard Air Cross-Ventilation -->
+  <path d="M 280,480 Q 420,490 560,470 T 980,450" fill="none" stroke="#588b8b" stroke-width="3" stroke-dasharray="5,4" marker-end="url(#coolArrow)"/>
+  <text x="730" y="475" fill="#2f5757" font-family="'Courier New', monospace" font-size="10" font-weight="bold">NATURAL CONVECTIVE DISPLACEMENT (12 ACH)</text>
+
+  <!-- Bottom KPI Summary -->
+  <rect x="65" y="610" width="1070" height="80" fill="#f8f7f2" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="330" y1="610" x2="330" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="600" y1="610" x2="600" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="870" y1="610" x2="870" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+
+  <text x="85" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">DAYLIGHT FACTOR</text>
+  <text x="85" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">DF &gt; 2.8% Average</text>
+  <text x="85" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Zero artificial light needed 9am–4pm</text>
+
+  <text x="350" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">REVERBERATION TIME</text>
+  <text x="350" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">RT₆₀ ≤ 0.52 s</text>
+  <text x="350" y="678" font-family="Arial, sans-serif" font-size="10" fill="#6c7066">Compliant with BB93 school acoustic code</text>
+
+  <text x="620" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">GLARE EXCLUSION</text>
+  <text x="620" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">DGP &lt; 0.20</text>
+  <text x="620" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Imperceptible daylight glare probability</text>
+
+  <text x="890" y="635" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">COURTYARD MICROCLIMATE</text>
+  <text x="890" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">ΔT -4.5°C Ambient</text>
+  <text x="890" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Evaporative cooling from vegetation</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eeece5"/>
+      <stop offset="100%" stop-color="#e5e2d6"/>
+    </linearGradient>
+    <pattern id="grid6" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#dcd9ce" stroke-width="0.8"/>
+    </pattern>
+    <marker id="windArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#588b8b"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGrad6)"/>
+  <rect width="1200" height="750" fill="url(#grid6)"/>
+
+  <!-- Frame -->
+  <rect x="35" y="35" width="1130" height="680" fill="none" stroke="#cccec3" stroke-width="1.5"/>
+  <rect x="42" y="42" width="1116" height="666" fill="none" stroke="#cccec3" stroke-width="0.75" stroke-dasharray="4,4"/>
+
+  <!-- Header Dossier Info -->
+  <text x="65" y="78" fill="#6b7459" font-family="'Courier New', monospace" font-size="12" letter-spacing="3" font-weight="bold">DOSSIER 06 / URBAN BIOCLIMATISM &amp; MICROCLIMATE MORPHOLOGY</text>
+  <text x="65" y="118" fill="#292d27" font-family="Georgia, serif" font-size="32" font-weight="normal">Urban Heat Island Mitigation: Courtyard Ratios &amp; Albedo Dynamics</text>
+  <text x="65" y="142" fill="#6c7066" font-family="Arial, sans-serif" font-size="13">North African Coastal Microclimates · Aspect Ratio (H/W = 1.2 to 1.5) &amp; Shaded Canyon Networks</text>
+
+  <!-- Cross Section of Urban Street Canyon & Courtyard Matrix -->
+  <!-- Ground -->
+  <line x1="80" y1="540" x2="1120" y2="540" stroke="#292d27" stroke-width="2.5"/>
+
+  <!-- Building Block A (Left) -->
+  <rect x="120" y="320" width="180" height="220" fill="#a4ab9a" stroke="#292d27" stroke-width="2"/>
+  <!-- High Albedo White Roof -->
+  <rect x="110" y="300" width="200" height="20" fill="#fcfbf7" stroke="#292d27" stroke-width="1.5"/>
+  <text x="125" y="290" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" font-weight="bold">HIGH ALBEDO ROOF (SRI ≥ 82)</text>
+
+  <!-- Street Canyon (Width: W1 = 12m) -->
+  <rect x="300" y="530" width="160" height="10" fill="#b5b8aa"/>
+  <text x="330" y="520" fill="#6c7066" font-family="'Courier New', monospace" font-size="11">CANYON (H/W ≈ 1.3)</text>
+  <!-- Shading shadow angle in street -->
+  <polygon points="300,320 460,540 300,540" fill="#292d27" opacity="0.12"/>
+  <text x="325" y="440" fill="#24342f" font-family="Arial, sans-serif" font-size="11" font-weight="bold">SHADED PEDESTRIAN CANYON</text>
+
+  <!-- Building Block B with Central Patio/Courtyard (Middle) -->
+  <rect x="460" y="280" width="140" height="260" fill="#88927e" stroke="#292d27" stroke-width="2"/>
+  <rect x="450" y="260" width="160" height="20" fill="#fcfbf7" stroke="#292d27" stroke-width="1.5"/>
+  
+  <!-- Central Courtyard Pool (Microclimatic Hearth) -->
+  <rect x="600" y="380" width="160" height="160" fill="#dce0cf" opacity="0.5"/>
+  <rect x="640" y="525" width="80" height="15" fill="#588b8b" stroke="#292d27" stroke-width="1"/>
+  <circle cx="680" cy="460" r="30" fill="#6b7459" opacity="0.7"/>
+  <text x="615" y="420" fill="#24453b" font-family="'Courier New', monospace" font-size="11" font-weight="bold">COOL AIR RESERVOIR</text>
+  <text x="625" y="435" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Trapped night air pool (ΔT = -4.2°C)</text>
+
+  <!-- Building Block C (Right) -->
+  <rect x="760" y="280" width="140" height="260" fill="#88927e" stroke="#292d27" stroke-width="2"/>
+  <rect x="750" y="260" width="160" height="20" fill="#fcfbf7" stroke="#292d27" stroke-width="1.5"/>
+
+  <!-- Right Open Boulevard -->
+  <rect x="900" y="530" width="200" height="10" fill="#b5b8aa"/>
+
+  <!-- Sea Breeze Funneling Wind Vectors -->
+  <path d="M 1050,470 Q 940,490 850,510 T 680,510" fill="none" stroke="#588b8b" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#windArrow)"/>
+  <path d="M 1050,380 Q 900,410 750,400" fill="none" stroke="#588b8b" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#windArrow)"/>
+  <text x="920" y="440" fill="#2f5757" font-family="'Courier New', monospace" font-size="11" font-weight="bold">PREVAILING COASTAL SEA BREEZE</text>
+  <text x="920" y="455" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Channelled along E-W street alignments</text>
+
+  <!-- Bottom KPI Summary -->
+  <rect x="65" y="615" width="1070" height="75" fill="#f8f7f2" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="330" y1="615" x2="330" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="600" y1="615" x2="600" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+  <line x1="870" y1="615" x2="870" y2="690" stroke="#d5d8cc" stroke-width="1"/>
+
+  <text x="85" y="638" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">UHI TEMPERATURE RELIEF</text>
+  <text x="85" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">-3.8°C Canyon Temp</text>
+  <text x="85" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Compared to wide unshaded asphalt avenues</text>
+
+  <text x="350" y="638" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">SOLAR REFLECTANCE INDEX</text>
+  <text x="350" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">SRI ≥ 82 Roofs</text>
+  <text x="350" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Minimizes urban thermal storage flux</text>
+
+  <text x="620" y="638" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">PATIO ASPECT RATIO</text>
+  <text x="620" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">H/W = 1.35 Optimal</text>
+  <text x="620" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Maximizes shade while retaining airflow</text>
+
+  <text x="890" y="638" fill="#6b7459" font-family="'Courier New', monospace" font-size="10" letter-spacing="1">PEDESTRIAN COMFORT (PET)</text>
+  <text x="890" y="662" fill="#292d27" font-family="Georgia, serif" font-size="20">+65% Comfortable Hours</text>
+  <text x="890" y="678" fill="#6c7066" font-family="Arial, sans-serif" font-size="10">Under outdoor physiological equivalent metric</text>
+</svg>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atelierdaoudi27.online/sitemap.xml

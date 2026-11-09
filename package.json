@@ -1,0 +1,18 @@
+{
+  "name": "atelier-daoudi",
+  "version": "2.0.0",
+  "description": "Atelier Daoudi — Architecture with Purpose & Architectural Research Review",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [
+    "architecture",
+    "sustainable-design",
+    "bipv",
+    "bioclimatic",
+    "atelier-daoudi"
+  ],
+  "author": "Abdelkarim Daoudi",
+  "license": "ISC"
+}
