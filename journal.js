@@ -41,7 +41,7 @@
         leadImg.alt = lead.imageAlt || lead.title;
       }
       if (leadCategory) leadCategory.textContent = lead.category.toUpperCase();
-      if (leadTime) leadTime.textContent = `${lead.readingTime || '7 MIN READ'} · ${(lead.drawings || []).length} SCHEMATIC PLANS · IEA PVPS`;
+      if (leadTime) leadTime.textContent = `${lead.readingTime || '8 MIN READ'} · 📸 REAL PHOTOGRAPHY & INTERIORS · 📐 ${(lead.drawings || []).length} BLUEPRINTS`;
       if (leadTitle) leadTitle.textContent = lead.title;
       if (leadSummary) leadSummary.textContent = lead.summary;
       if (leadReadBtn) {
@@ -57,7 +57,7 @@
           <div class="side-card-img-wrap">
             <img src="${esc(a.image)}" alt="${esc(a.imageAlt)}" loading="lazy">
             <span class="side-badge">${esc(a.category.toUpperCase())}</span>
-            <span class="side-drawings-pill">📐 ${(a.drawings || []).length} Architectural Drawings</span>
+            <span class="side-drawings-pill">📸 Photos &amp; 📐 ${(a.drawings || []).length} Plans</span>
           </div>
           <div class="side-card-body">
             <div class="side-meta">
@@ -107,7 +107,7 @@
             <img class="journal-cover" src="${esc(a.image)}" alt="${esc(a.imageAlt)}" loading="lazy">
             <span class="journal-badge">${esc(a.dossierNumber || 'DOSSIER')}</span>
             <div class="journal-card-media-count">
-              <span>📐 ${drawingsCount} Technical Drawing${drawingsCount > 1 ? 's' : ''}</span>
+              <span>📸 Real Photo · 📐 ${drawingsCount} Drawing${drawingsCount > 1 ? 's' : ''}</span>
             </div>
           </div>
           <div class="journal-card-body">
@@ -187,6 +187,11 @@
       <!-- Interactive Tab Bar -->
       <div class="article-tabs" role="tablist">
         <button class="article-tab active" data-tab-target="#tab-narrative">Overview &amp; Analysis</button>
+        ${a.gallery && a.gallery.length ? `
+          <button class="article-tab" data-tab-target="#tab-gallery">
+            Project &amp; Interior Decor (${a.gallery.length})
+          </button>
+        ` : ''}
         ${a.drawings && a.drawings.length ? `
           <button class="article-tab" data-tab-target="#tab-drawings">
             Architectural Drawings &amp; Diagrams (${a.drawings.length})
@@ -226,6 +231,27 @@
           `).join('')}
         </div>
 
+        <!-- Featured Interior Decor & Architecture Gallery -->
+        ${a.gallery && a.gallery.length ? `
+          <div class="article-featured-gallery">
+            <div class="takeaways-header" style="margin-top:35px;margin-bottom:15px">
+              <span class="takeaways-icon">📸</span>
+              <strong>BUILT ARCHITECTURE &amp; INTERIOR DECOR SPACES</strong>
+            </div>
+            <div class="article-gallery-grid">
+              ${a.gallery.map(g => `
+                <figure class="gallery-photo-item">
+                  <img src="${esc(g.url)}" alt="${esc(g.title || '')}" loading="lazy">
+                  <figcaption>
+                    <strong>${esc(g.title || '')}</strong>
+                    <br><small>${esc(g.caption || '')}</small>
+                  </figcaption>
+                </figure>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+
         ${a.practiceImplications ? `
           <div class="article-practice-box">
             <div class="practice-header">
@@ -235,6 +261,27 @@
           </div>
         ` : ''}
       </div>
+
+      <!-- TAB: PROJECT & INTERIOR DECOR GALLERY -->
+      ${a.gallery && a.gallery.length ? `
+        <div id="tab-gallery" class="article-tab-panel">
+          <div class="drawings-section-header">
+            <h3>Real Project Photography &amp; Interior Design Gallery</h3>
+            <p>Photographic exploration documenting exterior volumes, structural joinery, daylighting ambiance, and refined interior decor.</p>
+          </div>
+          <div class="article-gallery-grid">
+            ${a.gallery.map(g => `
+              <figure class="gallery-photo-item">
+                <img src="${esc(g.url)}" alt="${esc(g.title || '')}" loading="lazy">
+                <figcaption>
+                  <strong>${esc(g.title || '')}</strong>
+                  <br><small>${esc(g.caption || '')}</small>
+                </figcaption>
+              </figure>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
 
       <!-- TAB 2: ARCHITECTURAL DRAWINGS & PLANS -->
       ${a.drawings && a.drawings.length ? `

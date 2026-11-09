@@ -11,9 +11,9 @@
       "date": "2026-11-09",
       "readingTime": "8 min read",
       "dossierNumber": "SPECIAL FEATURE 01 / MASS TIMBER TECTONICS",
-      "image": "assets/article-mass-timber-clt.svg",
-      "imageAlt": "Architectural section drawing of 5-ply CLT slab, glulam column, and 900mm double-skin solar greenhouse buffer",
-      "imageCredit": "Architectural Section & Thermodynamics Tectonic Detail · Atelier Daoudi International Architectural Review",
+      "image": "assets/photo-timber-hero.jpg",
+      "imageAlt": "Modern mass timber architecture with warm exposed wood beams and double-height glazing",
+      "imageCredit": "Architectural Photography · Modern Mass Timber & Biophilic Tectonics Collection",
       "specs": {
         "Structural System": "5-Ply Cross-Laminated Timber (CLT 200mm) + Glued-Laminated Columns",
         "Fire Resistance Rating": "REI 90 / REI 120 (Standard Charring Rate 0.65 mm/min per EN 1995-1-2)",
@@ -30,7 +30,23 @@
           "caption": "Section drawing illustrating 5-ply CLT floor slab, glulam column, double-skin greenhouse loggia, solar radiation absorption, and natural convective stack effect."
         }
       ],
-      "gallery": [],
+      "gallery": [
+        {
+          "title": "Biophilic Living Core & Natural Wood Finishes",
+          "url": "assets/photo-timber-interior.jpg",
+          "caption": "Open-plan interior living and dining space with natural oak joinery, ambient linear lighting, and continuous biophilic timber textures."
+        },
+        {
+          "title": "CLT Column Interface & Precision Joint Detailing",
+          "url": "assets/photo-timber-detail.jpg",
+          "caption": "Tectonic junction between 5-ply cross-laminated timber floor slab and glued-laminated structural columns with concealed knife plates."
+        },
+        {
+          "title": "Double-Skin Greenhouse Solar Loggia Buffer",
+          "url": "assets/photo-timber-hero.jpg",
+          "caption": "South-facing glazed loggia providing a 900mm thermal climate buffer that reduces winter heat losses by 46%."
+        }
+      ],
       "keyTakeaways": [
         "Cross-laminated timber (CLT) replaces energy-intensive steel and concrete while locking away biogenic carbon for centuries.",
         "A charring rate of 0.65 mm/min creates a natural insulating carbon layer during fire exposure, protecting structural integrity without toxic coatings.",
@@ -68,9 +84,9 @@
       "date": "2026-11-09",
       "readingTime": "8 min read",
       "dossierNumber": "SPECIAL FEATURE 02 / COMPUTATIONAL ENVELOPES",
-      "image": "assets/article-kinetic-shading.svg",
-      "imageAlt": "Solar vector altitude tracking diagram and exploded axonometric detail of responsive kinetic origami shading module",
-      "imageCredit": "Parametric Geometry & Solar Ray Vector Diagram · Atelier Daoudi International Architectural Review",
+      "image": "assets/photo-kinetic-hero.jpg",
+      "imageAlt": "Dynamic computational facade with faceted geometric shading louvers on contemporary building",
+      "imageCredit": "Architectural Photography · Computational Facades & Dynamic Shading Systems",
       "specs": {
         "Facade Category": "Dynamic Computational Façade & Adaptive Screen",
         "Shading Geometry": "Parametric Origami Tessellation (Triangulated Mashrabiya)",
@@ -87,7 +103,18 @@
           "caption": "Architectural diagram comparing 72° summer solstice solar ray deflection against 28° winter solar penetration, alongside laser-cut micro-perforated origami louvers and actuator joints."
         }
       ],
-      "gallery": [],
+      "gallery": [
+        {
+          "title": "Interior Daylighting & Dappled Shadow Patterns",
+          "url": "assets/photo-kinetic-interior.jpg",
+          "caption": "Interior lounge and executive workspace bathed in diffused daylight; origami screen maintains glare-free sDA at 78%."
+        },
+        {
+          "title": "Geometric Parametric Tessellation Close-up",
+          "url": "assets/photo-kinetic-hero.jpg",
+          "caption": "Laser-cut bronze and anodized metal louver modules folded according to astronomical solar altitude algorithms."
+        }
+      ],
       "keyTakeaways": [
         "Static brise-soleil compromises either summer shading or winter daylight; kinetic screens adapt continuously to exact solar azimuth and solar altitude.",
         "Triangulated origami folding patterns offer immense structural rigidity against wind shear while operating via minimal low-power actuator nodes.",
@@ -125,9 +152,9 @@
       "date": "2026-11-09",
       "readingTime": "9 min read",
       "dossierNumber": "SPECIAL FEATURE 03 / BIOCLIMATIC VERNACULAR",
-      "image": "assets/article-courtyard-bioclimatic.svg",
-      "imageAlt": "Bioclimatic architectural section through courtyard house showing wind tower, solar chimney, central water basin, and air currents",
-      "imageCredit": "Bioclimatic Thermodynamic Cross-Section · Atelier Daoudi International Architectural Review",
+      "image": "assets/photo-courtyard-hero.jpg",
+      "imageAlt": "Modern luxury courtyard villa with central turquoise reflecting pool, stone walls, and warm interior lighting",
+      "imageCredit": "Architectural Photography · Contemporary Bioclimatic Courtyard House Collection",
       "specs": {
         "Typology": "Contemporary Central Courtyard (Patio Central Bioclimatique)",
         "Thermal Mass": "500mm Compressed Stabilized Earth Block (CSEB) / Local Limestone",
@@ -144,7 +171,23 @@
           "caption": "Section drawing illustrating prevailing breeze capture aloft via Badgir wind catcher, evaporative cooling water basin, 500mm rammed earth thermal lag, and solar chimney thermal stack exhaust."
         }
       ],
-      "gallery": [],
+      "gallery": [
+        {
+          "title": "Interior Living Room Open onto Courtyard Patio",
+          "url": "assets/photo-courtyard-interior.jpg",
+          "caption": "Minimalist living room with bespoke furniture seamlessly transitioning to the shaded courtyard through floor-to-ceiling sliding glass."
+        },
+        {
+          "title": "Central Evaporative Reflecting Pool & Microclimate",
+          "url": "assets/photo-courtyard-pool.jpg",
+          "caption": "Sunlit patio and reflection pool inducing natural evaporative cooling, depressing ambient dry-bulb temperature by up to 7.5°C."
+        },
+        {
+          "title": "Night Purge & Thermal Radiance Twilight View",
+          "url": "assets/photo-courtyard-hero.jpg",
+          "caption": "Protected microclimate reservoir releasing accumulated daytime thermal mass heat to cool evening breezes."
+        }
+      ],
       "keyTakeaways": [
         "The introverted courtyard acts as a private microclimatic reservoir, pooling dense cool night air that resists midday solar displacement.",
         "Water features in shaded courtyards depress dry-bulb temperatures by up to 7.5°C through natural latent heat absorption (adiabatic cooling).",
@@ -182,9 +225,9 @@
       "date": "2026-11-09",
       "readingTime": "7 min read",
       "dossierNumber": "GLOBAL DOSSIER 01 / BIPV",
-      "image": "assets/journal-solar-performance.svg",
-      "imageAlt": "Axonometric diagram of BIPV roof matrix and ventilated facade showing rear convective cooling cavity",
-      "imageCredit": "Technical Axonometric & Aerodynamic Flow Diagram · International Solar Architecture Review",
+      "image": "assets/photo-solar-hero.jpg",
+      "imageAlt": "Contemporary architectural glass facade with integrated monocrystalline solar cells",
+      "imageCredit": "Architectural Photography · International BIPV Envelopes",
       "specs": {
         "Focus": "Building-Integrated Photovoltaic Envelopes",
         "Reference Standard": "IEA PVPS Task 13 / Task 15 Guidelines",
@@ -239,9 +282,9 @@
       "date": "2026-11-09",
       "readingTime": "6 min read",
       "dossierNumber": "GLOBAL DOSSIER 02 / PASSIVE PHYSICS",
-      "image": "assets/journal-passive-physics.svg",
-      "imageAlt": "Bioclimatic cross-section diagram showing calibrated summer overhang, deep winter sun penetration, and night purge stack",
-      "imageCredit": "Environmental Thermodynamic Cross-Section · Passive Architecture Review",
+      "image": "assets/photo-passive-hero.jpg",
+      "imageAlt": "Modern villa with deep cantilevered solar overhangs, floor-to-ceiling glass, and landscaped terrace",
+      "imageCredit": "Architectural Photography · Passive Mediterranean Architecture",
       "specs": {
         "Field": "Bioclimatic Architecture & Solar Geometry",
         "Methodology": "Passivhaus Mediterranean Standards / US DOE Solar Principles",
@@ -296,9 +339,9 @@
       "date": "2026-11-09",
       "readingTime": "7 min read",
       "dossierNumber": "GLOBAL DOSSIER 03 / CIRCULARITY",
-      "image": "assets/journal-carbon-lifecycle.svg",
-      "imageAlt": "Life-cycle carbon comparison bar chart contrasting standard practice against low-carbon circular specification",
-      "imageCredit": "Analytical Carbon Accounting Diagram · EN 15978 & WorldGBC Framework",
+      "image": "assets/photo-carbon-hero.jpg",
+      "imageAlt": "Low-carbon contemporary architecture interior with minimalist textures and natural materials",
+      "imageCredit": "Architectural Photography · Circular Construction & Low-Carbon Interiors",
       "specs": {
         "Discipline": "Whole-Life Carbon Assessment (LCA)",
         "Standards": "EN 15978 / World Green Building Council Framework",
@@ -353,9 +396,9 @@
       "date": "2026-11-09",
       "readingTime": "6 min read",
       "dossierNumber": "GLOBAL DOSSIER 04 / EDUCATIONAL MORPHOLOGY",
-      "image": "assets/journal-educational-acoustics.svg",
-      "imageAlt": "Classroom and central courtyard environmental section showing light shelves and acoustic diffusion baffles",
-      "imageCredit": "Educational Typology Environmental Section · Architectural Review Dossier",
+      "image": "assets/photo-education-hero.jpg",
+      "imageAlt": "Modern educational building atrium with acoustic timber slatted walls and high natural daylighting",
+      "imageCredit": "Architectural Photography · Educational Atriums & Acoustic Morphologies",
       "specs": {
         "Field": "Educational Architecture & Indoor Environmental Quality (IEQ)",
         "Capacity Scale": "800 to 1,200 Student Facilities",
@@ -410,9 +453,9 @@
       "date": "2026-11-09",
       "readingTime": "5 min read",
       "dossierNumber": "GLOBAL DOSSIER 05 / FACADE PHYSICS",
-      "image": "assets/journal-facade-shading.svg",
-      "imageAlt": "Wall section detail showing ventilated 150mm air cavity and angled terracotta louver sunscreen",
-      "imageCredit": "Ventilated Rainscreen Wall Section Detail · Facade Engineering Review",
+      "image": "assets/photo-facade-hero.jpg",
+      "imageAlt": "Architectural terracotta and ceramic louvers creating textured sunshade on contemporary building",
+      "imageCredit": "Architectural Photography · Ventilated Ceramic Rainscreens",
       "specs": {
         "Envelope Typology": "Ventilated Ceramic & Terracotta Rainscreen",
         "Cavity Width": "150mm Clear Air Chimney",
@@ -463,9 +506,9 @@
       "date": "2026-11-09",
       "readingTime": "6 min read",
       "dossierNumber": "GLOBAL DOSSIER 06 / URBAN BIOCLIMATISM",
-      "image": "assets/journal-urban-microclimate.svg",
-      "imageAlt": "Urban morphology cross-section showing shaded pedestrian canyons, courtyard cool pools, and high-albedo roofs",
-      "imageCredit": "Urban Microclimate & Morphology Section · Bioclimatic Urbanism Review",
+      "image": "assets/photo-urban-hero.jpg",
+      "imageAlt": "Porous contemporary residential urban block with high-albedo facades and landscaped courtyards",
+      "imageCredit": "Architectural Photography · Sustainable Urban Morphology",
       "specs": {
         "Field": "Urban Morphology & Microclimatic Mitigation",
         "Aspect Ratio": "H/W = 1.2 to 1.5 (Shaded Canyon Index)",
