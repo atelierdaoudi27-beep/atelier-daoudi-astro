@@ -40,8 +40,8 @@ nav sup{color:var(--accent);font-weight:bold}
 /* ========================================================================= */
 /* 1. ARCHDAILY-STYLE FRONT JOURNAL SECTION (الواجهة التحريرية العالمية)     */
 /* ========================================================================= */
-.archdaily-front{padding:55px 5% 80px;background:var(--bg)}
-.archdaily-masthead{border-bottom:1px solid var(--line);padding-bottom:38px;margin-bottom:45px}
+.archdaily-front{padding:70px 5% 100px;background:var(--bg)}
+.archdaily-masthead{border-bottom:1px solid var(--line);padding-bottom:42px;margin-bottom:50px}
 .masthead-meta{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1.5px;color:var(--muted);margin-bottom:18px}
 .masthead-tag{font-family:'Courier New',monospace;font-weight:bold;color:var(--dossier-tag);background:#dfded6;padding:3px 8px}
 .masthead-date{font-family:'Courier New',monospace}

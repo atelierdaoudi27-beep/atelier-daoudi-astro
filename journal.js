@@ -2,7 +2,7 @@
   let articles = [];
   let currentFilter = 'All';
   let currentIndex = 0;
-  let expanded = false;
+  let expanded = true;
 
   const list = document.querySelector('#journal-list');
   const journalDate = document.querySelector('#journal-date');
@@ -139,8 +139,7 @@
     });
 
     if (journalMore) {
-      journalMore.hidden = filtered.length <= 6;
-      journalMore.textContent = expanded ? 'Show initial selection ↑' : `Browse full research archive (${filtered.length} dossiers) ↓`;
+      journalMore.hidden = true;
     }
   }
 
