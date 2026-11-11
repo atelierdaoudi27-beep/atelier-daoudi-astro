@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <!-- Background & Grid Gradients -->
+    <linearGradient id="cadBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f7f2"/>
+      <stop offset="100%" stop-color="#eeece2"/>
+    </linearGradient>
+    <pattern id="cadGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#e0ded4" stroke-width="0.75"/>
+    </pattern>
+    <pattern id="soilHatch" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 L 20 0 M 0 0 L 20 20" fill="none" stroke="#c8bcaa" stroke-width="0.6"/>
+    </pattern>
+    <pattern id="earthMassHatch" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 0 12 L 12 0" fill="none" stroke="#8d6e63" stroke-width="0.75"/>
+    </pattern>
+    <linearGradient id="solarChimneyGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ffeaa7" stop-opacity="0.2"/>
+      <stop offset="40%" stop-color="#fab1a0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff7675" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="pipeCoolingGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e17055"/>
+      <stop offset="35%" stop-color="#fdcb6e"/>
+      <stop offset="70%" stop-color="#74b9ff"/>
+      <stop offset="100%" stop-color="#0984e3"/>
+    </linearGradient>
+
+    <!-- Markers for Physics Vectors -->
+    <marker id="arrowCool" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#0984e3"/>
+    </marker>
+    <marker id="arrowWarm" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d63031"/>
+    </marker>
+    <marker id="arrowSolar" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#e17055"/>
+    </marker>
+    <marker id="arrowHeatFlux" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 1 L 7 5 L 0 9 z" fill="#6c5ce7"/>
+    </marker>
+    <marker id="dimTick" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6">
+      <line x1="2" y1="8" x2="8" y2="2" stroke="#2d3436" stroke-width="1.8"/>
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="800" fill="url(#cadBg)"/>
+  <rect width="1200" height="800" fill="url(#cadGrid)"/>
+
+  <!-- Master Drawing Border -->
+  <rect x="25" y="25" width="1150" height="750" fill="none" stroke="#2d3436" stroke-width="2"/>
+  <rect x="31" y="31" width="1138" height="738" fill="none" stroke="#8d6e63" stroke-width="0.8" stroke-dasharray="6,4"/>
+
+  <!-- Title Masthead Block -->
+  <g id="masthead">
+    <rect x="35" y="35" width="1130" height="95" fill="#ffffff" fill-opacity="0.85" stroke="#d0c9b6" stroke-width="1"/>
+    <text x="55" y="62" fill="#8d6e63" font-family="'Courier New', monospace" font-size="11" letter-spacing="3" font-weight="bold">ATELIER DAOUDI ARCHITECTURAL REVIEW · DETAIL &amp; ARCHDAILY RESEARCH DOSSIER</text>
+    <text x="55" y="94" fill="#2d3436" font-family="Georgia, serif" font-size="24" font-weight="bold">Geothermal Earth-Air Heat Exchangers (EAHE) &amp; Solar Chimney Aerodynamics</text>
+    <text x="55" y="117" fill="#636e72" font-family="Arial, sans-serif" font-size="12">Passive Subterranean Pre-Cooling Coupled with Buoyancy-Driven Solar Thermal Exhaust · Scale 1:100 Metric (mm)</text>
+    
+    <rect x="990" y="45" width="160" height="75" fill="#f8f9fa" stroke="#b2bec3" stroke-width="1"/>
+    <text x="1000" y="65" fill="#2d3436" font-family="'Courier New', monospace" font-size="10" font-weight="bold">PROJECT: EAHE-SOLAR-01</text>
+    <text x="1000" y="82" fill="#636e72" font-family="'Courier New', monospace" font-size="9">DATE: 2026-11-10</text>
+    <text x="1000" y="97" fill="#636e72" font-family="'Courier New', monospace" font-size="9">STANDARD: VDI 4640 / EN 16798</text>
+    <text x="1000" y="112" fill="#0984e3" font-family="'Courier New', monospace" font-size="9" font-weight="bold">STATUS: PEER-VERIFIED</text>
+  </g>
+
+  <!-- Ground Plane & Soil Stratification -->
+  <!-- Ground Level line: y = 390 -->
+  <rect x="40" y="390" width="1120" height="250" fill="#f5ede0" fill-opacity="0.6"/>
+  <rect x="40" y="390" width="1120" height="250" fill="url(#soilHatch)"/>
+  <!-- Top Soil Line -->
+  <line x1="40" y1="390" x2="1160" y2="390" stroke="#4e342e" stroke-width="3"/>
+  <text x="50" y="382" fill="#4e342e" font-family="'Courier New', monospace" font-size="11" font-weight="bold">NATURAL GRADE ELEVATION ±0.000 m</text>
+  <text x="50" y="420" fill="#8d6e63" font-family="'Courier New', monospace" font-size="10">SUBTERRANEAN STRATA (Sandy-Clay Soil, k = 1.65 W/m·K, C_v = 2.4 MJ/m³·K)</text>
+  <text x="50" y="438" fill="#0984e3" font-family="'Courier New', monospace" font-size="10" font-weight="bold">ISOTHERMAL GROUND CORE: T_soil = +18.2°C (STABLE YEAR-ROUND AT -3000 mm)</text>
+
+  <!-- SUBTERRANEAN EAHE SYSTEM (Left & Center) -->
+  <!-- Air Intake Tower at Distance -->
+  <g id="eahe-intake-tower">
+    <!-- Intake Hood at +1800mm -->
+    <rect x="75" y="315" width="45" height="75" fill="#dfe6e9" stroke="#2d3436" stroke-width="2"/>
+    <polygon points="65,315 130,315 120,295 75,295" fill="#636e72" stroke="#2d3436" stroke-width="1.5"/>
+    <!-- Louver Slots -->
+    <line x1="80" y1="330" x2="115" y2="330" stroke="#2d3436" stroke-width="1.5"/>
+    <line x1="80" y1="345" x2="115" y2="345" stroke="#2d3436" stroke-width="1.5"/>
+    <line x1="80" y1="360" x2="115" y2="360" stroke="#2d3436" stroke-width="1.5"/>
+    <!-- G4 Insect & Dust Filter -->
+    <rect x="82" y="368" width="31" height="6" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="1"/>
+    
+    <!-- Vertical Drop Shaft down to -3000 mm (y = 570) -->
+    <rect x="80" y="390" width="35" height="195" fill="#b2bec3" stroke="#2d3436" stroke-width="2"/>
+    
+    <!-- Intake Vectors -->
+    <path d="M 40 335 L 75 335" fill="none" stroke="#d63031" stroke-width="2.5" marker-end="url(#arrowWarm)"/>
+    <text x="35" y="305" fill="#d63031" font-family="'Courier New', monospace" font-size="10" font-weight="bold">AMBIENT INTAKE</text>
+    <text x="35" y="320" fill="#d63031" font-family="'Courier New', monospace" font-size="11" font-weight="bold">T_ext = +39.5°C</text>
+    <text x="35" y="333" fill="#636e72" font-family="'Courier New', monospace" font-size="9">RH = 24% | v = 1.8 m/s</text>
+  </g>
+
+  <!-- Horizontal Buried EAHE Pipe Run (Depth -3000 mm) -->
+  <g id="eahe-buried-pipe">
+    <!-- Pipe Trench & Bedding (Sand layer) -->
+    <rect x="115" y="555" width="480" height="60" fill="#eed9c4" stroke="#c8bcaa" stroke-dasharray="3,3" stroke-width="1"/>
+    
+    <!-- Food-grade Polypropylene Pipe Ø 250mm with Silver-Ion Antimicrobial Inner Liner -->
+    <!-- Downward 2% slope towards condensate sump -->
+    <path d="M 115 570 L 595 585 L 595 610 L 115 595 Z" fill="url(#pipeCoolingGrad)" stroke="#2d3436" stroke-width="2.2"/>
+    <line x1="115" y1="582" x2="595" y2="597" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="8,4"/>
+
+    <!-- Geothermal Heat Flux Vectors (dissipating into cool soil) -->
+    <line x1="200" y1="565" x2="200" y2="525" stroke="#6c5ce7" stroke-width="1.8" stroke-dasharray="3,2" marker-end="url(#arrowHeatFlux)"/>
+    <line x1="200" y1="600" x2="200" y2="635" stroke="#6c5ce7" stroke-width="1.8" stroke-dasharray="3,2" marker-end="url(#arrowHeatFlux)"/>
+    <line x1="330" y1="568" x2="330" y2="530" stroke="#6c5ce7" stroke-width="1.8" stroke-dasharray="3,2" marker-end="url(#arrowHeatFlux)"/>
+    <line x1="330" y1="603" x2="330" y2="638" stroke="#6c5ce7" stroke-width="1.8" stroke-dasharray="3,2" marker-end="url(#arrowHeatFlux)"/>
+    <line x1="460" y1="572" x2="460" y2="535" stroke="#6c5ce7" stroke-width="1.8" stroke-dasharray="3,2" marker-end="url(#arrowHeatFlux)"/>
+    <line x1="460" y1="607" x2="460" y2="642" stroke="#6c5ce7" stroke-width="1.8" stroke-dasharray="3,2" marker-end="url(#arrowHeatFlux)"/>
+    
+    <text x="210" y="520" fill="#6c5ce7" font-family="'Courier New', monospace" font-size="9" font-weight="bold">Q_rad: HEAT CONDUCTION TO SOIL</text>
+
+    <!-- Air Temperature Gradient Callouts along Pipe -->
+    <text x="135" y="555" fill="#d63031" font-family="'Courier New', monospace" font-size="9" font-weight="bold">+35.8°C</text>
+    <text x="280" y="558" fill="#e17055" font-family="'Courier New', monospace" font-size="9" font-weight="bold">+29.4°C</text>
+    <text x="420" y="562" fill="#0984e3" font-family="'Courier New', monospace" font-size="9" font-weight="bold">+25.1°C</text>
+    <text x="535" y="575" fill="#0984e3" font-family="'Courier New', monospace" font-size="10" font-weight="bold">+23.5°C</text>
+
+    <!-- Condensate Drain Sump & Siphon Pit at Lowest Point -->
+    <rect x="585" y="585" width="45" height="55" fill="#b2bec3" stroke="#2d3436" stroke-width="1.5"/>
+    <rect x="590" y="620" width="35" height="15" fill="#74b9ff" stroke="#0984e3" stroke-width="1"/>
+    <text x="525" y="655" fill="#0984e3" font-family="'Courier New', monospace" font-size="8" font-weight="bold">CONDENSATE DRAIN SUMP &amp; DRY WELL (SLOPE 2%)</text>
+  </g>
+
+  <!-- Vertical Rise into Building Plenum -->
+  <g id="eahe-building-riser">
+    <rect x="595" y="380" width="30" height="205" fill="#74b9ff" fill-opacity="0.3" stroke="#2d3436" stroke-width="2"/>
+    <!-- Pre-cooled air rising vector -->
+    <path d="M 610 570 L 610 400" fill="none" stroke="#0984e3" stroke-width="3" stroke-dasharray="6,3" marker-end="url(#arrowCool)"/>
+    <text x="625" y="470" fill="#0984e3" font-family="'Courier New', monospace" font-size="10" font-weight="bold" transform="rotate(90 625 470)">PRE-COOLED AIR (+23.5°C, ΔT = -16.0°C)</text>
+  </g>
+
+  <!-- ARCHITECTURAL SUPERSTRUCTURE & BUILDING ENVELOPE -->
+  <!-- Building Span: x = 620 to x = 1110 -->
+  <g id="architectural-envelope">
+    <!-- Sub-Slab Insulation & Floor Slab -->
+    <rect x="625" y="375" width="475" height="20" fill="#dfe6e9" stroke="#2d3436" stroke-width="1.5"/>
+    <!-- Underfloor Displacement Plenum -->
+    <rect x="635" y="360" width="320" height="15" fill="#e3f2fd" stroke="#0984e3" stroke-width="1"/>
+    <!-- Finished Floor (250mm low-carbon concrete thermal slab) -->
+    <rect x="625" y="345" width="475" height="15" fill="#b2bec3" stroke="#2d3436" stroke-width="2"/>
+    
+    <!-- Displacement Air Floor Grilles -->
+    <rect x="660" y="342" width="35" height="5" fill="#0984e3"/>
+    <rect x="740" y="342" width="35" height="5" fill="#0984e3"/>
+    <rect x="820" y="342" width="35" height="5" fill="#0984e3"/>
+    
+    <!-- Floor displacement air vectors -->
+    <path d="M 677 340 L 677 305" fill="none" stroke="#0984e3" stroke-width="2" marker-end="url(#arrowCool)"/>
+    <path d="M 757 340 L 757 305" fill="none" stroke="#0984e3" stroke-width="2" marker-end="url(#arrowCool)"/>
+    <path d="M 837 340 L 837 305" fill="none" stroke="#0984e3" stroke-width="2" marker-end="url(#arrowCool)"/>
+    <text x="660" y="295" fill="#0984e3" font-family="'Courier New', monospace" font-size="9" font-weight="bold">LAMINAR DISPLACEMENT (v ≤ 0.35 m/s)</text>
+
+    <!-- Heavy Thermal Mass Wall (North/East): 400mm Compressed Earth (CSEB) -->
+    <rect x="625" y="160" width="35" height="185" fill="#c7a788" stroke="#4e342e" stroke-width="2"/>
+    <rect x="625" y="160" width="35" height="185" fill="url(#earthMassHatch)"/>
+    <text x="615" y="270" fill="#4e342e" font-family="'Courier New', monospace" font-size="9" font-weight="bold" transform="rotate(-90 615 270)">400 mm CSEB RAMMED EARTH (11.5 h THERMAL LAG)</text>
+
+    <!-- Occupied Living & Research Core -->
+    <text x="710" y="235" fill="#2d3436" font-family="Georgia, serif" font-size="18" font-weight="bold">Thermal Comfort Zone</text>
+    <text x="700" y="255" fill="#636e72" font-family="Arial, sans-serif" font-size="11">Operative Temp: T_op = 24.2°C ± 0.8°C</text>
+    <text x="700" y="270" fill="#27ae60" font-family="'Courier New', monospace" font-size="10" font-weight="bold">EN 16798-1 CATEGORY I COMFORT (ZERO ACTIVE CHILLER)</text>
+
+    <!-- Roof Structure: Insulated Concrete Slab + Green Roof Substrate -->
+    <rect x="620" y="145" width="360" height="20" fill="#b2bec3" stroke="#2d3436" stroke-width="2"/>
+    <rect x="620" y="135" width="360" height="10" fill="#81c784" stroke="#2e7d32" stroke-width="1.2"/>
+    <!-- Deep Cantilevered Solar Overhang: 1400 mm -->
+    <rect x="910" y="145" width="70" height="20" fill="#8d6e63" stroke="#4e342e" stroke-width="1.5"/>
+    <text x="650" y="130" fill="#2e7d32" font-family="'Courier New', monospace" font-size="9" font-weight="bold">HIGH-ALBEDO EXTENSIVE ROOF GARDEN (SRI ≥ 92)</text>
+
+    <!-- South High-Performance Solar Glazing -->
+    <line x1="900" y1="165" x2="900" y2="345" stroke="#74b9ff" stroke-width="4"/>
+    <text x="840" y="210" fill="#0984e3" font-family="'Courier New', monospace" font-size="8">LOW-E DOUBLE GLAZING (SHGC 0.28)</text>
+
+    <!-- Summer Solstice Sun Cutoff (72°) -->
+    <line x1="1020" y1="70" x2="960" y2="155" stroke="#f39c12" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="960" y1="155" x2="900" y2="245" stroke="#f39c12" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowSolar)"/>
+    <text x="965" y="85" fill="#f39c12" font-family="'Courier New', monospace" font-size="10" font-weight="bold">SOLAR CUTOFF: 72° SUMMER</text>
+    <text x="965" y="98" fill="#f39c12" font-family="'Courier New', monospace" font-size="8">100% EXCLUSION OF DIRECT GAIN</text>
+  </g>
+
+  <!-- HIGH-PERFORMANCE SOLAR CHIMNEY TECTONICS (Right Wing) -->
+  <g id="solar-chimney-engine">
+    <!-- Solar Chimney Cavity: Width = 600 mm, Height = 8500 mm (y = 80 to y = 345) -->
+    <!-- South Dark Absorber Backplate (Volcanic Basalt / Selective Metal α = 0.94) -->
+    <rect x="990" y="90" width="20" height="255" fill="#2d3436" stroke="#1e272e" stroke-width="1.5"/>
+    <text x="1005" y="240" fill="#ffffff" font-family="'Courier New', monospace" font-size="8" font-weight="bold" transform="rotate(90 1005 240)">SOLAR ABSORBER α = 0.94 (T_plate = 68.5°C)</text>
+
+    <!-- Glazed Outer Front Skin (Low-Iron Toughened Glass) -->
+    <rect x="1055" y="90" width="8" height="255" fill="#81ecec" fill-opacity="0.8" stroke="#00cec9" stroke-width="1.5"/>
+    <text x="1070" y="225" fill="#00b894" font-family="'Courier New', monospace" font-size="8" font-weight="bold" transform="rotate(90 1070 225)">LOW-IRON GLASS (T_sol = 91%)</text>
+
+    <!-- Solar Cavity Volume with Convective Buoyancy Gradient -->
+    <rect x="1010" y="90" width="45" height="255" fill="url(#solarChimneyGrad)"/>
+
+    <!-- Air Intake from Room Core into Chimney Base -->
+    <rect x="975" y="300" width="35" height="35" fill="none" stroke="#2d3436" stroke-width="1.5"/>
+    <path d="M 940 320 L 985 320 Q 1025 320 1025 280" fill="none" stroke="#e17055" stroke-width="3" marker-end="url(#arrowSolar)"/>
+    <text x="915" y="340" fill="#e17055" font-family="'Courier New', monospace" font-size="9" font-weight="bold">THERMAL DRAFT INLET</text>
+
+    <!-- Stack Buoyancy Convection Vectors inside Chimney -->
+    <path d="M 1032 260 L 1032 130" fill="none" stroke="#d63031" stroke-width="3.5" stroke-dasharray="6,3" marker-end="url(#arrowWarm)"/>
+    <text x="1040" y="170" fill="#d63031" font-family="'Courier New', monospace" font-size="10" font-weight="bold" transform="rotate(90 1040 170)">STACK SUCTION ΔP = 14.8 Pa (v = 2.4 m/s)</text>
+
+    <!-- Aerodynamic Exhaust Cowl at Parapet (+9200 mm) -->
+    <polygon points="980,90 1075,90 1090,65 965,65" fill="#636e72" stroke="#2d3436" stroke-width="2"/>
+    <rect x="985" y="68" width="85" height="12" fill="#dfe6e9" stroke="#2d3436" stroke-width="1"/>
+    
+    <!-- Wind-Assisted Bernoulli Exhaust Plume -->
+    <path d="M 1032 65 Q 1032 35 1075 30" fill="none" stroke="#d63031" stroke-width="3" marker-end="url(#arrowWarm)"/>
+    <text x="1000" y="25" fill="#d63031" font-family="'Courier New', monospace" font-size="10" font-weight="bold">SOLAR CHIMNEY EXHAUST (ACH = 7.4 h⁻¹)</text>
+
+    <!-- Prevailing Summer Breeze Inducing Bernoulli Negative Pressure -->
+    <line x1="880" y1="45" x2="960" y2="45" stroke="#00b894" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrowHeatFlux)"/>
+    <text x="840" y="38" fill="#00b894" font-family="'Courier New', monospace" font-size="9" font-weight="bold">PREVAILING BREEZE (VENTURI ACCELERATION)</text>
+  </g>
+
+  <!-- CAD DIMENSION CHAINS (MILLIMETERS) -->
+  <g id="dimension-chains">
+    <!-- Subterranean Depth: 3 000 mm -->
+    <line x1="60" y1="390" x2="60" y2="570" stroke="#2d3436" stroke-width="1.2"/>
+    <line x1="52" y1="390" x2="68" y2="390" stroke="#2d3436" stroke-width="1.5"/>
+    <line x1="52" y1="570" x2="68" y2="570" stroke="#2d3436" stroke-width="1.5"/>
+    <text x="45" y="485" fill="#2d3436" font-family="'Courier New', monospace" font-size="10" font-weight="bold" transform="rotate(-90 45 485)">3 000 mm DEPTH</text>
+
+    <!-- Buried Pipe Run Length: 50 000 mm (Not to scale abbreviation) -->
+    <line x1="115" y1="675" x2="595" y2="675" stroke="#2d3436" stroke-width="1.2"/>
+    <line x1="115" y1="667" x2="115" y2="683" stroke="#2d3436" stroke-width="1.5"/>
+    <line x1="595" y1="667" x2="595" y2="683" stroke="#2d3436" stroke-width="1.5"/>
+    <text x="290" y="692" fill="#2d3436" font-family="'Courier New', monospace" font-size="11" font-weight="bold">50 000 mm PIPE RUN (SLOPE 2% / 20 mm/m)</text>
+
+    <!-- Pipe Diameter: Ø 250 mm -->
+    <line x1="120" y1="620" x2="160" y2="620" stroke="#0984e3" stroke-width="1"/>
+    <text x="165" y="623" fill="#0984e3" font-family="'Courier New', monospace" font-size="9" font-weight="bold">Ø 250 mm PP-R PIPE (SILVER-ION LINER)</text>
+
+    <!-- Clear Ceiling Height: 3 400 mm -->
+    <line x1="885" y1="165" x2="885" y2="345" stroke="#2d3436" stroke-width="1.2"/>
+    <line x1="878" y1="165" x2="892" y2="165" stroke="#2d3436" stroke-width="1.5"/>
+    <line x1="878" y1="345" x2="892" y2="345" stroke="#2d3436" stroke-width="1.5"/>
+    <text x="878" y="260" fill="#2d3436" font-family="'Courier New', monospace" font-size="10" font-weight="bold" transform="rotate(-90 878 260)">3 400 mm CLEAR HEIGHT</text>
+
+    <!-- Solar Chimney Cavity Width: 600 mm -->
+    <line x1="1010" y1="355" x2="1055" y2="355" stroke="#2d3436" stroke-width="1.2"/>
+    <line x1="1010" y1="348" x2="1010" y2="362" stroke="#2d3436" stroke-width="1.5"/>
+    <line x1="1055" y1="348" x2="1055" y2="362" stroke="#2d3436" stroke-width="1.5"/>
+    <text x="1005" y="372" fill="#2d3436" font-family="'Courier New', monospace" font-size="9" font-weight="bold">600 mm</text>
+
+    <!-- Solar Chimney Total Height: 8 500 mm -->
+    <line x1="1125" y1="65" x2="1125" y2="345" stroke="#2d3436" stroke-width="1.2"/>
+    <line x1="1118" y1="65" x2="1132" y2="65" stroke="#2d3436" stroke-width="1.5"/>
+    <line x1="1118" y1="345" x2="1132" y2="345" stroke="#2d3436" stroke-width="1.5"/>
+    <text x="1142" y="215" fill="#2d3436" font-family="'Courier New', monospace" font-size="10" font-weight="bold" transform="rotate(90 1142 215)">8 500 mm CHIMNEY SHAFT</text>
+
+    <!-- Cantilever Overhang: 1 400 mm -->
+    <line x1="910" y1="120" x2="980" y2="120" stroke="#8d6e63" stroke-width="1.2"/>
+    <line x1="910" y1="113" x2="910" y2="127" stroke="#8d6e63" stroke-width="1.5"/>
+    <line x1="980" y1="113" x2="980" y2="127" stroke="#8d6e63" stroke-width="1.5"/>
+    <text x="918" y="112" fill="#8d6e63" font-family="'Courier New', monospace" font-size="9" font-weight="bold">1 400 mm</text>
+  </g>
+
+  <!-- ENGINEERING SPECIFICATION & PHYSICS DATA BOX -->
+  <g id="technical-specs-table" transform="translate(45, 705)">
+    <rect width="1110" height="60" fill="#ffffff" fill-opacity="0.9" stroke="#b2bec3" stroke-width="1"/>
+    
+    <g transform="translate(15, 18)">
+      <text x="0" y="0" fill="#8d6e63" font-family="'Courier New', monospace" font-size="9" font-weight="bold">GEOTHERMAL HEAT TRANSFER RATE</text>
+      <text x="0" y="16" fill="#2d3436" font-family="Georgia, serif" font-size="14" font-weight="bold">Q_sensible = 4.85 kW</text>
+      <text x="0" y="30" fill="#636e72" font-family="Arial, sans-serif" font-size="9">m_dot = 0.32 kg/s | ΔT = -16.0 K</text>
+    </g>
+
+    <line x1="280" y1="8" x2="280" y2="52" stroke="#dfe6e9" stroke-width="1"/>
+
+    <g transform="translate(300, 18)">
+      <text x="0" y="0" fill="#8d6e63" font-family="'Courier New', monospace" font-size="9" font-weight="bold">NATURAL THERMAL DRAFT PRESSURE</text>
+      <text x="0" y="16" fill="#d63031" font-family="Georgia, serif" font-size="14" font-weight="bold">ΔP = ρ·g·H·β·ΔT = 14.8 Pa</text>
+      <text x="0" y="30" fill="#636e72" font-family="Arial, sans-serif" font-size="9">Buoyancy head across 8.5m cavity</text>
+    </g>
+
+    <line x1="560" y1="8" x2="560" y2="52" stroke="#dfe6e9" stroke-width="1"/>
+
+    <g transform="translate(580, 18)">
+      <text x="0" y="0" fill="#8d6e63" font-family="'Courier New', monospace" font-size="9" font-weight="bold">AIR EXCHANGE RATE (ACH)</text>
+      <text x="0" y="16" fill="#0984e3" font-family="Georgia, serif" font-size="14" font-weight="bold">7.4 h⁻¹ Natural ACH</text>
+      <text x="0" y="30" fill="#636e72" font-family="Arial, sans-serif" font-size="9">100% Zero-Electricity Operation</text>
+    </g>
+
+    <line x1="840" y1="8" x2="840" y2="52" stroke="#dfe6e9" stroke-width="1"/>
+
+    <g transform="translate(860, 18)">
+      <text x="0" y="0" fill="#8d6e63" font-family="'Courier New', monospace" font-size="9" font-weight="bold">COOLING EFFECTIVENESS FACTOR</text>
+      <text x="0" y="16" fill="#27ae60" font-family="Georgia, serif" font-size="14" font-weight="bold">η_EAHE = 75.1%</text>
+      <text x="0" y="30" fill="#636e72" font-family="Arial, sans-serif" font-size="9">(T_in - T_out) / (T_in - T_soil)</text>
+    </g>
+  </g>
+</svg>

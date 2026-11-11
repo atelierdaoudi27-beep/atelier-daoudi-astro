@@ -1,7 +1,82 @@
 {
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-11",
   "dossier": "VOL. 04 — GLOBAL ARCHITECTURAL REVIEW & CASE STUDIES (ARCHDAILY FORMAT)",
   "articles": [
+    {
+      "id": "geothermal-eahe-solar-chimney",
+      "title": "Subterranean Geothermal (EAHE) & Solar Chimney Thermodynamics: Zero-Chiller Mediterranean Cooling",
+      "category": "Geothermal Physics & Passive Aerodynamics",
+      "topic": "Passive",
+      "summary": "Coupling a 50-meter subterranean Earth-Air Heat Exchanger (EAHE) with an 8.5-meter high-absorptance solar chimney: achieving a -16.0°C sensible cooling drop, 7.4 natural air changes per hour, and 100% zero-electricity thermal comfort.",
+      "date": "2026-11-11",
+      "readingTime": "9 min read",
+      "dossierNumber": "SPECIAL FEATURE 04 / GEOTHERMAL AERODYNAMICS",
+      "image": "assets/photo-geothermal-hero.jpg",
+      "imageAlt": "Contemporary bioclimatic residence with integrated solar chimney tower, rammed earth volumes, and native Mediterranean landscaping",
+      "imageCredit": "Architectural Photography · Bioclimatic Subterranean & Solar Chimney Architecture Collection",
+      "specs": {
+        "Thermodynamic Typology": "Earth-Air Heat Exchanger (EAHE) + Buoyancy-Driven Solar Chimney",
+        "Subterranean Depth & Length": "Depth -3,000mm / Length 50,000mm (Food-Grade PP-R Ø250mm, 2% Slope)",
+        "Sensible Heat Transfer Rate": "Q_sensible = 4.85 kW (Thermal Soil Conduction k = 1.65 W/m·K)",
+        "Thermal Relief Performance": "ΔT = -16.0°C (Intake +39.5°C down to Indoor Delivery +23.5°C)",
+        "Induced Ventilation Draft": "ΔP = 14.8 Pa Stack Suction / 7.4 Natural ACH (Zero Fan Electricity)",
+        "Building Envelope Massing": "400mm CSEB Compressed Earth Walls (11.5h Lag) + Deep 1,400mm Overhangs",
+        "Indoor Climate Compliance": "EN 16798-1 Category I / ASHRAE 55 Adaptive Comfort (Operative 24.2°C ± 0.8°C)",
+        "Standards & Directives": "VDI 4640 Blatt 4 / EN 16798-1 / Detail Bioclimatic Protocols"
+      },
+      "drawings": [
+        {
+          "title": "Subterranean EAHE Section & Solar Chimney Aerodynamic Engine",
+          "type": "Thermodynamic CAD Section & Vector Blueprint (Scale 1:100 mm)",
+          "url": "assets/article-geothermal-eahe.svg",
+          "caption": "Orthographic thermodynamic section showing ambient air intake (+39.5°C), 50m subterranean PP-R tube cooling gradient to +23.5°C at -3,000mm depth, underfloor displacement plenum, 400mm rammed earth thermal mass, 72° summer solar cutoff, and 8,500mm solar chimney generating 14.8 Pa buoyant stack exhaust (ACH = 7.4 h⁻¹)."
+        }
+      ],
+      "gallery": [
+        {
+          "title": "Bioclimatic Exterior Massing & Aerodynamic Solar Chimney Tower",
+          "url": "assets/photo-geothermal-hero.jpg",
+          "caption": "Exterior volumetric composition highlighting the 8.5m solar thermal exhaust tower, low-e deep-recessed fenestration, 1400mm cantilevered shading overhangs, and warm natural earth tones blending with the arid Mediterranean landscape."
+        },
+        {
+          "title": "Refined Biophilic Interior & Flush Floor Displacement Grilles",
+          "url": "assets/photo-geothermal-interior.jpg",
+          "caption": "Contemporary living core featuring 3.4m high exposed timber ceilings, 400mm raw rammed earth walls, polished concrete floor slabs, and integrated linear displacement grilles delivering pre-cooled 23.5°C air at laminar velocity (v ≤ 0.35 m/s) with zero draft discomfort."
+        }
+      ],
+      "keyTakeaways": [
+        "Subterranean soil at -3.0 meters maintains an isothermal temperature of 18.2°C year-round, serving as an inexhaustible natural thermal heat sink.",
+        "A 50-meter food-grade PP-R pipe with silver-ion antimicrobial coating delivers a sensible heat transfer rate of 4.85 kW, depressing outdoor peak air from +39.5°C to +23.5°C.",
+        "An 8.5-meter south-facing glazed solar chimney with high-absorptance basalt backplate (α = 0.94) heats up to 68.5°C, generating 14.8 Pa of buoyant suction draft.",
+        "Combining passive subterranean supply with thermal stack exhaust yields 7.4 air changes per hour (ACH) entirely free of mechanical fans or chillers.",
+        "400mm compressed stabilized earth walls provide an 11.5-hour thermal phase shift, perfectly delaying external temperature waves until nocturnal cooling."
+      ],
+      "paragraphs": [
+        "In hyper-arid and Mediterranean climate zones, the quest for thermal comfort has all too often surrendered to energy-intensive mechanical air conditioning, which accounts for over 35% of peak electrical grid stress during summer heatwaves. International research published across Detail and ArchDaily underscores an urgent paradigm shift: reviving subterranean thermal exchange and natural aerodynamic buoyancy to eliminate active chillers entirely.",
+        "The thermodynamics of the Earth-Air Heat Exchanger (EAHE) leverage the immense thermal inertia of the upper earth crust. While surface ambient temperatures oscillate between +16°C at night and +40°C at peak solar noon, soil temperatures at depths greater than 3,000mm stabilize at the annual mean ground temperature (+18.2°C). By drawing outdoor air (+39.5°C) through a 50-meter subterranean run of 250mm food-grade polypropylene piping with antimicrobial silver-ion interior liners, heat is conducted outward into the surrounding soil matrix (k = 1.65 W/m·K). The air stream undergoes a sensible temperature reduction of 16.0 K, arriving at the building plenum at a temperate +23.5°C with an EAHE cooling effectiveness of η = 75.1%.",
+        "To circulate this pre-cooled air without consuming fan energy, the architecture incorporates an 8,500mm high vertical solar chimney at the building leeward solar facade. The chimney features a south-oriented low-iron glazing skin and a dark basalt thermal absorber (absorptance α = 0.94). Solar radiation trapped within the cavity heats the interior air column to +68.5°C, generating a buoyancy head (ΔP = 14.8 Pa) via the Bernoulli and stack principles. This continuous thermal draft pulls stale indoor air upward and exhausts it through an aerodynamic parapet cowl, which in turn induces fresh, subterranean-cooled air into the living chambers through floor displacement grilles at laminar velocities (v ≤ 0.35 m/s).",
+        "Editorial perspective: The synergy of an EAHE system with heavy mineral envelopes—specifically 400mm Compressed Stabilized Earth Blocks (CSEB) providing an 11.5-hour thermal lag—creates an autonomous microclimatic habitat. Condensate management must be addressed with rigorous detailing: a constant 2% pipe slope terminates in a subterranean drainage sump to prevent microbial pooling. When calculated according to VDI 4640 and EN 16798-1, this integrated system guarantees Category I comfort (operative temperature 24.2°C ± 0.8°C) under 40°C ambient extremes, representing the pinnacle of passive bioclimatic tectonics."
+      ],
+      "practiceImplications": "Specify food-grade polypropylene (PP-R) or high-density polyethylene (HDPE) with antimicrobial inner linings to prevent mold growth; PVC piping must be strictly avoided due to toxic phthalate outgassing. Maintain a continuous 2% slope towards a cleanable siphon condensate sump. For the solar chimney, provide seasonal motorized bypass dampers to switch between summer thermal exhausting and winter passive heat recovery.",
+      "sources": [
+        {
+          "title": "Association of German Engineers — VDI 4640 Blatt 4: Thermal Use of the Underground (Ground-Air Heat Exchangers)",
+          "url": "https://www.vdi.de/richtlinien/details/vdi-4640-blatt-4-thermische-nutzung-des-untergrunds-erdwaermetauscher"
+        },
+        {
+          "title": "European Standard EN 16798-1: Energy Performance of Buildings — Indoor Environmental Quality & Thermal Comfort",
+          "url": "https://www.en-standard.eu/csn-en-16798-1-energy-performance-of-buildings-ventilation-for-buildings/"
+        },
+        {
+          "title": "Detail Magazine Technical Review — Building Physics, Natural Ventilation & Solar Chimney Aerodynamics",
+          "url": "https://www.detail.de/"
+        },
+        {
+          "title": "Lawrence Berkeley National Laboratory (LBNL) — Passive Cooling & Earth-Coupled Thermal Exchange Guidelines",
+          "url": "https://eta.lbl.gov/"
+        }
+      ]
+    },
     {
       "id": "mass-timber-clt-thermodynamics",
       "title": "Mass Timber & Double-Skin Greenhouse Buffer Thermodynamics",
