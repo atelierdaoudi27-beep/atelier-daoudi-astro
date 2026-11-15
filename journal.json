@@ -1,7 +1,90 @@
 {
-  "updatedAt": "2026-11-11",
-  "dossier": "VOL. 04 — GLOBAL ARCHITECTURAL REVIEW & CASE STUDIES (ARCHDAILY FORMAT)",
+  "updatedAt": "2026-11-15",
+  "dossier": "VOL. 05 — GLOBAL ARCHITECTURAL REVIEW & CASE STUDIES (ARCHDAILY FORMAT)",
   "articles": [
+    {
+      "id": "passive-radiative-cooling-vault",
+      "title": "Sub-Ambient Passive Radiative Cooling (PRC) & Capillary Vault Thermodynamics: Zero-Chiller Mediterranean Microclimates",
+      "category": "Radiative Physics & Bio-Vault Tectonics",
+      "topic": "Passive",
+      "summary": "Coupling a sub-ambient passive radiative cooling (PRC) metasurface with a closed-loop thermosyphon and monolithic pozzolan-lime vault: achieving a -6.8°C sub-ambient surface depression, 92 W/m² daytime cooling flux, and draft-free radiant comfort under peak solar irradiance.",
+      "date": "2026-11-15",
+      "readingTime": "9 min read",
+      "dossierNumber": "SPECIAL FEATURE 05 / RADIATIVE SKY COOLING",
+      "image": "assets/photo-prc-vault-hero.jpg",
+      "imageAlt": "Contemporary bioclimatic Mediterranean residence with ultra-white passive radiative cooling roof parapets, local limestone ashlar, deep timber brise-soleil, and native xeriscape landscaping",
+      "imageCredit": "Architectural Photography · Bioclimatic Metamaterial & Radiative Architecture Collection",
+      "specs": {
+        "Thermodynamic Typology": "Sub-Ambient Passive Radiative Cooling (PRC) + Closed-Loop Thermosyphon + Monolithic Hydronic Vault",
+        "Solar Reflectance (R_solar)": "97.2% (Nanostructured BaSO₄/Polymer Metasurface Coating)",
+        "Atmospheric Window Emissivity": "ε = 0.95 (Selective LWIR Emission in 8–13 µm Band towards Deep Space 3 K)",
+        "Net Radiative Cooling Power": "q_rad = 92 W/m² (Peak Noon Direct Sun 1,020 W/m²) / 125 W/m² (Nocturnal)",
+        "Sub-Ambient Surface Depression": "ΔT = -6.8 K below Ambient Air (T_amb +38.5°C down to T_collector +31.5°C)",
+        "Embedded Capillary Matrix": "Ø4.3x0.8mm PE-RT Capillary Tubes at 20mm Pitch embedded in Vault Intrados (25mm depth)",
+        "Chilled Supply & Radiant Temp": "T_supply = 19.8°C / Vault Radiant Surface T_radiant = 20.2°C ± 0.5°C",
+        "Structural Vault Massing": "250mm Monolithic Hydraulic Lime & Volcanic Pozzolan Vault (Clear Span 6,200mm, Rise 600mm)",
+        "Envelope Thermal Massing": "450mm Local Ashlar Limestone + 150mm Aerated Lime Mortar (Lag φ = 12.8h, Decrement f = 0.04)",
+        "Solar Shading Cantilever": "1,600mm Deep Brise-Soleil (66° Summer Solstice Absolute Glazing Cutoff)",
+        "Indoor Comfort Compliance": "ISO 52016-1 / EN 16798-1 Category I (T_op = 23.8°C ± 0.5°C, RH 48%, PMV = -0.12, DR < 5%)",
+        "Standards & Directives": "ISO 52016-1 / EN 16798-1 / DIN 4108-2 / Detail Green Protocols"
+      },
+      "drawings": [
+        {
+          "title": "Sub-Ambient PRC Collector Section & Capillary Vault Thermosyphon Blueprint",
+          "type": "Thermodynamic CAD Section & Vector Blueprint (Scale 1:50 mm)",
+          "url": "assets/article-radiative-cooling-vault.svg",
+          "caption": "Orthographic thermodynamic section showing atmospheric window LWIR emission (8–13 µm) to outer space (3 K), generating -6.8 K sub-ambient surface depression, gravity thermosyphon hydronic supply (19.8°C) to embedded Ø4.3mm capillary mats in a 250mm pozzolan-lime vault (span 6,200mm), 600mm ashlar stone envelope, and 1,600mm cantilevered brise-soleil."
+        }
+      ],
+      "gallery": [
+        {
+          "title": "Bioclimatic Exterior Massing & Sub-Ambient Metamaterial Parapets",
+          "url": "assets/photo-prc-vault-hero.jpg",
+          "caption": "Exterior volumetric composition highlighting the ultra-white radiative parapets, honed local limestone walls, 1,600mm cantilevered timber shading overhangs, and recessed low-e glazing harmonized with arid Mediterranean olive landscaping."
+        },
+        {
+          "title": "Refined Mediterranean Salon & Radiant Capillary Lime Vault",
+          "url": "assets/photo-prc-vault-interior.jpg",
+          "caption": "Serene interior living space crowned by a monolithic pozzolan-lime vault with integrated invisible capillary cooling lines maintaining a 20.2°C radiant surface, complemented by honed limestone flooring, natural oak joinery, and indirect clerestory daylighting."
+        }
+      ],
+      "keyTakeaways": [
+        "Leveraging the atmospheric transparency window (8–13 µm) vents thermal longwave radiation directly into deep outer space (3 K), achieving 92 W/m² of net cooling under direct peak sunlight.",
+        "Nanostructured barium sulfate coatings achieve 97.2% solar reflectance and 0.95 LWIR emissivity, yielding a -6.8 K sub-ambient depression without mechanical compressor energy.",
+        "Embedding closed-loop PE-RT capillary mats (Ø4.3mm) within a 250mm monolithic lime-pozzolan vault delivers laminar radiant cooling (T_radiant = 20.2°C) directly to occupants with zero draft noise.",
+        "A 450mm ashlar limestone envelope provides an 12.8-hour thermal phase shift and a 0.04 decrement factor, buffering indoor spaces from 38°C+ Mediterranean heatwaves.",
+        "Nocturnal convective purging through automated clerestory louvers (ACH = 4.8 h⁻¹) pre-cools structural mass overnight to stabilize daytime operative temperatures at 23.8°C."
+      ],
+      "paragraphs": [
+        "In arid and Mediterranean coastal microclimates such as Mostaganem and the Algerian littoral, conventional cooling paradigms have historically relied on energy-intensive mechanical chillers, driving peak electricity consumption and severe heat-island emissions. Groundbreaking research published across Detail and ArchDaily marks an essential inflection point: harnessing the cold sink of deep space (3 Kelvin) through passive radiative cooling (PRC) metamaterials coupled with high-thermal-inertia monolithic vaults.",
+        "The physics of sub-ambient radiative cooling relies on the atmospheric transparency window between 8.0 and 13.0 micrometers. Terrestrial thermal radiation in this spectral band passes unhindered through greenhouse gases and discharges straight into outer space. By engineering a roof parapet metasurface combining hierarchical barium sulfate (BaSO₄) microparticles embedded in a fluoropolymer matrix, the envelope reflects 97.2% of shortwave solar irradiance (1,020 W/m²) while exhibiting an emissivity of 0.95 across 8–13 µm. Under solar noon conditions, this dual mechanism achieves a net radiative cooling flux of 92 W/m², depressing the collector surface temperature by -6.8 K below ambient dry-bulb air temperature.",
+        "To distribute this sub-ambient cooling into the occupied volume without active mechanical refrigeration, the design employs a closed-loop thermosyphon hydronic network. Chilled fluid at 19.8°C descends by gravity into flexible high-density polypropylene capillary mats (Ø4.3mm x 0.8mm, 20mm pitch) embedded 25mm deep within the intrados of a 250mm monolithic hydraulic lime and volcanic pozzolan vault. The structural vault acts as an expansive radiant cooling element with a surface temperature of 20.2°C ± 0.5°C, absorbing sensible radiant heat from human bodies and furnishing Category I indoor comfort (EN 16798-1, operative 23.8°C ± 0.5°C) at zero acoustic disturbance.",
+        "Editorial perspective: The architectural synergy of passive radiative harvesting with regional earth and stone tectonics establishes a truly resilient Mediterranean typology. The 450mm exterior limestone walls and breathable lime mortars offer a 12.8-hour phase lag, synchronizing solar heat wave attenuation with nocturnal convective purging (ACH = 4.8 h⁻¹ via high-level clerestory louvers). The hygroscopic matrix of lime and pozzolan naturally buffers indoor relative humidity at 48%, preventing surface condensation even during humid maritime breeze events."
+      ],
+      "practiceImplications": "Specify high-durability barium sulfate nanocomposite coatings with hydrophobic silane topcoats to preserve solar reflectance in dust-prone North African environments. Embed capillary mats within natural hydraulic lime (NHL 3.5) and pozzolanic mortars, performing hydrostatic pressure testing at 8 bar for 24 hours prior to finish plastering. Integrate a solid-state dew-point sensor to modulate hydronic flow and guarantee that ceiling surface temperatures remain strictly above the indoor dew-point threshold.",
+      "sources": [
+        {
+          "title": "Detail Magazine (Detail Structure & Green) — Passive Radiative Cooling & Advanced Envelope Physics in Low-Carbon Architecture",
+          "url": "https://www.detail.de/"
+        },
+        {
+          "title": "Fraunhofer Institute for Solar Energy Systems (ISE) — Radiative Sky Cooling & Thermally Activated Building Systems (TABS)",
+          "url": "https://www.ise.fraunhofer.de/"
+        },
+        {
+          "title": "International Standard ISO 52016-1: Energy Performance of Buildings — Sensible and Latent Heat Loads and Internal Temperatures",
+          "url": "https://www.iso.org/"
+        },
+        {
+          "title": "European Standard EN 16798-1: Indoor Environmental Quality & Operative Temperature Criteria for Radiant Systems",
+          "url": "https://www.en-standard.eu/"
+        },
+        {
+          "title": "ArchDaily Editorial Review — Case Studies in Contemporary Mediterranean Vaults & Passive Bioclimatic Housing",
+          "url": "https://www.archdaily.com/"
+        }
+      ]
+    },
     {
       "id": "geothermal-eahe-solar-chimney",
       "title": "Subterranean Geothermal (EAHE) & Solar Chimney Thermodynamics: Zero-Chiller Mediterranean Cooling",
