@@ -1,0 +1,263 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+  <defs>
+    <!-- Background & Engineering Grid -->
+    <linearGradient id="cadBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f2ede4"/>
+    </linearGradient>
+    <pattern id="cadGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#e3ded3" stroke-width="0.75"/>
+    </pattern>
+
+    <!-- Material Hatches -->
+    <!-- Rammed Earth Strata Hatch -->
+    <pattern id="piseHatch" width="40" height="20" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="5" x2="40" y2="5" stroke="#a08264" stroke-width="1.2"/>
+      <line x1="0" y1="10" x2="40" y2="10" stroke="#bfa382" stroke-width="0.6" stroke-dasharray="3,2"/>
+      <line x1="0" y1="15" x2="40" y2="15" stroke="#8d6e4f" stroke-width="1"/>
+      <circle cx="8" cy="7.5" r="0.8" fill="#78593a"/>
+      <circle cx="24" cy="12.5" r="1" fill="#6d4c41"/>
+      <circle cx="34" cy="3" r="0.7" fill="#78593a"/>
+    </pattern>
+    <!-- Earth Soil Foundation Hatch -->
+    <pattern id="soilHatch" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 L 20 0 M 0 0 L 20 20" fill="none" stroke="#cfc2b2" stroke-width="0.6"/>
+    </pattern>
+    <!-- Insulation Hatch -->
+    <pattern id="insulHatch" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 0 4 Q 2 0 4 4 T 8 4" fill="none" stroke="#d35400" stroke-width="0.75"/>
+    </pattern>
+    <!-- Timber Hatch -->
+    <pattern id="timberHatch" width="12" height="12" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#5d4037" stroke-width="0.8"/>
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#8d6e63" stroke-width="0.5"/>
+    </pattern>
+    <!-- Bio-PCM Micro-Capsules Pattern -->
+    <pattern id="pcmPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#e8f4f8"/>
+      <circle cx="5" cy="5" r="2.2" fill="#0288d1" fill-opacity="0.75"/>
+      <circle cx="5" cy="5" r="1.1" fill="#b3e5fc"/>
+    </pattern>
+
+    <!-- Gradients for Physics Dynamics -->
+    <linearGradient id="solarHeatGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e67e22" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#f39c12" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="pcmBufferGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0288d1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#03a9f4" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="coolNightAirGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#26de81" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#20bf6b" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Vector Markers -->
+    <marker id="arrowSolar" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d35400"/>
+    </marker>
+    <marker id="arrowVentCool" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#009432"/>
+    </marker>
+    <marker id="arrowVentWarm" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#ea2027"/>
+    </marker>
+    <marker id="arrowPCM" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#0288d1"/>
+    </marker>
+    <marker id="dimTick" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6">
+      <line x1="2" y1="8" x2="8" y2="2" stroke="#2c3e50" stroke-width="1.8"/>
+    </marker>
+  </defs>
+
+  <!-- Sheet Background -->
+  <rect width="1200" height="820" fill="url(#cadBg)"/>
+  <rect width="1200" height="820" fill="url(#cadGrid)"/>
+
+  <!-- Border & Engineering Frame -->
+  <rect x="25" y="25" width="1150" height="770" fill="none" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="31" y="31" width="1138" height="758" fill="none" stroke="#795548" stroke-width="0.8" stroke-dasharray="6,4"/>
+
+  <!-- Title Block & Header Masthead -->
+  <g id="header-masthead">
+    <rect x="35" y="35" width="1130" height="96" fill="#ffffff" fill-opacity="0.92" stroke="#d5cfbe" stroke-width="1"/>
+    <text x="55" y="60" fill="#795548" font-family="'Courier New', monospace" font-size="11" letter-spacing="3" font-weight="bold">ATELIER DAOUDI ARCHITECTURAL REVIEW · DETAIL &amp; ARCHDAILY RESEARCH DOSSIER</text>
+    <text x="55" y="90" fill="#2c3e50" font-family="Georgia, serif" font-size="22" font-weight="bold">Hygroscopic Rammed Earth (Pisé) &amp; Bio-PCM Latent Heat Storage</text>
+    <text x="55" y="113" fill="#57606f" font-family="Arial, sans-serif" font-size="12">Passive Diurnal Temperature Damping (14.2h Lag) Coupled to Micro-Encapsulated Bio-PCM (Tm = 23.5°C) · Scale 1:50 Metric (mm)</text>
+
+    <!-- Meta Status Box -->
+    <rect x="960" y="45" width="190" height="76" fill="#f8f9fa" stroke="#b2bec3" stroke-width="1"/>
+    <text x="972" y="64" fill="#2c3e50" font-family="'Courier New', monospace" font-size="10" font-weight="bold">DOSSIER: PISE-PCM-2026</text>
+    <text x="972" y="80" fill="#57606f" font-family="'Courier New', monospace" font-size="9">DATE: 2026-11-16 (08:30 DZ)</text>
+    <text x="972" y="95" fill="#57606f" font-family="'Courier New', monospace" font-size="9">STANDARD: ISO 52016 / DIN 4108</text>
+    <text x="972" y="110" fill="#e67e22" font-family="'Courier New', monospace" font-size="9" font-weight="bold">STATUS: PROPOSED FOR APPROVAL</text>
+  </g>
+
+  <!-- NATURAL GRADE STRATA & BASEMENT FOUNDATION (y: 640 to 780) -->
+  <rect x="40" y="640" width="1120" height="140" fill="#f5ede3"/>
+  <rect x="40" y="640" width="1120" height="140" fill="url(#soilHatch)"/>
+  <line x1="40" y1="640" x2="1160" y2="640" stroke="#3e2723" stroke-width="3"/>
+  <text x="50" y="632" fill="#3e2723" font-family="'Courier New', monospace" font-size="11" font-weight="bold">FINISHED GRADE ELEVATION ±0.000 m (NATIVE TOPSOIL &amp; SUB-BASE)</text>
+  <text x="50" y="665" fill="#6d4c41" font-family="'Courier New', monospace" font-size="10">SUB-GRADE THERMAL REPOSITORY: Compacted Gravel Trench &amp; Perforated Sub-Drainage (Ø160 mm)</text>
+  <text x="50" y="682" fill="#0288d1" font-family="'Courier New', monospace" font-size="10" font-weight="bold">INSULATED FOUNDATION: 140mm Cellular Glass Foam (λ = 0.038 W/m·K) + 80mm Lime-Soil Stabilization Bed</text>
+
+  <!-- BUILDING SECTION GEOMETRY -->
+  <!-- Left Wall (North/Rear): x: 180 to 230 (500mm Rammed Earth Pisé) -->
+  <!-- Interior Room: x: 230 to 890 (Span = 6,600mm) -->
+  <!-- Right Wall (South Facade): x: 890 to 940 (500mm Rammed Earth Pier + Timber Curtain Wall) -->
+
+  <!-- Left Wall: 500mm Monolithic Rammed Earth Pisé -->
+  <rect x="180" y="270" width="50" height="370" fill="#dfcfbe"/>
+  <rect x="180" y="270" width="50" height="370" fill="url(#piseHatch)"/>
+  <rect x="180" y="270" width="50" height="370" fill="none" stroke="#3e2723" stroke-width="2"/>
+  <!-- Interior 20mm Hygroscopic Clay Plaster on Left Wall -->
+  <line x1="230" y1="270" x2="230" y2="640" stroke="#a08264" stroke-width="2.5"/>
+
+  <!-- Right Pier: 500mm Monolithic Rammed Earth Pisé -->
+  <rect x="890" y="270" width="50" height="100" fill="#dfcfbe"/>
+  <rect x="890" y="270" width="50" height="100" fill="url(#piseHatch)"/>
+  <rect x="890" y="270" width="50" height="100" fill="none" stroke="#3e2723" stroke-width="2"/>
+
+  <!-- Right Ground Stem Wall: x: 890 to 940, y: 590 to 640 -->
+  <rect x="890" y="590" width="50" height="50" fill="#dfcfbe"/>
+  <rect x="890" y="590" width="50" height="50" fill="url(#piseHatch)"/>
+  <rect x="890" y="590" width="50" height="50" fill="none" stroke="#3e2723" stroke-width="2"/>
+
+  <!-- South Fenestration Opening: High-Performance Triple Glazing & Clerestory (x: 890 to 940, y: 370 to 590) -->
+  <!-- Automated Clerestory Vent Louvers at Top (y: 370 to 420) -->
+  <rect x="900" y="370" width="30" height="50" fill="#dff9fb" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="905" y1="382" x2="925" y2="382" stroke="#20bf6b" stroke-width="2"/>
+  <line x1="905" y1="395" x2="925" y2="395" stroke="#20bf6b" stroke-width="2"/>
+  <line x1="905" y1="408" x2="925" y2="408" stroke="#20bf6b" stroke-width="2"/>
+
+  <!-- Floor-to-Ceiling High Performance Triple Glazing (y: 420 to 590) -->
+  <rect x="905" y="420" width="20" height="170" fill="#e8f4f8" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="915" y1="420" x2="915" y2="590" stroke="#0288d1" stroke-width="2"/>
+
+  <!-- Low-level Intake Damper on Left Wall for Night Stack Flush (y: 570 to 620) -->
+  <rect x="180" y="580" width="50" height="40" fill="#e8f8f5" stroke="#20bf6b" stroke-width="1.5"/>
+  <line x1="190" y1="590" x2="220" y2="590" stroke="#20bf6b" stroke-width="1.8"/>
+  <line x1="190" y1="605" x2="220" y2="605" stroke="#20bf6b" stroke-width="1.8"/>
+
+  <!-- STRUCTURAL ROOF SLAB & TIMBER COFFERING WITH INTEGRATED BIO-PCM PANELS -->
+  <!-- Timber Beams: y: 250 to 290 -->
+  <rect x="140" y="250" width="820" height="25" fill="#8d6e63" stroke="#4e342e" stroke-width="1.5"/>
+  <rect x="140" y="250" width="820" height="25" fill="url(#timberHatch)"/>
+
+  <!-- Bio-PCM Latent Heat Storage Matrix Layer (Ceiling Intrados: 25mm thick, y: 275 to 290) -->
+  <rect x="230" y="275" width="660" height="15" fill="url(#pcmPattern)" stroke="#0288d1" stroke-width="1"/>
+
+  <!-- Roof Thermal Insulation (160mm Wood-Fiber / Cork Board: y: 232 to 250) -->
+  <rect x="140" y="232" width="820" height="18" fill="#ffeaa7"/>
+  <rect x="140" y="232" width="820" height="18" fill="url(#insulHatch)"/>
+  <line x1="140" y1="232" x2="960" y2="232" stroke="#d35400" stroke-width="1.5"/>
+
+  <!-- Vegetated / High-Albedo Gravel Roof Top Layer: y: 220 to 232 -->
+  <rect x="140" y="220" width="820" height="12" fill="#dcdde1" stroke="#2c3e50" stroke-width="1"/>
+  <text x="350" y="215" fill="#2c3e50" font-family="'Courier New', monospace" font-size="9.5" font-weight="bold">HIGH-ALBEDO EXTENSIVE ROOF (R_solar = 0.82) + 160mm BIO-CORK INSULATION</text>
+
+  <!-- CANTILEVERED TIMBER BRISE-SOLEIL SHADING (South Side Overhang) -->
+  <!-- Overhang Cantilever: x: 890 to 1070 (1,800mm deep overhang) -->
+  <rect x="890" y="240" width="180" height="16" fill="#6d4c41" stroke="#3e2723" stroke-width="1.5"/>
+  <rect x="890" y="240" width="180" height="16" fill="url(#timberHatch)"/>
+  <!-- Louver Blades (45° angle) -->
+  <line x1="930" y1="256" x2="950" y2="280" stroke="#4e342e" stroke-width="3"/>
+  <line x1="970" y1="256" x2="990" y2="280" stroke="#4e342e" stroke-width="3"/>
+  <line x1="1010" y1="256" x2="1030" y2="280" stroke="#4e342e" stroke-width="3"/>
+  <line x1="1050" y1="256" x2="1070" y2="280" stroke="#4e342e" stroke-width="3"/>
+
+  <!-- FLOOR SLAB & BIO-PCM RADIANT TECTONICS (y: 620 to 640) -->
+  <!-- 150mm High-Inertia Terracotta / Micro-Cement Screed -->
+  <rect x="230" y="620" width="660" height="20" fill="#d7ccc8" stroke="#4e342e" stroke-width="1.2"/>
+  <!-- Floor Bio-PCM Embedded Mat (15mm under surface) -->
+  <rect x="230" y="628" width="660" height="8" fill="url(#pcmPattern)"/>
+
+  <!-- SOLAR PHYSICS & CUTOFF VECTORS -->
+  <!-- High Summer Sun Ray (Solstice 76°) blocked 100% by Overhang -->
+  <line x1="1140" y1="140" x2="1010" y2="300" stroke="#e67e22" stroke-width="2.5" marker-end="url(#arrowSolar)"/>
+  <line x1="1010" y1="300" x2="915" y2="420" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="1035" y="200" fill="#d35400" font-family="'Courier New', monospace" font-size="10" font-weight="bold">SUMMER NOON SUN (76° CUTOFF)</text>
+  <text x="1035" y="215" fill="#7f8c8d" font-family="Arial, sans-serif" font-size="8.5">100% Direct Irradiance Rejected (1,800mm Cantilever)</text>
+
+  <!-- Winter Low Sun Ray (32°) penetrating deep into interior thermal mass -->
+  <line x1="1140" y1="420" x2="910" y2="520" stroke="#f39c12" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowSolar)"/>
+  <line x1="910" y1="520" x2="480" y2="625" stroke="#f39c12" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="965" y="500" fill="#f39c12" font-family="'Courier New', monospace" font-size="9" font-weight="bold">WINTER SUN (32° PENETRATION)</text>
+  <text x="965" y="513" fill="#7f8c8d" font-family="Arial, sans-serif" font-size="8.5">Direct Sensible Gain into Pisé &amp; PCM</text>
+
+  <!-- THERMODYNAMIC BIO-PCM ISOTHERMAL FLUX (Upper Ceiling Intrados) -->
+  <rect x="380" y="295" width="360" height="26" fill="#e1f5fe" stroke="#0288d1" stroke-width="1" rx="4"/>
+  <text x="390" y="312" fill="#01579b" font-family="'Courier New', monospace" font-size="9.5" font-weight="bold">ISOTHERMAL LATENT HEAT STORAGE: Bio-PCM ΔH_f = 210 kJ/kg @ 23.5°C</text>
+
+  <!-- PISÉ THERMAL MASS BUFFERING (Left Wall Heat Wave Attenuation) -->
+  <path d="M 140 400 Q 180 430 205 470" fill="none" stroke="#e67e22" stroke-width="3" marker-end="url(#arrowSolar)"/>
+  <text x="55" y="415" fill="#d35400" font-family="'Courier New', monospace" font-size="10" font-weight="bold">PEAK EXTERIOR WAVE: +38.5°C</text>
+  <text x="55" y="430" fill="#7f8c8d" font-family="Arial, sans-serif" font-size="8.5">Direct Sol-Air Heat Flux</text>
+
+  <!-- Damped Wave Emerging to Interior (14.2 Hours Later) -->
+  <path d="M 205 470 Q 220 500 240 520" fill="none" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowVentCool)"/>
+  <text x="55" y="530" fill="#27ae60" font-family="'Courier New', monospace" font-size="9.5" font-weight="bold">DAMPED INTERIOR FLUX: +23.2°C</text>
+  <text x="55" y="545" fill="#2c3e50" font-family="Arial, sans-serif" font-size="8.5">Thermal Lag φ = 14.2 h · Decrement f = 0.03</text>
+
+  <!-- NOCTURNAL BUOYANCY STACK PURGE (Green Arrows) -->
+  <!-- Cool night intake at lower left -->
+  <path d="M 150 600 L 250 600 Q 320 600 380 580" fill="none" stroke="#009432" stroke-width="2.5" marker-end="url(#arrowVentCool)"/>
+  <text x="260" y="618" fill="#009432" font-family="'Courier New', monospace" font-size="9" font-weight="bold">COOL NIGHT INTAKE: T_amb = +19.5°C</text>
+
+  <!-- Buoyancy rising across room -->
+  <path d="M 460 560 Q 640 520 780 450" fill="none" stroke="#009432" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arrowVentCool)"/>
+
+  <!-- Warm convective exhaust out of clerestory at top right -->
+  <path d="M 780 450 Q 860 400 930 390" fill="none" stroke="#ea2027" stroke-width="2.5" marker-end="url(#arrowVentWarm)"/>
+  <text x="730" y="375" fill="#ea2027" font-family="'Courier New', monospace" font-size="9.5" font-weight="bold">WARM LATENT EXHAUST</text>
+  <text x="730" y="388" fill="#7f8c8d" font-family="Arial, sans-serif" font-size="8.5">Nocturnal Buoyancy Stack (ACH = 6.2 h⁻¹)</text>
+
+  <!-- INDOOR MICROCLIMATIC METRICS PANEL -->
+  <rect x="370" y="440" width="380" height="115" fill="#ffffff" fill-opacity="0.94" stroke="#0288d1" stroke-width="1.2" rx="4"/>
+  <text x="390" y="462" fill="#01579b" font-family="'Courier New', monospace" font-size="11" font-weight="bold">STABILIZED INDOOR MICROCLIMATE METRICS</text>
+  <text x="390" y="482" fill="#2c3e50" font-family="Arial, sans-serif" font-size="10.5">Operative Temperature: <tspan fill="#009432" font-weight="bold">T_op = 23.5°C ± 0.8°C (Constant Zero-Energy)</tspan></text>
+  <text x="390" y="500" fill="#2c3e50" font-family="Arial, sans-serif" font-size="10.5">Relative Humidity Buffer: <tspan fill="#0288d1" font-weight="bold">48% – 52% RH (Hygroscopic MBV 2.4 g/m²·%RH)</tspan></text>
+  <text x="390" y="518" fill="#2c3e50" font-family="Arial, sans-serif" font-size="10.5">Thermal Comfort Compliance: <tspan font-weight="bold">ISO 52016-1 / EN 16798-1 Category I (PMV ±0.15)</tspan></text>
+  <text x="390" y="536" fill="#2c3e50" font-family="Arial, sans-serif" font-size="10.5">Acoustic &amp; Draft Integrity: <tspan fill="#795548" font-weight="bold">Natural Draft DR &lt; 4% · Zero Mechanical Chiller Noise</tspan></text>
+
+  <!-- CAD DIMENSION CALLOUTS (ISO Metric mm) -->
+  <!-- 1. Overhang Dimension: 1,800 mm -->
+  <line x1="890" y1="210" x2="1070" y2="210" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="890" y1="205" x2="890" y2="215" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="1070" y1="205" x2="1070" y2="215" stroke="#2c3e50" stroke-width="1"/>
+  <text x="945" y="202" fill="#2c3e50" font-family="'Courier New', monospace" font-size="9" font-weight="bold">1,800 mm</text>
+
+  <!-- 2. Room Clear Span: 6,600 mm -->
+  <line x1="230" y1="610" x2="890" y2="610" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="230" y1="605" x2="230" y2="615" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="890" y1="605" x2="890" y2="615" stroke="#2c3e50" stroke-width="1"/>
+  <text x="515" y="605" fill="#2c3e50" font-family="'Courier New', monospace" font-size="10" font-weight="bold">CLEAR SPAN: 6,600 mm</text>
+
+  <!-- 3. Rammed Earth Wall Thickness: 500 mm -->
+  <line x1="180" y1="250" x2="230" y2="250" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="180" y1="245" x2="180" y2="255" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="230" y1="245" x2="230" y2="255" stroke="#2c3e50" stroke-width="1"/>
+  <text x="188" y="242" fill="#2c3e50" font-family="'Courier New', monospace" font-size="9" font-weight="bold">500 mm</text>
+
+  <!-- 4. Clear Ceiling Height: 3,600 mm -->
+  <line x1="150" y1="275" x2="150" y2="620" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="145" y1="275" x2="155" y2="275" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="145" y1="620" x2="155" y2="620" stroke="#2c3e50" stroke-width="1"/>
+  <text x="75" y="470" fill="#2c3e50" font-family="'Courier New', monospace" font-size="9" font-weight="bold">H_clear: 3,600 mm</text>
+
+  <!-- 5. Glazing Clear Height: 2,800 mm -->
+  <line x1="950" y1="420" x2="950" y2="590" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="945" y1="420" x2="955" y2="420" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="945" y1="590" x2="955" y2="590" stroke="#2c3e50" stroke-width="1"/>
+  <text x="960" y="510" fill="#2c3e50" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold">H_glazing: 2,800 mm</text>
+
+  <!-- FOOTER TECHNICAL SPECIFICATIONS & TECTONIC LEGEND -->
+  <g id="footer-legend">
+    <rect x="35" y="720" width="1130" height="65" fill="#ffffff" fill-opacity="0.94" stroke="#d5cfbe" stroke-width="1"/>
+    <text x="50" y="738" fill="#2c3e50" font-family="'Courier New', monospace" font-size="9" font-weight="bold">COMPONENT TECTONICS &amp; PHYSICAL PERFORMANCE SPECIFICATIONS (ISO 52016-1 / DIN 4108-2 / DETAIL GREEN):</text>
+    <text x="50" y="753" fill="#57606f" font-family="Arial, sans-serif" font-size="8.5">① Monolithic Stabilized Rammed Earth (Pisé): 500mm hydraulic lime-stabilized earth (ρ = 2,150 kg/m³, λ = 0.85 W/m·K, C_v = 1,950 kJ/m³·K, φ = 14.2 h, f = 0.03)</text>
+    <text x="50" y="768" fill="#57606f" font-family="Arial, sans-serif" font-size="8.5">② Micro-Encapsulated Bio-PCM Layer: 25mm extruded clay tiles with vegetable fatty-acid esters (T_m = 23.5°C, ΔH_f = 210 kJ/kg, isothermal latent heat sink)</text>
+    <text x="50" y="780" fill="#795548" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold">③ Hygroscopic Render: 20mm unbaked earth &amp; lime plaster (MBV = 2.4 g/m²·%RH) · ④ Shading: 1,800mm Douglas Fir Brise-Soleil (65° summer cutoff)</text>
+  </g>
+</svg>
