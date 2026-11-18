@@ -445,7 +445,8 @@
     .then(data => {
       articles = data.articles || [];
       if (journalDate) {
-        journalDate.innerHTML = `<span>EDITORIAL REVIEW · VOL. 04</span> · <span>UPDATED ${esc(data.updatedAt)}</span>`;
+        const volTag = data.dossier ? data.dossier.split('—')[0].trim() : 'VOL. 06';
+        journalDate.innerHTML = `<span>EDITORIAL REVIEW · ${esc(volTag)}</span> · <span>UPDATED ${esc(data.updatedAt)}</span>`;
       }
       renderSpotlight();
       setupFilters();
