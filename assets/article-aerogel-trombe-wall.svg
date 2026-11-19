@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+  <defs>
+    <!-- Background & Engineering Grid -->
+    <linearGradient id="cadBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf9f6"/>
+      <stop offset="100%" stop-color="#f2eee6"/>
+    </linearGradient>
+    <pattern id="cadGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#e3ded3" stroke-width="0.75"/>
+    </pattern>
+
+    <!-- Material Hatches -->
+    <!-- Translucent Aerogel Nanoporous Pattern -->
+    <pattern id="aerogelPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#e0f2fe"/>
+      <circle cx="4" cy="4" r="1.5" fill="#38bdf8" fill-opacity="0.6"/>
+      <circle cx="12" cy="4" r="1.2" fill="#7dd3fc" fill-opacity="0.5"/>
+      <circle cx="8" cy="12" r="1.8" fill="#0284c7" fill-opacity="0.4"/>
+      <circle cx="4" cy="12" r="0.8" fill="#bae6fd"/>
+      <circle cx="12" cy="12" r="1.0" fill="#38bdf8"/>
+    </pattern>
+    <!-- Bio-PCM Latent Matrix Pattern -->
+    <pattern id="pcmMatrixPattern" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#fef3c7"/>
+      <polygon points="6,1 11,4 11,10 6,12 1,10 1,4" fill="#f59e0b" fill-opacity="0.4" stroke="#d97706" stroke-width="0.6"/>
+      <circle cx="6" cy="6.5" r="1.5" fill="#b45309"/>
+    </pattern>
+    <!-- Timber Hatch -->
+    <pattern id="timberHatch" width="12" height="12" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#5d4037" stroke-width="0.8"/>
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#8d6e63" stroke-width="0.5"/>
+    </pattern>
+    <!-- Soil Subgrade Hatch -->
+    <pattern id="soilHatch" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 L 20 0 M 0 0 L 20 20" fill="none" stroke="#cfc2b2" stroke-width="0.6"/>
+    </pattern>
+    <!-- Thermal Insulation Zigzag Hatch -->
+    <pattern id="insulHatch" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 0 4 Q 2 0 4 4 T 8 4" fill="none" stroke="#d35400" stroke-width="0.75"/>
+    </pattern>
+    <!-- Natural Stone Hatch -->
+    <pattern id="stoneHatch" width="24" height="14" patternUnits="userSpaceOnUse">
+      <rect width="24" height="14" fill="#f5ebe0" stroke="#d5bdaf" stroke-width="0.5"/>
+      <line x1="0" y1="7" x2="24" y2="7" stroke="#bb9457" stroke-width="0.5"/>
+      <line x1="12" y1="0" x2="12" y2="7" stroke="#bb9457" stroke-width="0.5"/>
+      <line x1="6" y1="7" x2="6" y2="14" stroke="#bb9457" stroke-width="0.5"/>
+      <line x1="18" y1="7" x2="18" y2="14" stroke="#bb9457" stroke-width="0.5"/>
+    </pattern>
+
+    <!-- Vector Markers -->
+    <marker id="arrowSolar" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d97706"/>
+    </marker>
+    <marker id="arrowWarmAir" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrowCoolAir" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrowLatent" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- Sheet Background -->
+  <rect width="1200" height="820" fill="url(#cadBg)"/>
+  <rect width="1200" height="820" fill="url(#cadGrid)"/>
+
+  <!-- Border & Engineering Frame -->
+  <rect x="25" y="25" width="1150" height="770" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <rect x="31" y="31" width="1138" height="758" fill="none" stroke="#92400e" stroke-width="0.8" stroke-dasharray="6,4"/>
+
+  <!-- Title Block & Header Masthead -->
+  <g id="header-masthead">
+    <rect x="35" y="35" width="1130" height="96" fill="#ffffff" fill-opacity="0.94" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="55" y="60" fill="#92400e" font-family="'Courier New', monospace" font-size="11" letter-spacing="3" font-weight="bold">ATELIER DAOUDI ARCHITECTURAL REVIEW · DETAIL &amp; ARCHDAILY RESEARCH DOSSIER</text>
+    <text x="55" y="90" fill="#0f172a" font-family="Georgia, serif" font-size="22" font-weight="bold">Advanced Aerogel Trombe Wall &amp; Bio-PCM Composite Latent Heat Storage</text>
+    <text x="55" y="113" fill="#475569" font-family="Arial, sans-serif" font-size="12">Thermodynamic Cavity Section: Eradicating Reverse Nocturnal Heat Loss &amp; Summer Overheating · Scale 1:50 Metric (mm)</text>
+
+    <!-- Meta Status Box -->
+    <rect x="960" y="45" width="190" height="76" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="972" y="64" fill="#0f172a" font-family="'Courier New', monospace" font-size="10" font-weight="bold">DOSSIER: VOL. 07 / 2026</text>
+    <text x="972" y="80" fill="#475569" font-family="'Courier New', monospace" font-size="9">DATE: 2026-11-19 (08:30 DZ)</text>
+    <text x="972" y="95" fill="#475569" font-family="'Courier New', monospace" font-size="9">STANDARDS: ISO 52016 / EN 16798</text>
+    <text x="972" y="110" fill="#d97706" font-family="'Courier New', monospace" font-size="9" font-weight="bold">STATUS: DRAFT FOR APPROVAL</text>
+  </g>
+
+  <!-- NATURAL GRADE STRATA & FOUNDATION (y: 640 to 780) -->
+  <rect x="40" y="640" width="1120" height="140" fill="#f5ede3"/>
+  <rect x="40" y="640" width="1120" height="140" fill="url(#soilHatch)"/>
+  <line x1="40" y1="640" x2="1160" y2="640" stroke="#3e2723" stroke-width="3"/>
+  <text x="50" y="632" fill="#3e2723" font-family="'Courier New', monospace" font-size="11" font-weight="bold">FINISHED GRADE ELEVATION ±0.000 m (NATIVE GROUND &amp; COMPACTED STRATA)</text>
+  <text x="50" y="665" fill="#78350f" font-family="'Courier New', monospace" font-size="10">SUB-GRADE TRENCH: Perforated Continuous Sub-Drainage Pipe (Ø160 mm) &amp; Washed Basalt Gravel Bed</text>
+  <text x="50" y="682" fill="#0369a1" font-family="'Courier New', monospace" font-size="10" font-weight="bold">THERMAL SLAB ISOLATION: 140mm Cellular Glass Foam (λ = 0.038 W/m·K) + Waterproofed Capillary Membrane</text>
+
+  <!-- BUILDING SECTION GEOMETRY -->
+  <!-- North/Rear Wall: x: 180 to 220 (400mm Insulated Masonry/Stone) -->
+  <!-- Interior Room: x: 220 to 880 (Clear Span = 6,600 mm) -->
+  <!-- South Facade (Aerogel Trombe System): x: 880 to 970 (Total System Depth = 220 mm) -->
+
+  <!-- North Wall: 400mm Solid Stone with Interior Lime Render -->
+  <rect x="180" y="270" width="40" height="370" fill="#f5ebe0"/>
+  <rect x="180" y="270" width="40" height="370" fill="url(#stoneHatch)"/>
+  <rect x="180" y="270" width="40" height="370" fill="none" stroke="#292524" stroke-width="2"/>
+  <line x1="220" y1="270" x2="220" y2="640" stroke="#a8a29e" stroke-width="2"/>
+
+  <!-- Lower Fresh Air Cross-Ventilation Inlet on North Wall (y: 575 to 625) -->
+  <rect x="180" y="575" width="40" height="50" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+  <line x1="190" y1="590" x2="210" y2="590" stroke="#0284c7" stroke-width="2"/>
+  <line x1="190" y1="605" x2="210" y2="605" stroke="#0284c7" stroke-width="2"/>
+  <text x="75" y="598" fill="#0284c7" font-family="'Courier New', monospace" font-size="9" font-weight="bold">NORTH INLET (19.0°C)</text>
+
+  <!-- STRUCTURAL ROOF & TIMBER COFFERING WITH GREEN EXTENSIVE ROOF -->
+  <!-- Timber Beams: y: 250 to 275 -->
+  <rect x="150" y="250" width="850" height="25" fill="#78350f" stroke="#451a03" stroke-width="1.5"/>
+  <rect x="150" y="250" width="850" height="25" fill="url(#timberHatch)"/>
+
+  <!-- High-Performance Wood-Fiber / Cork Insulation (160mm: y: 230 to 250) -->
+  <rect x="150" y="230" width="850" height="20" fill="#fef08a"/>
+  <rect x="150" y="230" width="850" height="20" fill="url(#insulHatch)"/>
+  <line x1="150" y1="230" x2="1000" y2="230" stroke="#d97706" stroke-width="1.5"/>
+
+  <!-- Extensive Vegetated Green Roof Top (y: 216 to 230) -->
+  <rect x="150" y="216" width="850" height="14" fill="#a7f3d0" stroke="#059669" stroke-width="1"/>
+  <text x="360" y="210" fill="#065f46" font-family="'Courier New', monospace" font-size="9.5" font-weight="bold">HIGH-ALBEDO EXTENSIVE BIO-ROOF (R_solar = 0.85) + 160mm CORK INSULATION</text>
+
+  <!-- CANTILEVERED DOUGLAS FIR BRISE-SOLEIL OVERHANG (South Side: x: 880 to 1040 = 1,600 mm) -->
+  <rect x="880" y="236" width="160" height="16" fill="#78350f" stroke="#451a03" stroke-width="1.5"/>
+  <rect x="880" y="236" width="160" height="16" fill="url(#timberHatch)"/>
+  <!-- Angled Timber Louver Blades (45° cutoff) -->
+  <line x1="920" y1="252" x2="940" y2="278" stroke="#451a03" stroke-width="3"/>
+  <line x1="960" y1="252" x2="980" y2="278" stroke="#451a03" stroke-width="3"/>
+  <line x1="1000" y1="252" x2="1020" y2="278" stroke="#451a03" stroke-width="3"/>
+  <line x1="1035" y1="252" x2="1055" y2="278" stroke="#451a03" stroke-width="3"/>
+
+  <!-- ADVANCED TROMBE WALL TECTONIC ASSEMBLY (x: 880 to 970, y: 275 to 640) -->
+  <!-- 1. Interior Absorber & Bio-PCM Matrix Layer (x: 880 to 900, 80mm high-conductivity composite) -->
+  <rect x="880" y="325" width="22" height="265" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <rect x="880" y="325" width="22" height="265" fill="url(#pcmMatrixPattern)"/>
+  <!-- Front Selective Solar Absorber Coating (α = 0.94, ε = 0.05) -->
+  <line x1="902" y1="325" x2="902" y2="590" stroke="#0f172a" stroke-width="3"/>
+
+  <!-- 2. Thermosiphonic Convective Air Cavity (100mm air gap: x: 902 to 930) -->
+  <rect x="902" y="325" width="28" height="265" fill="#fffbeb" fill-opacity="0.4"/>
+
+  <!-- 3. Outer Translucent Nanoporous Silica Aerogel Glazing Unit (40mm: x: 930 to 948) -->
+  <rect x="930" y="325" width="18" height="265" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <rect x="930" y="325" width="18" height="265" fill="url(#aerogelPattern)"/>
+
+  <!-- Lower Infiltration Damper (Motorized Room Air Intake: x: 880 to 902, y: 590 to 625) -->
+  <rect x="880" y="595" width="22" height="30" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+  <line x1="885" y1="605" x2="898" y2="605" stroke="#0284c7" stroke-width="2"/>
+  <line x1="885" y1="615" x2="898" y2="615" stroke="#0284c7" stroke-width="2"/>
+  <text x="815" y="614" fill="#0284c7" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold">LOWER INTAKE</text>
+
+  <!-- Upper Convective Discharge Damper to Living Room (x: 880 to 902, y: 290 to 325) -->
+  <rect x="880" y="290" width="22" height="35" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="885" y1="302" x2="898" y2="302" stroke="#dc2626" stroke-width="2"/>
+  <line x1="885" y1="314" x2="898" y2="314" stroke="#dc2626" stroke-width="2"/>
+  <text x="795" y="310" fill="#dc2626" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold">UPPER DISCHARGE</text>
+
+  <!-- Upper Exterior Purge Flap for Summer Solar Chimney (x: 930 to 948, y: 290 to 325) -->
+  <rect x="930" y="290" width="18" height="35" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="935" y1="300" x2="945" y2="315" stroke="#ea580c" stroke-width="2.5"/>
+  <text x="955" y="310" fill="#ea580c" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold">SUMMER PURGE</text>
+
+  <!-- Ground Spandrel Stem Wall: x: 880 to 950, y: 625 to 640 -->
+  <rect x="880" y="625" width="70" height="15" fill="#f5ebe0" stroke="#292524" stroke-width="1.5"/>
+
+  <!-- FLOOR SLAB & RADIANT FOUNDATION (y: 620 to 640) -->
+  <!-- 160mm High-Thermal-Mass Travertine Screed -->
+  <rect x="220" y="620" width="660" height="20" fill="#e7e5e4" stroke="#44403c" stroke-width="1.2"/>
+  <!-- Travertine Tile Finish Layer -->
+  <line x1="220" y1="620" x2="880" y2="620" stroke="#78716c" stroke-width="2"/>
+
+  <!-- SOLAR PHYSICS & CUTOFF VECTORS -->
+  <!-- 1. Summer Noon Solar Vector (75° Angle of Incidence: 100% Shaded) -->
+  <line x1="1120" y1="130" x2="980" y2="290" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrowSolar)"/>
+  <line x1="980" y1="290" x2="948" y2="330" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="1010" y="195" fill="#b45309" font-family="'Courier New', monospace" font-size="10" font-weight="bold">SUMMER SUN (75° CUTOFF)</text>
+  <text x="1010" y="210" fill="#64748b" font-family="Arial, sans-serif" font-size="8.5">100% Direct Irradiance Rejected (1,600mm Louver)</text>
+
+  <!-- 2. Winter Low Sun Solar Vector (34° Penetration into Aerogel Collector) -->
+  <line x1="1140" y1="400" x2="948" y2="480" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arrowSolar)"/>
+  <line x1="948" y1="480" x2="902" y2="500" stroke="#f59e0b" stroke-width="2"/>
+  <text x="965" y="475" fill="#b45309" font-family="'Courier New', monospace" font-size="9" font-weight="bold">WINTER SUN (34° ANGLE)</text>
+  <text x="965" y="490" fill="#64748b" font-family="Arial, sans-serif" font-size="8.5">Direct Solar Irradiance = 620 W/m²</text>
+  <text x="965" y="503" fill="#0284c7" font-family="Arial, sans-serif" font-size="8">Aerogel Transmittance: g = 0.58, U = 0.38 W/m²·K</text>
+
+  <!-- THERMOSIPHONIC CONVECTIVE FLUID DYNAMICS (WINTER HEATING CYCLE) -->
+  <!-- Cool Room Air Drawn into Lower Damper (Blue Arrow) -->
+  <path d="M 830 610 L 880 610 L 912 605" fill="none" stroke="#0284c7" stroke-width="2.5" marker-end="url(#arrowCoolAir)"/>
+  <text x="700" y="628" fill="#0284c7" font-family="'Courier New', monospace" font-size="9" font-weight="bold">ROOM AIR INTAKE: T_in = 19.0°C</text>
+
+  <!-- Buoyancy Rising Convective Loop in Cavity -->
+  <path d="M 914 590 L 914 340" fill="none" stroke="#ea580c" stroke-width="3" stroke-dasharray="6,4"/>
+  <text x="920" y="420" fill="#c2410c" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold" transform="rotate(90,920,420)">THERMOSIPHON ASCENT (v = 0.45 m/s)</text>
+
+  <!-- Heated Convective Discharge into Room (Red Arrow) -->
+  <path d="M 914 320 L 880 308 L 830 308" fill="none" stroke="#dc2626" stroke-width="2.8" marker-end="url(#arrowWarmAir)"/>
+  <text x="690" y="298" fill="#dc2626" font-family="'Courier New', monospace" font-size="9.5" font-weight="bold">WARM CONVECTIVE FLUX: T_out = 33.5°C</text>
+
+  <!-- ISOTHERMAL BIO-PCM LATENT STORAGE CALLOUT -->
+  <rect x="420" y="325" width="370" height="30" fill="#fef3c7" stroke="#d97706" stroke-width="1.2" rx="4"/>
+  <text x="430" y="344" fill="#92400e" font-family="'Courier New', monospace" font-size="9.5" font-weight="bold">LATENT HEAT CORE: Bio-PCM ΔH_f = 220 kJ/kg @ T_m = 22.5°C</text>
+  <text x="430" y="356" fill="#78350f" font-family="Arial, sans-serif" font-size="8">Isothermal Phase Transition Prevents Overheating · Delays Heat Peak by 11.8 Hours</text>
+
+  <!-- INDOOR RADIANT & MICROCLIMATIC COMFORT PANEL -->
+  <rect x="360" y="440" width="410" height="120" fill="#ffffff" fill-opacity="0.96" stroke="#0284c7" stroke-width="1.2" rx="4"/>
+  <text x="380" y="462" fill="#0369a1" font-family="'Courier New', monospace" font-size="11" font-weight="bold">STABILIZED INDOOR MICROCLIMATE METRICS</text>
+  <text x="380" y="482" fill="#0f172a" font-family="Arial, sans-serif" font-size="10.5">Operative Room Temp: <tspan fill="#059669" font-weight="bold">T_op = 22.8°C ± 0.6°C (Zero Mechanical Energy)</tspan></text>
+  <text x="380" y="500" fill="#0f172a" font-family="Arial, sans-serif" font-size="10.5">Reverse Nocturnal Heat Loss: <tspan fill="#0284c7" font-weight="bold">-88% Reduction vs Conventional Trombe</tspan></text>
+  <text x="380" y="518" fill="#0f172a" font-family="Arial, sans-serif" font-size="10.5">Envelope Dead Load: <tspan fill="#b45309" font-weight="bold">145 kg/m² (vs 920 kg/m² Massive Concrete Pisé)</tspan></text>
+  <text x="380" y="536" fill="#0f172a" font-family="Arial, sans-serif" font-size="10.5">ISO 52016 / EN 16798-1: <tspan font-weight="bold">Category I Comfort (PMV = +0.04, PPD &lt; 5%)</tspan></text>
+  <text x="380" y="552" fill="#0f172a" font-family="Arial, sans-serif" font-size="10.5">Summer Purge Capacity: <tspan fill="#ea580c" font-weight="bold">ACH = 5.4 h⁻¹ (Buoyancy Solar Chimney Draft)</tspan></text>
+
+  <!-- CAD DIMENSION CALLOUTS (ISO Metric mm) -->
+  <!-- 1. Overhang Dimension: 1,600 mm -->
+  <line x1="880" y1="195" x2="1040" y2="195" stroke="#1e293b" stroke-width="1"/>
+  <line x1="880" y1="190" x2="880" y2="200" stroke="#1e293b" stroke-width="1"/>
+  <line x1="1040" y1="190" x2="1040" y2="200" stroke="#1e293b" stroke-width="1"/>
+  <text x="930" y="190" fill="#1e293b" font-family="'Courier New', monospace" font-size="9" font-weight="bold">1,600 mm</text>
+
+  <!-- 2. Room Clear Span: 6,600 mm -->
+  <line x1="220" y1="610" x2="880" y2="610" stroke="#1e293b" stroke-width="1"/>
+  <line x1="220" y1="605" x2="220" y2="615" stroke="#1e293b" stroke-width="1"/>
+  <line x1="880" y1="605" x2="880" y2="615" stroke="#1e293b" stroke-width="1"/>
+  <text x="510" y="605" fill="#1e293b" font-family="'Courier New', monospace" font-size="10" font-weight="bold">CLEAR SPAN: 6,600 mm</text>
+
+  <!-- 3. Trombe Assembly Total Depth: 220 mm (80mm PCM + 100mm Cavity + 40mm Aerogel) -->
+  <line x1="880" y1="270" x2="948" y2="270" stroke="#1e293b" stroke-width="1"/>
+  <line x1="880" y1="265" x2="880" y2="275" stroke="#1e293b" stroke-width="1"/>
+  <line x1="948" y1="265" x2="948" y2="275" stroke="#1e293b" stroke-width="1"/>
+  <text x="895" y="265" fill="#1e293b" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold">220 mm</text>
+
+  <!-- 4. Aerogel Glazing Thickness: 40 mm -->
+  <line x1="930" y1="630" x2="948" y2="630" stroke="#0284c7" stroke-width="1"/>
+  <text x="955" y="633" fill="#0284c7" font-family="'Courier New', monospace" font-size="8" font-weight="bold">40mm AEROGEL</text>
+
+  <!-- 5. Clear Height: 3,400 mm -->
+  <line x1="150" y1="275" x2="150" y2="620" stroke="#1e293b" stroke-width="1"/>
+  <line x1="145" y1="275" x2="155" y2="275" stroke="#1e293b" stroke-width="1"/>
+  <line x1="145" y1="620" x2="155" y2="620" stroke="#1e293b" stroke-width="1"/>
+  <text x="75" y="460" fill="#1e293b" font-family="'Courier New', monospace" font-size="9" font-weight="bold">H_clear: 3,400 mm</text>
+
+  <!-- 6. Glazing Collector Height: 2,650 mm -->
+  <line x1="960" y1="325" x2="960" y2="590" stroke="#1e293b" stroke-width="1"/>
+  <line x1="955" y1="325" x2="965" y2="325" stroke="#1e293b" stroke-width="1"/>
+  <line x1="955" y1="590" x2="965" y2="590" stroke="#1e293b" stroke-width="1"/>
+  <text x="970" y="460" fill="#1e293b" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold">H_collector: 2,650 mm</text>
+
+  <!-- FOOTER TECHNICAL SPECIFICATIONS & TECTONIC LEGEND -->
+  <g id="footer-legend">
+    <rect x="35" y="720" width="1130" height="65" fill="#ffffff" fill-opacity="0.94" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="50" y="738" fill="#0f172a" font-family="'Courier New', monospace" font-size="9" font-weight="bold">COMPONENT TECTONICS &amp; PHYSICAL PERFORMANCE SPECIFICATIONS (ISO 52016-1 / DIN 4108-2 / DETAIL GREEN):</text>
+    <text x="50" y="753" fill="#475569" font-family="Arial, sans-serif" font-size="8.5">① Translucent Silica Aerogel Unit: 40mm granular aerogel (λ = 0.017 W/m·K, U = 0.38 W/m²·K, g = 0.58, T_v = 0.65 glare-free diffuse daylight)</text>
+    <text x="50" y="768" fill="#475569" font-family="Arial, sans-serif" font-size="8.5">② Bio-PCM Latent Absorber: 80mm organic fatty-acid matrix (T_m = 22.5°C, ΔH_f = 220 kJ/kg, selective coat α = 0.94, ε = 0.05, 11.8h phase lag)</text>
+    <text x="50" y="780" fill="#92400e" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold">③ Dual-Mode Fluid Dynamics: Winter thermosiphon (v = 0.45 m/s, T = 33.5°C) &amp; Summer solar chimney purge (ACH = 5.4 h⁻¹) · ④ Shading: 1,600mm Timber Overhang (75° cutoff)</text>
+  </g>
+</svg>

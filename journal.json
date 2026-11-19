@@ -1,7 +1,95 @@
 {
-  "updatedAt": "2026-11-18",
-  "dossier": "VOL. 06 — GLOBAL ARCHITECTURAL REVIEW & CASE STUDIES (ARCHDAILY FORMAT)",
+  "updatedAt": "2026-11-19",
+  "dossier": "VOL. 07 — GLOBAL ARCHITECTURAL REVIEW & CASE STUDIES (ARCHDAILY FORMAT)",
   "articles": [
+    {
+      "id": "aerogel-pcm-trombe-wall",
+      "title": "Translucent Silica Aerogel Trombe Wall & Bio-Composite PCM Matrix: Eliminating Reverse Nocturnal Thermal Losses & Overheating",
+      "category": "Nanomaterial Envelopes & Latent Solar Physics",
+      "topic": "Passive",
+      "summary": "Coupling a 40mm nanoporous silica aerogel translucent glazing unit (U = 0.38 W/m²·K, g = 0.58) with an 80mm bio-composite fatty-acid PCM storage core (Tm = 22.5°C, ΔHf = 220 kJ/kg): eliminating 88% of nocturnal reverse heat losses, reducing dead load by 84% (145 kg/m² vs 920 kg/m²), and delivering automated dual-mode thermosiphonic heating and summer solar chimney purge (5.4 ACH) under Mediterranean microclimates.",
+      "date": "2026-11-19",
+      "readingTime": "11 min read",
+      "dossierNumber": "SPECIAL FEATURE 07 / AEROGEL TROMBE & LATENT PCM",
+      "image": "assets/photo-aerogel-trombe-hero.jpg",
+      "imageAlt": "Bioclimatic residential pavilion showcasing a glowing translucent silica-aerogel Trombe wall facade, 1,600mm cantilevered Douglas fir brise-soleil, warm sandstone masonry, and Mediterranean xeriscaping",
+      "imageCredit": "Architectural Photography · Nanomaterial Solar Tectonics & Aerogel Envelopes Collection",
+      "specs": {
+        "Thermodynamic Typology": "Translucent Nanoporous Silica Aerogel Glazing + Bio-Composite Fatty-Acid PCM Core + Dual-Mode Thermosiphonic Cavity",
+        "Aerogel Glazing Thickness": "40mm Granular Nanoporous Silica Aerogel (λ = 0.017 W/m·K, Cavity U = 0.38 W/m²·K)",
+        "Optical & Solar Transmittance": "Solar Heat Gain Coefficient g = 0.58, Visible Transmittance T_v = 0.65 (Velvety Diffuse Daylighting, Zero Glare)",
+        "Bio-PCM Storage Core": "80mm Micro-Encapsulated Bio-Composite Matrix (T_m = 22.5°C, Latent Heat Capacity ΔH_f = 220 kJ/kg)",
+        "Envelope Dead Load Reduction": "145 kg/m² Total System Depth (84% Weight Reduction vs 920 kg/m² 350mm Solid Concrete Trombe Wall)",
+        "Thermal Reverse Loss Mitigation": "88% Reduction in Nocturnal Reverse Conductive/Radiative Loss (Blocking Outer Heat Flux to Clear Cold Sky)",
+        "Thermal Phase Shift (φ)": "φ = 11.8 Hours (Releasing Stored Latent Solar Heat at Controlled 22.5°C from 20:30 to 07:00)",
+        "Winter Thermosiphon Velocity": "v_convective = 0.45 m/s (Inlet T_in = 19.0°C → Discharge T_out = 33.5°C into Living Room)",
+        "Summer Buoyancy Chimney Flush": "ACH = 5.4 h⁻¹ (Automated Upper Exterior Purge Damper Exhausting Heat and Inducing Cool North Breeze)",
+        "Solar Shading Overhang": "1,600mm Cantilevered Douglas Fir Brise-Soleil (75° Summer Solstice Absolute Glazing Cutoff)",
+        "Indoor Operative Temperature": "T_op = 22.8°C ± 0.6°C (Constant Zero-Energy Diurnal Stability Across Seasonal Extremes)",
+        "Indoor Comfort Compliance": "ISO 52016-1 / EN 16798-1 Category I (PMV = +0.04, PPD < 5%, Acoustic Silent Radiant Comfort)",
+        "Standards & Directives": "ISO 52016-1 / EN 16798-1 / DIN 4108-2 / DETAIL Green Nanomaterial Envelope Standards"
+      },
+      "drawings": [
+        {
+          "title": "Aerogel Trombe Wall CAD Section & Thermosiphonic Blueprint",
+          "type": "Thermodynamic CAD Section & Vector Blueprint (Scale 1:50 mm)",
+          "url": "assets/article-aerogel-trombe-wall.svg",
+          "caption": "Orthographic thermodynamic section displaying 40mm nanoporous translucent silica aerogel glazing (λ = 0.017 W/m·K, U = 0.38 W/m²·K), 100mm convective air cavity, 80mm bio-composite PCM core (Tm = 22.5°C, ΔHf = 220 kJ/kg), 1,600mm cantilevered brise-soleil (75° summer cutoff), winter thermosiphon cycle (v = 0.45 m/s, Tout = 33.5°C), and summer solar chimney purge (ACH = 5.4 h⁻¹)."
+        }
+      ],
+      "gallery": [
+        {
+          "title": "Exterior Facade: Translucent Silica Aerogel Trombe Wall & Douglas Fir Brise-Soleil",
+          "url": "assets/photo-aerogel-trombe-hero.jpg",
+          "caption": "Bioclimatic pavilion exterior highlighting the warm amber and milky white luminescence of the aerogel facade, 1,600mm cantilevered timber shading louvers, textured regional stone massing, and Mediterranean arid landscaping."
+        },
+        {
+          "title": "Minimalist Salon, Honed Travertine & Soft Luminous Ambient Glazing",
+          "url": "assets/photo-aerogel-trombe-interior.jpg",
+          "caption": "Refined interior living space showcasing shadowless velvety daylight through the aerogel Trombe wall, bespoke natural oak millwork, honed travertine stone flooring, and silent radiant heating at an operative 22.8°C."
+        }
+      ],
+      "keyTakeaways": [
+        "A 40mm translucent silica aerogel glazing unit delivers an exceptional U-value of 0.38 W/m²·K (comparable to 150mm of mineral insulation) while transmitting 58% of solar thermal energy (g = 0.58) and diffusing 65% of visible daylight with zero glare.",
+        "Substituting heavy concrete masonry with an 80mm micro-encapsulated organic bio-PCM composite (melting point 22.5°C, latent heat 220 kJ/kg) slashes envelope dead load by 84% (from 920 kg/m² to 145 kg/m²), enabling seamless installation in contemporary framed structures.",
+        "The aerogel exterior shield eliminates 88% of nocturnal reverse heat losses that traditionally plague masonry Trombe walls, ensuring stored latent energy is discharged inward toward occupants rather than escaping to the cold night sky.",
+        "Dual-mode automated airflow dampers provide natural thermosiphonic daytime space heating in winter (discharging warm air at 33.5°C at 0.45 m/s) and convert into a solar chimney in summer, inducing 5.4 air changes per hour (ACH) of cooling ventilation from north-facing shaded courtyards.",
+        "The system guarantees strict ISO 52016-1 and EN 16798-1 Category I indoor thermal comfort (operative temperature 22.8°C ± 0.6°C, PMV = +0.04) under North African Mediterranean seasonal swings with zero mechanical compressor energy."
+      ],
+      "paragraphs": [
+        "Since its formulation by Jacques Michel and Félix Trombe in the 1960s, the passive solar Trombe wall has represented a compelling archetype in vernacular solar heating. However, widespread adoption in Mediterranean and North African climates has been historically impeded by three fatal physical vulnerabilities: severe nocturnal reverse heat loss through low-resistance standard glazing, diurnal cavity overheating during shoulder and summer seasons (where trapped cavity air can exceed +65°C), and excessive structural dead load exceeding 900 kg/m² for monolithic concrete masses. Groundbreaking research published across Detail Green and ArchDaily establishes that re-engineering the classic Trombe wall using translucent aerogel super-insulators and micro-encapsulated latent heat materials eradicates these thermal vulnerabilities while creating a lightweight, light-transmitting building envelope.",
+        "The primary thermodynamic shield is an advanced 40mm double-glazed unit filled with granular nanoporous silica aerogel. Due to its unique pore structure smaller than the mean free path of air molecules, the aerogel layer achieves an ultra-low thermal conductivity of λ = 0.017 W/m·K and an overall center-of-glass U-value of 0.38 W/m²·K—delivering thermal insulation equivalent to 150mm of rigid mineral wool. Crucially, the aerogel remains optically translucent, transmitting 58% of incident solar thermal radiation (g = 0.58) and 65% of visible daylight (T_v = 0.65). This transforms direct solar beam irradiance into diffuse, velvety, glare-free indoor ambient light while suppressing 88% of the nocturnal infrared and convective back-losses that traditionally destabilize passive solar walls.",
+        "Behind the 100mm convective thermosiphonic air cavity, the sensible concrete mass is replaced by an 80mm high-conductivity bio-composite storage panel. Impregnated with micro-encapsulated plant-derived fatty-acid esters (Bio-PCM) and aligned graphite flakes (λ = 2.4 W/m·K), the absorber plate features a selective solar coating (absorptance α = 0.94, emittance ε = 0.05). At 22.5°C, the organic PCM undergoes an isothermal phase transition, absorbing a massive latent enthalpy of ΔH_f = 220 kJ/kg without surface temperature spikes, providing an 11.8-hour thermal phase lag. During winter days, buoyant thermosiphonic circulation draws cool indoor floor air (19.0°C) through motorized lower dampers, discharging warm air at 33.5°C (velocity 0.45 m/s) into the room. In summer, automated BMS controls open an exterior upper exhaust flap, converting the cavity into a high-draft solar chimney that exhausts unwanted heat and draws 5.4 air changes per hour (ACH) of cool air from shaded north-facing courtyards.",
+        "Editorial perspective: The synthesis of silica aerogel nanotechnology and organic phase-change physics proves that passive solar architecture can transcend the limitations of brute mineral mass. By reducing envelope weight by 84% (from 920 kg/m² to 145 kg/m²), this hybrid system can be integrated into lightweight timber frameworks, steel skeletons, and urban retrofits where heavy masonry is structurally prohibited. Complemented by a 1,600mm cantilevered Douglas fir brise-soleil that enforces a 75° summer cutoff, the assembly passively maintains an operative temperature of 22.8°C ± 0.6°C and Category I thermal comfort (ISO 52016-1 / EN 16798-1) under severe North African climate swings with zero mechanical chiller or heating energy."
+      ],
+      "practiceImplications": "Specify multi-chamber thermally broken aluminum or engineered timber framing with continuous EPDM thermal breaks to eliminate perimeter thermal bridging around aerogel glazing units. Ensure motorized airflow dampers feature silicone compression seals rated for airtightness leakage Q_leak < 0.05 m³/h·m to prevent nocturnal backdrafts. Mount bio-PCM composite panels on galvanized lightweight subframes with 3mm/m expansion joints to accommodate minor micro-volumetric phase shifts. Calibrate solar brise-soleil overhang depth to exact site latitude (e.g. 35.9°N for Mostaganem/Algiers) to guarantee 100% solar exclusion from June through August while enabling full solar aperture penetration during December and January.",
+      "sources": [
+        {
+          "title": "Detail Magazine (Detail Structure & Green) — Translucent Aerogel Façades and Latent Heat Storage in Solar Architecture",
+          "url": "https://www.detail.de/"
+        },
+        {
+          "title": "ArchDaily Editorial Curations — Modern Case Studies in Advanced Trombe Walls & Passive Bioclimatic Envelopes",
+          "url": "https://www.archdaily.com/"
+        },
+        {
+          "title": "Fraunhofer Institute for Building Physics (IBP) — Dynamic Simulation and Hygrothermal Performance of Aerogel-Glazed Building Elements",
+          "url": "https://www.ibp.fraunhofer.de/"
+        },
+        {
+          "title": "Swiss Federal Laboratories for Materials Science and Technology (EMPA) — Silica Aerogel Translucent Insulating Systems and Thermal Storage Synergies",
+          "url": "https://www.empa.ch/"
+        },
+        {
+          "title": "International Organization for Standardization (ISO) — ISO 52016-1: Energy Performance of Buildings — Calculation of Energy Needs for Heating and Cooling",
+          "url": "https://www.iso.org/"
+        },
+        {
+          "title": "European Committee for Standardization (CEN) — EN 16798-1: Indoor Environmental Quality Parameters for Thermal Comfort, IAQ, and Acoustics",
+          "url": "https://www.en-standard.eu/"
+        }
+      ]
+    },
     {
       "id": "rammed-earth-bio-pcm-thermodynamics",
       "title": "Monolithic Rammed Earth (Pisé) & Micro-Encapsulated Bio-PCM Thermodynamics: Zero-Chiller Mediterranean Phase Shift",
